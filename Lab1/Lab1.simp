@@ -5,11 +5,11 @@
     <authors> </authors>
     <description />
   </meta>
-  <counters diagrams="6" models="1">
+  <counters diagrams="10" models="1">
     <entity-names>
       <counter>
         <item-type type-id="dfd-process" type="Process" />
-        <value>13</value>
+        <value>30</value>
       </counter>
       <counter>
         <item-type type-id="dfd-external" type="External" />
@@ -17,13 +17,13 @@
       </counter>
       <counter>
         <item-type type-id="dfd-data-store" type="Data Store" />
-        <value>10</value>
+        <value>18</value>
       </counter>
     </entity-names>
     <entity-ids>
       <counter>
         <item-type type-id="dfd-process" type="Process" />
-        <value>14</value>
+        <value>31</value>
       </counter>
       <counter>
         <item-type type-id="dfd-external" type="External" />
@@ -31,11 +31,11 @@
       </counter>
       <counter>
         <item-type type-id="dfd-data-flow" type="Data Flow" />
-        <value>60</value>
+        <value>137</value>
       </counter>
       <counter>
         <item-type type-id="dfd-data-store" type="Data Store" />
-        <value>11</value>
+        <value>19</value>
       </counter>
     </entity-ids>
     <diagrams />
@@ -75,7 +75,7 @@
   </types>
   <items />
   <models>
-    <model id="pe598aefc4d6444f1bb83f0c8ecf2aedd_554389935" name="Model1" namespace="" order-index="1">
+    <model id="pe598aefc4d6444f1bb83f0c8ecf2aedd_554389935" name="Model1" namespace="" order-index="1" expanded="true">
       <meta>
         <authors>
           <author> </author>
@@ -88,7 +88,7 @@
       </meta>
       <abstract-items />
       <sub-models />
-      <diagram type="gane-sarson-data-flow" id="p24f50d46649b430db39f8d574fa2a817_124916222" name="DFD0_Context" order-index="1" uid="" show-fields="true" auto-routed-paths="false" default-line-style="default" view-location="0,131">
+      <diagram type="gane-sarson-data-flow" id="p24f50d46649b430db39f8d574fa2a817_124916222" name="DFD0_Context" order-index="1" expanded="true" uid="" name-style="" show-fields="true" auto-routed-paths="false" default-line-style="default">
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -105,16 +105,12 @@
           <version />
         </meta>
         <abstract-items>
-          <item id="a38bf6f6c969459489d89493192b024f" cid="DFF008" type="dfd-data-flow" name="Видеоконтент" creation-date="12/25/2023 22:48:42" from="d478096fa0b84541ae1801bda41e7d41" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="f60d0c01ecd04e53833546f28bacd778" cid="DFF007" type="dfd-data-flow" name="Видеоконтент, &#xD;&#xA;комментарии" creation-date="12/25/2023 22:46:45" from="e84eae42809d45b2b87e51d296e85c3a" to="978c20af954b4712b73c576cd718f8d9" />
-          <item id="b884df10f25344ef84dd36c09a04bf4e" cid="DFF012" type="dfd-data-flow" name="Статистика показов &#xD;&#xA;обьявлений, аналитика" creation-date="12/25/2023 22:55:10" from="e84eae42809d45b2b87e51d296e85c3a" to="5017a589130c42f299e75e1d0ea03e12" />
-          <item id="bf234b1da39643c3917e9613cf9dfd28" cid="DFF005" type="dfd-data-flow" name="Данные библиотеки, &#xD;&#xA;рекомендации" creation-date="12/25/2023 22:40:42" from="e84eae42809d45b2b87e51d296e85c3a" to="2d26ad898a914c97858d884fae43e08d" />
-          <item id="1fd8f0d085494b67928edf4d5851dd20" cid="DFF001" type="dfd-data-flow" name="Запросы видео" creation-date="12/25/2023 22:33:33" from="98b07c7c3a9f4763a6284b71ad557e91" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="31fd726ac4ff45549890c8b04d145a16" cid="DFF011" type="dfd-data-flow" name="Данные рекламных объявлений, настройки рекламных кампаний" creation-date="12/25/2023 22:54:26" from="5017a589130c42f299e75e1d0ea03e12" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="98b07c7c3a9f4763a6284b71ad557e91" cid="DFE002" type="dfd-external" name="Пользователь" creation-date="12/25/2023 22:27:42" />
+          <item id="2d26ad898a914c97858d884fae43e08d" cid="DFE003" type="dfd-external" name="Авторизованный пользователь" creation-date="12/25/2023 22:38:58" />
+          <item id="d478096fa0b84541ae1801bda41e7d41" cid="DFE007" type="dfd-external" name="Автор видео" creation-date="12/25/2023 22:46:18" />
+          <item id="ec602cbb626c4f038dc724a99acf7a62" cid="DFE005" type="dfd-external" name="Администратор" creation-date="12/25/2023 22:43:41" />
           <item id="e84eae42809d45b2b87e51d296e85c3a" cid="" type="dfd-process" name="Сервис для хостинга и просмотра видео" creator="" creation-date="12/16/2023 00:10:48">
             <nested-diagrams>
-              <diagram type="gane-sarson-data-flow" id="p6bdcd444b5384b458fecf5167d0cc008_125068403" name="DFD1_User" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default">
+              <diagram type="gane-sarson-data-flow" id="p6bdcd444b5384b458fecf5167d0cc008_125068403" name="DFD1_User" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,-190">
                 <style>
                   <background-color index="1" color="#FFFFFFFF" />
                   <background-color index="2" color="#FFFFFFFF" />
@@ -126,35 +122,219 @@
                   </authors>
                   <description />
                   <creation-date>12/16/2023 00:11:18</creation-date>
-                  <change-date>01/03/2024 21:33:44</change-date>
+                  <change-date>01/04/2024 14:43:19</change-date>
                   <revision-count>0</revision-count>
                   <version />
                 </meta>
                 <abstract-items>
-                  <item id="9ed5a7f85d3e4c31bcf167db1a1f2f1a" cid="DFF020" type="dfd-data-flow" name="Видеопоток" creation-date="12/31/2023 18:14:45" from="aee2c09f0d5444f6976ad2f15dc12424" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="200cfb69510a4753bacbe5ddcbfa88ad" cid="DFF032" type="dfd-data-flow" name="Данные комментариев" creation-date="01/03/2024 21:29:27" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="13b7cb2f5c50441aa413aba5bedf1ed4" />
-                  <item id="7aeeb6cb4cdd4351b01e089a13552ab3" cid="DFF023" type="dfd-data-flow" name="Запрос, сверяющий учетные данные&#xD;&#xA;(логин, хеш пароля)" creation-date="12/31/2023 18:22:46" from="6c726091b717467286f76b782ea76081" to="d0eb480834fb40ab9530d60d4f28aa6b" />
-                  <item id="7e6162b9b8d04e12bd000f7792fc7222" cid="DFF014" type="dfd-data-flow" name="Запрос к таблице видеозаписей" creation-date="12/31/2023 18:01:28" from="4c750e365bac44bf9eeb745e073856e3" to="3a3d757acf054ea6ab6adbd358308227" />
-                  <item id="578d8c2ab54b4a8d8f59f17b9033df4b" cid="DFF025" type="dfd-data-flow" name="Данные сессии авторизации" creation-date="01/03/2024 20:29:23" from="6c726091b717467286f76b782ea76081" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="b1e553ab483344c0b34204fa361f0352" cid="DFF015" type="dfd-data-flow" name="Список видеозаписей с метаданными" creation-date="12/31/2023 18:02:14" from="3a3d757acf054ea6ab6adbd358308227" to="4c750e365bac44bf9eeb745e073856e3" />
-                  <item id="285ae41639a94892957f25f33738adfd" cid="DFF016" type="dfd-data-flow" name="Названия, метаданные видеозаписей" creation-date="12/31/2023 18:04:06" from="4c750e365bac44bf9eeb745e073856e3" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="18c54a6fee384f3889f95dda9c701a6b" cid="DFF021" type="dfd-data-flow" name="Данные, введенные в форме входа" creation-date="12/31/2023 18:20:50" from="98b07c7c3a9f4763a6284b71ad557e91" to="6c726091b717467286f76b782ea76081" />
-                  <item id="7870a874a4c349b59033aea6a340389a" cid="DFF018" type="dfd-data-flow" name="Запрос содержимого файла" creation-date="12/31/2023 18:11:17" from="aee2c09f0d5444f6976ad2f15dc12424" to="597cc54af10d441097b8f1f5279e23ca" />
-                  <item id="aee2c09f0d5444f6976ad2f15dc12424" cid="DFP003" type="dfd-process" name="Воспроизвести видеопоток" creation-date="12/31/2023 18:08:00" />
-                  <item id="ceac03df30024d1583d503a0523849f7" cid="DFF013" type="dfd-data-flow" name="Поисковый запрос" creation-date="12/31/2023 18:01:04" from="98b07c7c3a9f4763a6284b71ad557e91" to="4c750e365bac44bf9eeb745e073856e3" />
-                  <item id="597cc54af10d441097b8f1f5279e23ca" cid="DFS002" type="dfd-data-store" name="Хранилище видеоконтента" creation-date="12/31/2023 18:05:31" />
-                  <item id="6c726091b717467286f76b782ea76081" cid="DFP004" type="dfd-process" name="Авторизовать пользователя" creation-date="12/31/2023 18:19:44" />
-                  <item id="1169a647d5c84fccba1ed23c676e8c38" cid="DFF034" type="dfd-data-flow" name="Список комментариев" creation-date="01/03/2024 21:33:44" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="a545257a42114685a752133f9d76c2c7" cid="DFF033" type="dfd-data-flow" name="Идентификатор видео" creation-date="01/03/2024 21:30:06" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="4c750e365bac44bf9eeb745e073856e3" cid="DFP002" type="dfd-process" name="Показать список видео по запросу" creation-date="12/31/2023 18:00:11" />
-                  <item id="d0eb480834fb40ab9530d60d4f28aa6b" cid="DFS003" type="dfd-data-store" name="Учетные данные пользователей" creation-date="01/03/2024 20:17:55" />
-                  <item id="a0df2e3a15a64b7f80a32c4d5904d597" cid="DFF031" type="dfd-data-flow" name="Запрос с идентификатором видео" creation-date="01/03/2024 21:28:26" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="37283b78c3a74cc8bfc7d9468f958c5c" cid="DFF024" type="dfd-data-flow" name="Результат выполнения запроса" creation-date="01/03/2024 20:14:19" from="d0eb480834fb40ab9530d60d4f28aa6b" to="6c726091b717467286f76b782ea76081" />
-                  <item id="868b86e5a94e44099ce62302fc7648c6" cid="DFF017" type="dfd-data-flow" name="Идентификатор видео" creation-date="12/31/2023 18:08:56" from="98b07c7c3a9f4763a6284b71ad557e91" to="aee2c09f0d5444f6976ad2f15dc12424" />
-                  <item id="b89c37b8f58640e7b2ea56b3c3dae7a0" cid="DFS006" type="dfd-data-store" name="Комментарии к видео" creation-date="01/03/2024 21:27:54" />
-                  <item id="9e9669d399774e2db2c3fbcd30c5b76f" cid="DFF019" type="dfd-data-flow" name="Содержимое файла" creation-date="12/31/2023 18:12:44" from="597cc54af10d441097b8f1f5279e23ca" to="aee2c09f0d5444f6976ad2f15dc12424" />
+                  <item id="223a7da060464a0eada96eb611a34775" cid="DFF061" type="dfd-data-flow" name="Названия, метаданные каналов" creation-date="01/04/2024 14:41:16" from="2bb26c90d88547ca92279334b7bd1b0f" to="98b07c7c3a9f4763a6284b71ad557e91" />
                   <item id="13b7cb2f5c50441aa413aba5bedf1ed4" cid="DFP012" type="dfd-process" name="Показать комментарии к видео" creation-date="01/03/2024 21:25:10" />
+                  <item id="9ed5a7f85d3e4c31bcf167db1a1f2f1a" cid="DFF020" type="dfd-data-flow" name="Видеопоток" creation-date="12/31/2023 18:14:45" from="aee2c09f0d5444f6976ad2f15dc12424" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="aee2c09f0d5444f6976ad2f15dc12424" cid="DFP003" type="dfd-process" name="Воспроизвести видеопоток" creation-date="12/31/2023 18:08:00" />
+                  <item id="a545257a42114685a752133f9d76c2c7" cid="DFF033" type="dfd-data-flow" name="Идентификатор видео" creation-date="01/03/2024 21:30:06" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="a0df2e3a15a64b7f80a32c4d5904d597" cid="DFF031" type="dfd-data-flow" name="Запрос с идентификатором видео" creation-date="01/03/2024 21:28:26" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="578d8c2ab54b4a8d8f59f17b9033df4b" cid="DFF025" type="dfd-data-flow" name="Данные сессии авторизации" creation-date="01/03/2024 20:29:23" from="6c726091b717467286f76b782ea76081" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="7aeeb6cb4cdd4351b01e089a13552ab3" cid="DFF023" type="dfd-data-flow" name="Запрос, сверяющий учетные данные&#xD;&#xA;(логин, хеш пароля)" creation-date="12/31/2023 18:22:46" from="6c726091b717467286f76b782ea76081" to="d0eb480834fb40ab9530d60d4f28aa6b" />
+                  <item id="9e9669d399774e2db2c3fbcd30c5b76f" cid="DFF019" type="dfd-data-flow" name="Содержимое файла" creation-date="12/31/2023 18:12:44" from="597cc54af10d441097b8f1f5279e23ca" to="aee2c09f0d5444f6976ad2f15dc12424" />
+                  <item id="200cfb69510a4753bacbe5ddcbfa88ad" cid="DFF032" type="dfd-data-flow" name="Данные комментариев" creation-date="01/03/2024 21:29:27" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="13b7cb2f5c50441aa413aba5bedf1ed4" />
+                  <item id="d7f6042698204ffd9fa5c3eb790e4fad" cid="DFF062" type="dfd-data-flow" name="Запрос к таблице данных каналов" creation-date="01/04/2024 14:42:43" from="2bb26c90d88547ca92279334b7bd1b0f" to="678bef3f024343f8843ff3fc33225cb6" />
+                  <item id="1169a647d5c84fccba1ed23c676e8c38" cid="DFF034" type="dfd-data-flow" name="Список комментариев" creation-date="01/03/2024 21:33:44" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="b89c37b8f58640e7b2ea56b3c3dae7a0" cid="DFS006" type="dfd-data-store" name="Комментарии к видео" creation-date="01/03/2024 21:27:54" />
+                  <item id="6c726091b717467286f76b782ea76081" cid="DFP004" type="dfd-process" name="Авторизовать пользователя" creation-date="12/31/2023 18:19:44" />
+                  <item id="4c750e365bac44bf9eeb745e073856e3" cid="DFP002" type="dfd-process" name="Показать список видео по запросу" creation-date="12/31/2023 18:00:11">
+                    <nested-diagrams>
+                      <diagram type="gane-sarson-data-flow" id="pb688692a65ed424b82dc774efb7a2a5d_162641734" name="DFD2_002_VideoSearch" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default" view-location="0,-270">
+                        <style>
+                          <background-color index="1" color="#FFFFFFFF" />
+                          <background-color index="2" color="#FFFFFFFF" />
+                          <background-type type="solid" />
+                        </style>
+                        <meta>
+                          <authors>
+                            <author> </author>
+                          </authors>
+                          <description />
+                          <creation-date>01/04/2024 19:50:35</creation-date>
+                          <change-date>01/04/2024 20:55:22</change-date>
+                          <revision-count>0</revision-count>
+                          <version />
+                        </meta>
+                        <abstract-items>
+                          <item id="ea03546eda0a45a58b520b80251e132b" cid="DFF126" type="dfd-data-flow" name="Запрос поиска плейлистов по поисковому запросу" creation-date="01/04/2024 20:47:33" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="4e14021aee0f40c5881ca3b285a12991" />
+                          <item id="c29258c56fc24fcfa0f626d2b1ccfa8c" cid="DFP029" type="dfd-process" name="Собрать идентификаторы видео из плейлистов" creation-date="01/04/2024 20:46:29" />
+                          <item id="1854c8d369254da7879e69ba162b794b" cid="DFP028" type="dfd-process" name="Выполнить поиск видео" creation-date="01/04/2024 20:43:55" />
+                          <item id="cb56c9c1e9ef4b1fb0682941ce370d21" cid="DFF131" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/04/2024 20:51:49" from="7f5562318139411988e4c493ae37b9ee" to="0a83dc2533474cd9a9fc81e0c2c20545" />
+                          <item id="2f516307607a4377b96e183206b198b3" cid="DFF132" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:52:08" from="0a83dc2533474cd9a9fc81e0c2c20545" to="7f5562318139411988e4c493ae37b9ee" />
+                          <item id="7f5562318139411988e4c493ae37b9ee" cid="DFP027" type="dfd-process" name="Собрать идентификаторы видео из связанных сущностей" creation-date="01/04/2024 20:39:41" />
+                          <item id="720e67acc1c949888309db42161aca51" cid="DFF130" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:49:51" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="7f5562318139411988e4c493ae37b9ee" />
+                          <item id="839e2303c0904f2e9f7b6342b582e84d" cid="DFF135" type="dfd-data-flow" name="Запрос поиска видео на каналах" creation-date="01/04/2024 20:54:54" from="0a83dc2533474cd9a9fc81e0c2c20545" to="3a3d757acf054ea6ab6adbd358308227" />
+                          <item id="53c88bf09f834ed981342e73e738cf6f" cid="DFF129" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:49:32" from="83353f82cbf54b94b13204443e09b291" to="c29258c56fc24fcfa0f626d2b1ccfa8c" />
+                          <item id="f8eaeadec0d741de905d1cac754449df" cid="DFF125" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/04/2024 20:47:00" from="7f5562318139411988e4c493ae37b9ee" to="c29258c56fc24fcfa0f626d2b1ccfa8c" />
+                          <item id="0a83dc2533474cd9a9fc81e0c2c20545" cid="DFP030" type="dfd-process" name="Собрать идентификаторы видео из каналов" creation-date="01/04/2024 20:51:21" />
+                          <item id="6d51c74ca15c48b4bb342949e398be8d" cid="DFF128" type="dfd-data-flow" name="Запрос поиска видео в плейлистах по запросу" creation-date="01/04/2024 20:48:42" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="83353f82cbf54b94b13204443e09b291" />
+                          <item id="e90fa233c12d46febae2e6b8a31db37a" cid="DFF127" type="dfd-data-flow" name="Данные плейлистов" creation-date="01/04/2024 20:48:11" from="4e14021aee0f40c5881ca3b285a12991" to="c29258c56fc24fcfa0f626d2b1ccfa8c" />
+                          <item id="3f196a4ebad44f01a8048af82f338523" cid="DFF136" type="dfd-data-flow" creation-date="01/04/2024 20:55:22" from="3a3d757acf054ea6ab6adbd358308227" to="0a83dc2533474cd9a9fc81e0c2c20545" />
+                          <item id="a58e7f112d354ba6b77e914f616e2261" cid="DFF133" type="dfd-data-flow" name="Запрос поиска каналов" creation-date="01/04/2024 20:54:17" from="0a83dc2533474cd9a9fc81e0c2c20545" to="678bef3f024343f8843ff3fc33225cb6" />
+                          <item id="a17ae81ce20e4847ad135b143a5c709d" cid="DFF134" type="dfd-data-flow" name="Данные каналов" creation-date="01/04/2024 20:54:42" from="678bef3f024343f8843ff3fc33225cb6" to="0a83dc2533474cd9a9fc81e0c2c20545" />
+                        </abstract-items>
+                        <layer id="6eece9cde2f24dcf8a797da3d2636bd1" name="Default" visible="true" enabled="true" locked="false">
+                          <item id="98b07c7c3a9f4763a6284b71ad557e91" iid="bb69e01a882049c981561b294ff0bb1e" creation-date="12/25/2023 22:27:42" order-index="0" type="entity">
+                            <layout ax="101" ay="182.5" awidth="155" aheight="70" x="101" y="182.5" width="155" height="70" />
+                          </item>
+                          <item id="3a3d757acf054ea6ab6adbd358308227" iid="f715af77bfdd46f29d16d11b70eb58e8" creation-date="12/31/2023 17:39:49" order-index="1" type="entity">
+                            <layout ax="795" ay="369" awidth="174" aheight="50" x="795" y="369" width="174" height="50" />
+                          </item>
+                          <item id="678bef3f024343f8843ff3fc33225cb6" iid="9c1db6f69bd74334a1286aa6c1e8b50d" creation-date="01/04/2024 14:42:32" order-index="0" type="entity">
+                            <layout ax="1130" ay="105" awidth="120" aheight="50" x="1130" y="105" width="120" height="50" />
+                          </item>
+                          <item id="7f5562318139411988e4c493ae37b9ee" iid="d66edadb52fa40d08556f0f4cae63433" creation-date="01/04/2024 20:39:41" order-index="2" type="entity">
+                            <layout ax="436" ay="148" awidth="209" aheight="116" x="436" y="148" width="209" height="116" />
+                          </item>
+                          <item id="1854c8d369254da7879e69ba162b794b" iid="2186ac0330f14c349f66b08a5256972b" creation-date="01/04/2024 20:43:55" order-index="3" type="entity">
+                            <layout ax="480.5" ay="349" awidth="120" aheight="90" x="480.5" y="349" width="120" height="90" />
+                          </item>
+                          <item id="83353f82cbf54b94b13204443e09b291" iid="88dde744cddd492b955d9e79ce100677" creation-date="01/03/2024 21:39:05" order-index="0" type="entity">
+                            <layout ax="807" ay="55" awidth="155" aheight="50" x="807" y="55" width="155" height="50" />
+                          </item>
+                          <item id="4e14021aee0f40c5881ca3b285a12991" iid="0cf0ba5a88bc47879648e56176eed761" creation-date="01/03/2024 21:53:49" order-index="1" type="entity">
+                            <layout ax="808" ay="-92" awidth="153" aheight="50" x="808" y="-92" width="153" height="50" />
+                          </item>
+                          <item id="c29258c56fc24fcfa0f626d2b1ccfa8c" iid="8dd0b78e58f14066aa7d0730d6312ed9" creation-date="01/04/2024 20:46:29" order-index="4" type="entity">
+                            <layout ax="453.5" ay="-76" awidth="174" aheight="90" x="453.5" y="-76" width="174" height="90" />
+                          </item>
+                          <item id="f8eaeadec0d741de905d1cac754449df" iid="17ab28ac218940df9c78467c7083b294" creation-date="01/04/2024 20:47:00" order-index="5" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="475" y1="148" x2="476" y2="14" start-border-pos="0.0466507188975811" end-border-pos="0.7176724076271057" start-local-pos="65" end-local-pos="45.5" name-position="-55,3" name-width="94">
+                              <points>
+                                <point x="475" y="148" />
+                                <point x="476" y="14" />
+                              </points>
+                            </layout>
+                            <relation from="7f5562318139411988e4c493ae37b9ee" from-iid="d66edadb52fa40d08556f0f4cae63433" to="c29258c56fc24fcfa0f626d2b1ccfa8c" to-iid="8dd0b78e58f14066aa7d0730d6312ed9" />
+                          </item>
+                          <item id="ea03546eda0a45a58b520b80251e132b" iid="1c13f9d474014dd48a36cff72622d8dc" creation-date="01/04/2024 20:47:33" order-index="6" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="628" y1="-64" x2="808" y2="-64" start-border-pos="0.2833333333333333" end-border-pos="0.86" start-local-pos="12" end-local-pos="25" name-position="1,48">
+                              <points>
+                                <point x="628" y="-64" />
+                                <point x="808" y="-64" />
+                              </points>
+                            </layout>
+                            <relation from="c29258c56fc24fcfa0f626d2b1ccfa8c" from-iid="8dd0b78e58f14066aa7d0730d6312ed9" to="4e14021aee0f40c5881ca3b285a12991" to-iid="0cf0ba5a88bc47879648e56176eed761" />
+                          </item>
+                          <item id="e90fa233c12d46febae2e6b8a31db37a" iid="8e6efa32a501408ab1b76bcd8ae595f4" creation-date="01/04/2024 20:48:11" order-index="7" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="874" y1="-92" x2="572" y2="-76" start-border-pos="0.10784313827753067" end-border-pos="0.17025862634181976" start-local-pos="66" end-local-pos="118.5" name-position="-6,34">
+                              <points>
+                                <point x="874" y="-92" />
+                                <point x="572" y="-76" />
+                              </points>
+                            </layout>
+                            <relation from="4e14021aee0f40c5881ca3b285a12991" from-iid="0cf0ba5a88bc47879648e56176eed761" to="c29258c56fc24fcfa0f626d2b1ccfa8c" to-iid="8dd0b78e58f14066aa7d0730d6312ed9" />
+                          </item>
+                          <item id="6d51c74ca15c48b4bb342949e398be8d" iid="fa7351bb402e445fa986ad67a3c3de60" creation-date="01/04/2024 20:48:42" order-index="8" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="573" y1="14" x2="807" y2="93" start-border-pos="0.5783045962452888" end-border-pos="0.8099999986588955" start-local-pos="131.5" end-local-pos="38" name-position="66,31">
+                              <points>
+                                <point x="573" y="14" />
+                                <point x="807" y="93" />
+                              </points>
+                            </layout>
+                            <relation from="c29258c56fc24fcfa0f626d2b1ccfa8c" from-iid="8dd0b78e58f14066aa7d0730d6312ed9" to="83353f82cbf54b94b13204443e09b291" to-iid="88dde744cddd492b955d9e79ce100677" />
+                          </item>
+                          <item id="53c88bf09f834ed981342e73e738cf6f" iid="00808d963db34e6982e77529bbe7be51" creation-date="01/04/2024 20:49:32" order-index="9" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="807" y1="65" x2="600" y2="14" start-border-pos="0.95" end-border-pos="0.5387931034482759" start-local-pos="10" end-local-pos="147" name-position="15,-19">
+                              <points>
+                                <point x="807" y="65" />
+                                <point x="600" y="14" />
+                              </points>
+                            </layout>
+                            <relation from="83353f82cbf54b94b13204443e09b291" from-iid="88dde744cddd492b955d9e79ce100677" to="c29258c56fc24fcfa0f626d2b1ccfa8c" to-iid="8dd0b78e58f14066aa7d0730d6312ed9" />
+                          </item>
+                          <item id="720e67acc1c949888309db42161aca51" iid="47e224c793494f10817e203a3cb25d6c" creation-date="01/04/2024 20:49:51" order-index="10" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="500" y1="14" x2="501" y2="148" start-border-pos="0.6831896603107452" end-border-pos="0.07775119692087173" start-local-pos="70.5" end-local-pos="89" name-position="38,-5" name-width="57">
+                              <points>
+                                <point x="500" y="14" />
+                                <point x="501" y="148" />
+                              </points>
+                            </layout>
+                            <relation from="c29258c56fc24fcfa0f626d2b1ccfa8c" from-iid="8dd0b78e58f14066aa7d0730d6312ed9" to="7f5562318139411988e4c493ae37b9ee" to-iid="d66edadb52fa40d08556f0f4cae63433" />
+                          </item>
+                          <item id="0a83dc2533474cd9a9fc81e0c2c20545" iid="33d07328f6c14f07bdb39e00be911819" creation-date="01/04/2024 20:51:21" order-index="11" type="entity">
+                            <layout ax="807" ay="151.5" awidth="161" aheight="101" x="807" y="151.5" width="161" height="101" />
+                          </item>
+                          <item id="cb56c9c1e9ef4b1fb0682941ce370d21" iid="4ed427a2930f4cdabca5ab5260a2b648" creation-date="01/04/2024 20:51:49" order-index="12" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="645" y1="234" x2="807" y2="235" start-border-pos="0.4353448301553726" end-border-pos="0.7933168316831684" start-local-pos="86" end-local-pos="84.5" name-position="-1,-16">
+                              <points>
+                                <point x="645" y="234" />
+                                <point x="807" y="235" />
+                              </points>
+                            </layout>
+                            <relation from="7f5562318139411988e4c493ae37b9ee" from-iid="d66edadb52fa40d08556f0f4cae63433" to="0a83dc2533474cd9a9fc81e0c2c20545" to-iid="33d07328f6c14f07bdb39e00be911819" />
+                          </item>
+                          <item id="2f516307607a4377b96e183206b198b3" iid="44604da629674660a82c2e221b5a8677" creation-date="01/04/2024 20:52:08" order-index="13" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="807" y1="193" x2="645" y2="193" start-border-pos="0.8972772277227723" end-border-pos="0.34698276221752167" start-local-pos="37.5" end-local-pos="45" name-position="-2,-22">
+                              <points>
+                                <point x="807" y="193" />
+                                <point x="645" y="193" />
+                              </points>
+                            </layout>
+                            <relation from="0a83dc2533474cd9a9fc81e0c2c20545" from-iid="33d07328f6c14f07bdb39e00be911819" to="7f5562318139411988e4c493ae37b9ee" to-iid="d66edadb52fa40d08556f0f4cae63433" />
+                          </item>
+                          <item id="3a3d757acf054ea6ab6adbd358308227" iid="1c4ff392eace4bb6b5eb659bbac5ac93" creation-date="12/31/2023 17:39:49" order-index="0" type="entity">
+                            <layout ax="1130" ay="228" awidth="174" aheight="50" x="1130" y="228" width="174" height="50" />
+                          </item>
+                          <item id="a58e7f112d354ba6b77e914f616e2261" iid="50cda99548954b02acad3358f3c53636" creation-date="01/04/2024 20:54:17" order-index="14" type="relation">
+                            <layout line-style="perpendicular" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="968" y1="152" x2="1130" y2="155" start-border-pos="0.2512376237427816" end-border-pos="0.75" start-local-pos="0.5" end-local-pos="50" name-position="6,28">
+                              <points>
+                                <point x="968" y="152" />
+                                <point x="1130" y="155" />
+                              </points>
+                            </layout>
+                            <relation from="0a83dc2533474cd9a9fc81e0c2c20545" from-iid="33d07328f6c14f07bdb39e00be911819" to="678bef3f024343f8843ff3fc33225cb6" to-iid="9c1db6f69bd74334a1286aa6c1e8b50d" />
+                          </item>
+                          <item id="a17ae81ce20e4847ad135b143a5c709d" iid="6a5cfa3ba51945e2948e2a2c3eb9317a" creation-date="01/04/2024 20:54:42" order-index="15" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1130" y1="120" x2="943" y2="152" start-border-pos="0.925" end-border-pos="0.2111801242236025" start-local-pos="15" end-local-pos="136" name-position="7,19">
+                              <points>
+                                <point x="1130" y="120" />
+                                <point x="943" y="152" />
+                              </points>
+                            </layout>
+                            <relation from="678bef3f024343f8843ff3fc33225cb6" from-iid="9c1db6f69bd74334a1286aa6c1e8b50d" to="0a83dc2533474cd9a9fc81e0c2c20545" to-iid="33d07328f6c14f07bdb39e00be911819" />
+                          </item>
+                          <item id="839e2303c0904f2e9f7b6342b582e84d" iid="959251175c0340b38d0b9240bb4e7275" creation-date="01/04/2024 20:54:54" order-index="16" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="867" y1="252" x2="868" y2="369" start-border-pos="0.656832292675972" end-border-pos="0.1048850566148758" start-local-pos="60" end-local-pos="74" name-position="-68,-8" name-width="114">
+                              <points>
+                                <point x="867" y="252" />
+                                <point x="868" y="369" />
+                              </points>
+                            </layout>
+                            <relation from="0a83dc2533474cd9a9fc81e0c2c20545" from-iid="33d07328f6c14f07bdb39e00be911819" to="3a3d757acf054ea6ab6adbd358308227" to-iid="f715af77bfdd46f29d16d11b70eb58e8" />
+                          </item>
+                          <item id="3f196a4ebad44f01a8048af82f338523" iid="eff13910cfb245439af5d3473c43e0e8" creation-date="01/04/2024 20:55:22" order-index="17" type="relation">
+                            <layout line-style="perpendicular" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="929" y1="369" x2="928" y2="252" start-border-pos="0.19252873957157135" end-border-pos="0.5621118023991585" start-local-pos="151" end-local-pos="121" name-position="0,20">
+                              <points>
+                                <point x="929" y="369" />
+                                <point x="928" y="252" />
+                              </points>
+                            </layout>
+                            <relation from="3a3d757acf054ea6ab6adbd358308227" from-iid="f715af77bfdd46f29d16d11b70eb58e8" to="0a83dc2533474cd9a9fc81e0c2c20545" to-iid="33d07328f6c14f07bdb39e00be911819" />
+                          </item>
+                        </layer>
+                      </diagram>
+                    </nested-diagrams>
+                  </item>
+                  <item id="678bef3f024343f8843ff3fc33225cb6" cid="DFS011" type="dfd-data-store" name="Данные каналов" creation-date="01/04/2024 14:42:32" />
+                  <item id="eaa79dc195cb485c854807d1c72bc3a3" cid="DFF063" type="dfd-data-flow" name="Список каналов" creation-date="01/04/2024 14:43:19" from="678bef3f024343f8843ff3fc33225cb6" to="2bb26c90d88547ca92279334b7bd1b0f" />
+                  <item id="b1e553ab483344c0b34204fa361f0352" cid="DFF015" type="dfd-data-flow" name="Список видеозаписей с метаданными" creation-date="12/31/2023 18:02:14" from="3a3d757acf054ea6ab6adbd358308227" to="4c750e365bac44bf9eeb745e073856e3" />
                   <item id="3a3d757acf054ea6ab6adbd358308227" cid="DFS001" type="dfd-data-store" name="Данные видеозаписей" creation-date="12/31/2023 17:39:49" />
+                  <item id="597cc54af10d441097b8f1f5279e23ca" cid="DFS002" type="dfd-data-store" name="Хранилище видеоконтента" creation-date="12/31/2023 18:05:31" />
+                  <item id="ceac03df30024d1583d503a0523849f7" cid="DFF013" type="dfd-data-flow" name="Поисковый запрос" creation-date="12/31/2023 18:01:04" from="98b07c7c3a9f4763a6284b71ad557e91" to="4c750e365bac44bf9eeb745e073856e3" />
+                  <item id="d0eb480834fb40ab9530d60d4f28aa6b" cid="DFS003" type="dfd-data-store" name="Учетные данные пользователей" creation-date="01/03/2024 20:17:55" />
+                  <item id="7870a874a4c349b59033aea6a340389a" cid="DFF018" type="dfd-data-flow" name="Запрос содержимого файла" creation-date="12/31/2023 18:11:17" from="aee2c09f0d5444f6976ad2f15dc12424" to="597cc54af10d441097b8f1f5279e23ca" />
+                  <item id="37283b78c3a74cc8bfc7d9468f958c5c" cid="DFF024" type="dfd-data-flow" name="Результат выполнения запроса" creation-date="01/03/2024 20:14:19" from="d0eb480834fb40ab9530d60d4f28aa6b" to="6c726091b717467286f76b782ea76081" />
+                  <item id="f7bbfd0c88d84bcca0b159147db63788" cid="DFF060" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/04/2024 14:40:57" from="98b07c7c3a9f4763a6284b71ad557e91" to="2bb26c90d88547ca92279334b7bd1b0f" />
+                  <item id="868b86e5a94e44099ce62302fc7648c6" cid="DFF017" type="dfd-data-flow" name="Идентификатор видео" creation-date="12/31/2023 18:08:56" from="98b07c7c3a9f4763a6284b71ad557e91" to="aee2c09f0d5444f6976ad2f15dc12424" />
+                  <item id="2bb26c90d88547ca92279334b7bd1b0f" cid="DFP015" type="dfd-process" name="Показать список каналов по запросу" creation-date="01/04/2024 14:40:18" />
+                  <item id="285ae41639a94892957f25f33738adfd" cid="DFF016" type="dfd-data-flow" name="Названия, метаданные видеозаписей" creation-date="12/31/2023 18:04:06" from="4c750e365bac44bf9eeb745e073856e3" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="7e6162b9b8d04e12bd000f7792fc7222" cid="DFF014" type="dfd-data-flow" name="Запрос к таблице видеозаписей" creation-date="12/31/2023 18:01:28" from="4c750e365bac44bf9eeb745e073856e3" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="18c54a6fee384f3889f95dda9c701a6b" cid="DFF021" type="dfd-data-flow" name="Данные, введенные в форме входа" creation-date="12/31/2023 18:20:50" from="98b07c7c3a9f4763a6284b71ad557e91" to="6c726091b717467286f76b782ea76081" />
                 </abstract-items>
                 <layer id="8d8a4f1a121948ac920be1860ec70675" name="Default" visible="true" enabled="true" locked="false">
                   <item id="98b07c7c3a9f4763a6284b71ad557e91" iid="9199d322ddd842d0a9007e5196f042fd" creation-date="12/25/2023 22:27:42" order-index="0" type="entity">
@@ -330,9 +510,51 @@
                     </layout>
                     <relation from="13b7cb2f5c50441aa413aba5bedf1ed4" from-iid="4dab117f23a5475fb04b6fb0c91c7b20" to="98b07c7c3a9f4763a6284b71ad557e91" to-iid="9199d322ddd842d0a9007e5196f042fd" />
                   </item>
+                  <item id="2bb26c90d88547ca92279334b7bd1b0f" iid="dcd86abad4c7416987ffc9d76347e9f7" creation-date="01/04/2024 14:40:18" order-index="31" type="entity">
+                    <layout ax="451" ay="-129" awidth="130" aheight="105" x="451" y="-129" width="130" height="105" />
+                  </item>
+                  <item id="f7bbfd0c88d84bcca0b159147db63788" iid="7c695cf0a66e4c5dae9b958e77b35550" creation-date="01/04/2024 14:40:57" order-index="32" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="208" y1="37" x2="451" y2="-41" start-border-pos="0.1870967741935484" end-border-pos="0.7904761904761904" start-local-pos="116" end-local-pos="88" name-position="0,20">
+                      <points>
+                        <point x="208" y="37" />
+                        <point x="451" y="-41" />
+                      </points>
+                    </layout>
+                    <relation from="98b07c7c3a9f4763a6284b71ad557e91" from-iid="9199d322ddd842d0a9007e5196f042fd" to="2bb26c90d88547ca92279334b7bd1b0f" to-iid="dcd86abad4c7416987ffc9d76347e9f7" />
+                  </item>
+                  <item id="223a7da060464a0eada96eb611a34775" iid="1cd78fb2ebc042518afffebb90f21766" creation-date="01/04/2024 14:41:16" order-index="33" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="451" y1="-94" x2="185" y2="37" start-border-pos="0.9166666716337204" end-border-pos="0.15000000596046448" start-local-pos="35" end-local-pos="36" name-position="66,22">
+                      <points>
+                        <point x="451" y="-94" />
+                        <point x="185" y="37" />
+                      </points>
+                    </layout>
+                    <relation from="2bb26c90d88547ca92279334b7bd1b0f" from-iid="dcd86abad4c7416987ffc9d76347e9f7" to="98b07c7c3a9f4763a6284b71ad557e91" to-iid="9199d322ddd842d0a9007e5196f042fd" />
+                  </item>
+                  <item id="678bef3f024343f8843ff3fc33225cb6" iid="a47dfd58606f4890922c141f869804ec" creation-date="01/04/2024 14:42:32" order-index="34" type="entity">
+                    <layout ax="761" ay="-118.5" awidth="120" aheight="50" x="761" y="-118.5" width="120" height="50" />
+                  </item>
+                  <item id="d7f6042698204ffd9fa5c3eb790e4fad" iid="1eda1ac343664eafb857d2f20f8b8682" creation-date="01/04/2024 14:42:43" order-index="35" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="581" y1="-46" x2="771" y2="-68" start-border-pos="0.4476190476190476" end-border-pos="0.7291666666666666" start-local-pos="83" end-local-pos="10" name-position="-1,27">
+                      <points>
+                        <point x="581" y="-46" />
+                        <point x="771" y="-68" />
+                      </points>
+                    </layout>
+                    <relation from="2bb26c90d88547ca92279334b7bd1b0f" from-iid="dcd86abad4c7416987ffc9d76347e9f7" to="678bef3f024343f8843ff3fc33225cb6" to-iid="a47dfd58606f4890922c141f869804ec" />
+                  </item>
+                  <item id="eaa79dc195cb485c854807d1c72bc3a3" iid="5d99f3c60fe94c3eafd50e41bde98ef8" creation-date="01/04/2024 14:43:19" order-index="36" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="761" y1="-104" x2="581" y2="-102" start-border-pos="0.9275" end-border-pos="0.3142857142857143" start-local-pos="14.5" end-local-pos="27" name-position="-1,24">
+                      <points>
+                        <point x="761" y="-104" />
+                        <point x="581" y="-102" />
+                      </points>
+                    </layout>
+                    <relation from="678bef3f024343f8843ff3fc33225cb6" from-iid="a47dfd58606f4890922c141f869804ec" to="2bb26c90d88547ca92279334b7bd1b0f" to-iid="dcd86abad4c7416987ffc9d76347e9f7" />
+                  </item>
                 </layer>
               </diagram>
-              <diagram type="gane-sarson-data-flow" id="p88cd88555bbd43a29df8b738f3390189_945888016" name="DFD1_AuthorizedUser" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default" view-location="-460,-204" zoom="0.9">
+              <diagram type="gane-sarson-data-flow" id="p88cd88555bbd43a29df8b738f3390189_945888016" name="DFD1_AuthorizedUser" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-366,-229" zoom="0.9">
                 <style>
                   <background-color index="1" color="#FFFFFFFF" />
                   <background-color index="2" color="#FFFFFFFF" />
@@ -344,49 +566,54 @@
                   </authors>
                   <description />
                   <creation-date>01/03/2024 20:40:35</creation-date>
-                  <change-date>01/03/2024 22:48:26</change-date>
+                  <change-date>01/04/2024 15:10:15</change-date>
                   <revision-count>0</revision-count>
                   <version />
                 </meta>
                 <abstract-items>
-                  <item id="2cc1eeaecb444834a89fa8290a61d80c" cid="DFP006" type="dfd-process" name="Показать список подписок" creation-date="01/03/2024 20:44:09" />
-                  <item id="cc4c0b77e7d140e4a6a6e20fa9d74170" cid="DFF059" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:48:26" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="fecaa6995e244dea806ca2fb0840d5af" />
-                  <item id="5a839febbf7244808ddbd47a495a0464" cid="DFF047" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:13" from="2d26ad898a914c97858d884fae43e08d" to="fecaa6995e244dea806ca2fb0840d5af" />
-                  <item id="b50ba526c17d43e096d6b2572d4e8e9e" cid="DFF056" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:47:35" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="171a453d806a4f7996d9b32e12de6d8d" />
-                  <item id="4946261b55934b0d9fdee4d28b6803b0" cid="DFS005" type="dfd-data-store" name="Подписки пользователей" creation-date="01/03/2024 20:44:30" />
-                  <item id="3aaeb26988ad4608afe20ede6488fefc" cid="DFF039" type="dfd-data-flow" name="Название" creation-date="01/03/2024 21:58:26" from="2d26ad898a914c97858d884fae43e08d" to="c1f81bb325a04fcd88eed535739084a0" />
-                  <item id="c02ae94dcd434118a5e9b383fa87e636" cid="DFF029" type="dfd-data-flow" name="Список подписок" creation-date="01/03/2024 20:57:35" from="4946261b55934b0d9fdee4d28b6803b0" to="2cc1eeaecb444834a89fa8290a61d80c" />
-                  <item id="ba281e582c694132892033f6b2d9a5d5" cid="DFF052" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:11:39" from="fecaa6995e244dea806ca2fb0840d5af" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="1f32dd7a0951493a91b82a84d6d03cfd" cid="DFF038" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:50:18" from="83353f82cbf54b94b13204443e09b291" to="d7492fbb903141a59c78654aa8d146b2" />
-                  <item id="246a22db5024427ead115299cf411604" cid="DFF053" type="dfd-data-flow" name="Запрос на удаление комментария" creation-date="01/03/2024 22:46:12" from="fecaa6995e244dea806ca2fb0840d5af" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="ab9fce038f444a469db31bc80b7099d6" cid="DFF043" type="dfd-data-flow" name="Оценка, ИД видео" creation-date="01/03/2024 22:01:05" from="2d26ad898a914c97858d884fae43e08d" to="c566cfb84d8a49e0ac8394aa11a5a619" />
-                  <item id="053e7917dbd2438eaf7b24643c6854ac" cid="DFF028" type="dfd-data-flow" name="Запрос к таблице с идентификатором пользователя" creation-date="01/03/2024 20:56:39" from="2cc1eeaecb444834a89fa8290a61d80c" to="4946261b55934b0d9fdee4d28b6803b0" />
-                  <item id="3a53ebcc0d4943ac842846605ac71df0" cid="DFF044" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:01:37" from="c566cfb84d8a49e0ac8394aa11a5a619" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="3ea51b8a58ee433d816aab9177e55721" cid="DFF046" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:03:13" from="265681f4b1dd40d58929cd113e5fed0a" to="c566cfb84d8a49e0ac8394aa11a5a619" />
-                  <item id="5977f88b7e004e6284c1102e1b42bb14" cid="DFF037" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/03/2024 21:49:33" from="d7492fbb903141a59c78654aa8d146b2" to="83353f82cbf54b94b13204443e09b291" />
-                  <item id="fd36e955c3e7459a8513e0811b7901b4" cid="DFF030" type="dfd-data-flow" name="Список подписок" creation-date="01/03/2024 21:00:25" from="2cc1eeaecb444834a89fa8290a61d80c" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="a7ef503595884e4dbd740a62ba5dd084" cid="DFP010" type="dfd-process" name="Добавить комментарий" creation-date="01/03/2024 21:11:30" />
-                  <item id="064037c3eb264786b00d864cd9e106d8" cid="DFF040" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:58:52" from="c1f81bb325a04fcd88eed535739084a0" />
-                  <item id="b2409d16df3f4af5b10bb4bdba67abf5" cid="DFF048" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:30" from="2d26ad898a914c97858d884fae43e08d" to="a7ef503595884e4dbd740a62ba5dd084" />
-                  <item id="1470e6b2c9ad4c4f85f3f43e65ef15b6" cid="DFF035" type="dfd-data-flow" name="Команда (добавить, удалить видео), ИД" creation-date="01/03/2024 21:47:21" from="2d26ad898a914c97858d884fae43e08d" to="d7492fbb903141a59c78654aa8d146b2" />
-                  <item id="83353f82cbf54b94b13204443e09b291" cid="DFS008" type="dfd-data-store" name="Видео в плейлистах" creation-date="01/03/2024 21:39:05" />
-                  <item id="c6a083b4e00f4578adedf4413b3e5e9f" cid="DFF051" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:08:29" from="a7ef503595884e4dbd740a62ba5dd084" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="00d38288adb3447fbd1f46d31074271c" cid="DFF041" type="dfd-data-flow" name="Запрос на создание плейлиста" creation-date="01/03/2024 21:59:32" from="c1f81bb325a04fcd88eed535739084a0" to="4e14021aee0f40c5881ca3b285a12991" />
-                  <item id="4e14021aee0f40c5881ca3b285a12991" cid="DFS010" type="dfd-data-store" name="Плейлисты" creation-date="01/03/2024 21:53:49" />
-                  <item id="265681f4b1dd40d58929cd113e5fed0a" cid="DFS009" type="dfd-data-store" name="Оценки видео" creation-date="01/03/2024 21:44:13" />
-                  <item id="fecaa6995e244dea806ca2fb0840d5af" cid="DFP008" type="dfd-process" name="Удалить комментарий" creation-date="01/03/2024 21:08:09" />
-                  <item id="93e82e361b8e4f63a3eae58dbfef709a" cid="DFF042" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:00:15" from="4e14021aee0f40c5881ca3b285a12991" to="c1f81bb325a04fcd88eed535739084a0" />
-                  <item id="c566cfb84d8a49e0ac8394aa11a5a619" cid="DFP007" type="dfd-process" name="Оценить видео" creation-date="01/03/2024 21:00:57" />
-                  <item id="56634e50b3744c99984f80834b0ea7d0" cid="DFF049" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:41" from="2d26ad898a914c97858d884fae43e08d" to="171a453d806a4f7996d9b32e12de6d8d" />
-                  <item id="171a453d806a4f7996d9b32e12de6d8d" cid="DFP011" type="dfd-process" name="Редактировать комментарий" creation-date="01/03/2024 21:21:14" />
-                  <item id="8552a4bc1c0042cb8a31bdbfa06e5359" cid="DFF050" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:08:08" from="171a453d806a4f7996d9b32e12de6d8d" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="d7492fbb903141a59c78654aa8d146b2" cid="DFP009" type="dfd-process" name="Редактировать плейлист" creation-date="01/03/2024 21:08:23" />
-                  <item id="bc2627f919c147568a856811bc106400" cid="DFF045" type="dfd-data-flow" name="Запрос на создание оценки" creation-date="01/03/2024 22:02:39" from="c566cfb84d8a49e0ac8394aa11a5a619" to="265681f4b1dd40d58929cd113e5fed0a" />
-                  <item id="2708e663f7cc4748b0c7f0f6d0776f1c" cid="DFF036" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:49:09" from="d7492fbb903141a59c78654aa8d146b2" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="5d65fd9be10f46afa0fa078492b4af17" cid="DFF055" type="dfd-data-flow" name="Запрос на редактирование комментария" creation-date="01/03/2024 22:47:05" from="171a453d806a4f7996d9b32e12de6d8d" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="6c5d9cd42bda4d8ca62445168bbab04c" cid="DFF057" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:47:55" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="a7ef503595884e4dbd740a62ba5dd084" />
                   <item id="c1f81bb325a04fcd88eed535739084a0" cid="DFP013" type="dfd-process" name="Создать плейлист" creation-date="01/03/2024 21:54:19" />
+                  <item id="2708e663f7cc4748b0c7f0f6d0776f1c" cid="DFF036" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:49:09" from="d7492fbb903141a59c78654aa8d146b2" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="1f32dd7a0951493a91b82a84d6d03cfd" cid="DFF038" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:50:18" from="83353f82cbf54b94b13204443e09b291" to="d7492fbb903141a59c78654aa8d146b2" />
+                  <item id="3ea51b8a58ee433d816aab9177e55721" cid="DFF046" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:03:13" from="265681f4b1dd40d58929cd113e5fed0a" to="c566cfb84d8a49e0ac8394aa11a5a619" />
+                  <item id="3a53ebcc0d4943ac842846605ac71df0" cid="DFF044" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:01:37" from="c566cfb84d8a49e0ac8394aa11a5a619" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="b2409d16df3f4af5b10bb4bdba67abf5" cid="DFF048" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:30" from="2d26ad898a914c97858d884fae43e08d" to="a7ef503595884e4dbd740a62ba5dd084" />
+                  <item id="5977f88b7e004e6284c1102e1b42bb14" cid="DFF037" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/03/2024 21:49:33" from="d7492fbb903141a59c78654aa8d146b2" to="83353f82cbf54b94b13204443e09b291" />
+                  <item id="064037c3eb264786b00d864cd9e106d8" cid="DFF040" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:58:52" from="c1f81bb325a04fcd88eed535739084a0" />
+                  <item id="7fb640d67f5147088aaf17ab10b2b332" cid="DFF067" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:10:15" from="4946261b55934b0d9fdee4d28b6803b0" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" />
+                  <item id="5d65fd9be10f46afa0fa078492b4af17" cid="DFF055" type="dfd-data-flow" name="Запрос на редактирование комментария" creation-date="01/03/2024 22:47:05" from="171a453d806a4f7996d9b32e12de6d8d" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="4e14021aee0f40c5881ca3b285a12991" cid="DFS010" type="dfd-data-store" name="Плейлисты" creation-date="01/03/2024 21:53:49" />
+                  <item id="c6a083b4e00f4578adedf4413b3e5e9f" cid="DFF051" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:08:29" from="a7ef503595884e4dbd740a62ba5dd084" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="a1dedaecaacb4892a1856dc2db3171db" cid="DFF066" type="dfd-data-flow" name="Запрос на изменение данных с ИД канала" creation-date="01/04/2024 15:09:53" from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to="4946261b55934b0d9fdee4d28b6803b0" />
                   <item id="b628295c5b31460685f979a123050b0c" cid="DFF054" type="dfd-data-flow" name="Запрос на добавление комментария" creation-date="01/03/2024 22:46:33" from="a7ef503595884e4dbd740a62ba5dd084" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="6c5d9cd42bda4d8ca62445168bbab04c" cid="DFF057" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:47:55" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="a7ef503595884e4dbd740a62ba5dd084" />
+                  <item id="265681f4b1dd40d58929cd113e5fed0a" cid="DFS009" type="dfd-data-store" name="Оценки видео" creation-date="01/03/2024 21:44:13" />
+                  <item id="171a453d806a4f7996d9b32e12de6d8d" cid="DFP011" type="dfd-process" name="Редактировать комментарий" creation-date="01/03/2024 21:21:14" />
+                  <item id="053e7917dbd2438eaf7b24643c6854ac" cid="DFF028" type="dfd-data-flow" name="Запрос к таблице с идентификатором пользователя" creation-date="01/03/2024 20:56:39" from="2cc1eeaecb444834a89fa8290a61d80c" to="4946261b55934b0d9fdee4d28b6803b0" />
+                  <item id="fd36e955c3e7459a8513e0811b7901b4" cid="DFF030" type="dfd-data-flow" name="Список подписок" creation-date="01/03/2024 21:00:25" from="2cc1eeaecb444834a89fa8290a61d80c" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="d7492fbb903141a59c78654aa8d146b2" cid="DFP009" type="dfd-process" name="Редактировать плейлист" creation-date="01/03/2024 21:08:23" />
+                  <item id="ab9fce038f444a469db31bc80b7099d6" cid="DFF043" type="dfd-data-flow" name="Оценка, ИД видео" creation-date="01/03/2024 22:01:05" from="2d26ad898a914c97858d884fae43e08d" to="c566cfb84d8a49e0ac8394aa11a5a619" />
+                  <item id="cc4c0b77e7d140e4a6a6e20fa9d74170" cid="DFF059" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:48:26" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="fecaa6995e244dea806ca2fb0840d5af" />
+                  <item id="fecaa6995e244dea806ca2fb0840d5af" cid="DFP008" type="dfd-process" name="Удалить комментарий" creation-date="01/03/2024 21:08:09" />
+                  <item id="c02ae94dcd434118a5e9b383fa87e636" cid="DFF029" type="dfd-data-flow" name="Список подписок" creation-date="01/03/2024 20:57:35" from="4946261b55934b0d9fdee4d28b6803b0" to="2cc1eeaecb444834a89fa8290a61d80c" />
+                  <item id="8552a4bc1c0042cb8a31bdbfa06e5359" cid="DFF050" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:08:08" from="171a453d806a4f7996d9b32e12de6d8d" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="5a839febbf7244808ddbd47a495a0464" cid="DFF047" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:13" from="2d26ad898a914c97858d884fae43e08d" to="fecaa6995e244dea806ca2fb0840d5af" />
+                  <item id="13959edaa095432ca8f0f13fcd86a2ad" cid="DFF065" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:09:19" from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="93e82e361b8e4f63a3eae58dbfef709a" cid="DFF042" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:00:15" from="4e14021aee0f40c5881ca3b285a12991" to="c1f81bb325a04fcd88eed535739084a0" />
+                  <item id="1470e6b2c9ad4c4f85f3f43e65ef15b6" cid="DFF035" type="dfd-data-flow" name="Команда (добавить, удалить видео), ИД" creation-date="01/03/2024 21:47:21" from="2d26ad898a914c97858d884fae43e08d" to="d7492fbb903141a59c78654aa8d146b2" />
+                  <item id="bc2627f919c147568a856811bc106400" cid="DFF045" type="dfd-data-flow" name="Запрос на создание оценки" creation-date="01/03/2024 22:02:39" from="c566cfb84d8a49e0ac8394aa11a5a619" to="265681f4b1dd40d58929cd113e5fed0a" />
+                  <item id="56634e50b3744c99984f80834b0ea7d0" cid="DFF049" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:41" from="2d26ad898a914c97858d884fae43e08d" to="171a453d806a4f7996d9b32e12de6d8d" />
+                  <item id="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" cid="DFP019" type="dfd-process" name="Подписаться на канал/отписаться от канала" creation-date="01/04/2024 15:07:53" />
+                  <item id="4946261b55934b0d9fdee4d28b6803b0" cid="DFS005" type="dfd-data-store" name="Подписки пользователей" creation-date="01/03/2024 20:44:30" />
+                  <item id="23dd2d50be514534bcdccd54ad878195" cid="DFF064" type="dfd-data-flow" name="ИД канала, действие" creation-date="01/04/2024 15:08:30" from="2d26ad898a914c97858d884fae43e08d" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" />
+                  <item id="83353f82cbf54b94b13204443e09b291" cid="DFS008" type="dfd-data-store" name="Видео в плейлистах" creation-date="01/03/2024 21:39:05" />
+                  <item id="00d38288adb3447fbd1f46d31074271c" cid="DFF041" type="dfd-data-flow" name="Запрос на создание плейлиста" creation-date="01/03/2024 21:59:32" from="c1f81bb325a04fcd88eed535739084a0" to="4e14021aee0f40c5881ca3b285a12991" />
+                  <item id="246a22db5024427ead115299cf411604" cid="DFF053" type="dfd-data-flow" name="Запрос на удаление комментария" creation-date="01/03/2024 22:46:12" from="fecaa6995e244dea806ca2fb0840d5af" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="c566cfb84d8a49e0ac8394aa11a5a619" cid="DFP007" type="dfd-process" name="Оценить видео" creation-date="01/03/2024 21:00:57" />
+                  <item id="ba281e582c694132892033f6b2d9a5d5" cid="DFF052" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:11:39" from="fecaa6995e244dea806ca2fb0840d5af" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="2cc1eeaecb444834a89fa8290a61d80c" cid="DFP006" type="dfd-process" name="Показать список подписок" creation-date="01/03/2024 20:44:09" />
+                  <item id="a7ef503595884e4dbd740a62ba5dd084" cid="DFP010" type="dfd-process" name="Добавить комментарий" creation-date="01/03/2024 21:11:30" />
+                  <item id="3aaeb26988ad4608afe20ede6488fefc" cid="DFF039" type="dfd-data-flow" name="Название" creation-date="01/03/2024 21:58:26" from="2d26ad898a914c97858d884fae43e08d" to="c1f81bb325a04fcd88eed535739084a0" />
+                  <item id="b50ba526c17d43e096d6b2572d4e8e9e" cid="DFF056" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:47:35" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="171a453d806a4f7996d9b32e12de6d8d" />
                 </abstract-items>
                 <layer id="349f880afb2a439595c624f63182c091" name="Default" visible="true" enabled="true" locked="false">
                   <item id="2d26ad898a914c97858d884fae43e08d" iid="1c452ff4ee684e8486824eddfb513d82" creation-date="12/25/2023 22:38:58" order-index="0" type="entity">
@@ -417,9 +644,9 @@
                     <relation from="4946261b55934b0d9fdee4d28b6803b0" from-iid="d4c803e28a384907afae67c3bfe80c86" to="2cc1eeaecb444834a89fa8290a61d80c" to-iid="687a34f3d8d6429191791d3e901848c0" />
                   </item>
                   <item id="fd36e955c3e7459a8513e0811b7901b4" iid="94fe125ec4874784be713895face35b5" creation-date="01/03/2024 21:00:25" order-index="5" type="relation">
-                    <layout line-style="perpendicular" lock-end-point="true" lock-to-fields="false" auto-path="" x1="488" y1="34" x2="396" y2="44" start-border-pos="0.875" end-border-pos="0.26893939450383186" end-local-pos="12.5" name-position="-1,31.5">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="488" y1="46" x2="396" y2="44" start-border-pos="0.8416666666666667" end-border-pos="0.26893939450383186" start-local-pos="45" end-local-pos="12.5" name-position="-1,31.5">
                       <points>
-                        <point x="488" y="34" />
+                        <point x="488" y="46" />
                         <point x="396" y="44" />
                       </points>
                     </layout>
@@ -447,7 +674,7 @@
                     <layout ax="470.5" ay="306.5" awidth="155" aheight="50" x="470.5" y="306.5" width="155" height="50" />
                   </item>
                   <item id="265681f4b1dd40d58929cd113e5fed0a" iid="38ccec047ec94e6db27d7f023ed0c82f" creation-date="01/03/2024 21:44:13" order-index="12" type="entity">
-                    <layout ax="468" ay="-98.5" awidth="120" aheight="50" x="468" y="-98.5" width="120" height="50" />
+                    <layout ax="-99" ay="-116" awidth="120" aheight="50" x="-99" y="-116" width="120" height="50" />
                   </item>
                   <item id="1470e6b2c9ad4c4f85f3f43e65ef15b6" iid="4c9673ff379e43029ef724306b16cad3" creation-date="01/03/2024 21:47:21" order-index="13" type="relation">
                     <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="245" y1="196" x2="245" y2="286" start-border-pos="0.6850490196078431" end-border-pos="0.04791666666666667" start-local-pos="53" end-local-pos="23" name-position="-48,8" name-width="107">
@@ -537,7 +764,7 @@
                     <relation from="2d26ad898a914c97858d884fae43e08d" from-iid="1c452ff4ee684e8486824eddfb513d82" to="c566cfb84d8a49e0ac8394aa11a5a619" to-iid="31421a6929644b78902bb95cfc4bd5e0" />
                   </item>
                   <item id="3a53ebcc0d4943ac842846605ac71df0" iid="6483ae75cedd432089c21d9e95cca9fb" creation-date="01/03/2024 22:01:37" order-index="24" type="relation">
-                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="240" y1="-28" x2="240" y2="32" start-border-pos="0.6958333333333333" end-border-pos="0.058823529411764705" start-local-pos="26" end-local-pos="48" name-position="-52,-1" name-width="97">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="240" y1="-28" x2="240" y2="32" start-border-pos="0.6958333333333333" end-border-pos="0.058823529411764705" start-local-pos="26" end-local-pos="48" name-position="-47,-3" name-width="97">
                       <points>
                         <point x="240" y="-28" />
                         <point x="240" y="32" />
@@ -546,25 +773,26 @@
                     <relation from="c566cfb84d8a49e0ac8394aa11a5a619" from-iid="31421a6929644b78902bb95cfc4bd5e0" to="2d26ad898a914c97858d884fae43e08d" to-iid="1c452ff4ee684e8486824eddfb513d82" />
                   </item>
                   <item id="bc2627f919c147568a856811bc106400" iid="9788f9599eb840a7b7e2aced7df3234b" creation-date="01/03/2024 22:02:39" order-index="25" type="relation">
-                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="334" y1="-48" x2="468" y2="-59" start-border-pos="0.4458333333333333" end-border-pos="0.8025" start-local-pos="70.5" end-local-pos="39.5" name-position="27,43.5">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="214" y1="-48" x2="-2" y2="-66" start-border-pos="0.8041666666666667" end-border-pos="0.5479166656732559" start-local-pos="70.5" end-local-pos="97" name-position="15,-28.5" name-width="189">
                       <points>
-                        <point x="334" y="-48" />
-                        <point x="468" y="-59" />
+                        <point x="214" y="-48" />
+                        <point x="118" y="-45" />
+                        <point x="-2" y="-66" />
                       </points>
                     </layout>
                     <relation from="c566cfb84d8a49e0ac8394aa11a5a619" from-iid="31421a6929644b78902bb95cfc4bd5e0" to="265681f4b1dd40d58929cd113e5fed0a" to-iid="38ccec047ec94e6db27d7f023ed0c82f" />
                   </item>
                   <item id="3ea51b8a58ee433d816aab9177e55721" iid="c91be2ddced44c9e9648fa7d5e1b689e" creation-date="01/03/2024 22:03:13" order-index="26" type="relation">
-                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="468" y1="-84" x2="334" y2="-74" start-border-pos="0.9275" end-border-pos="0.3736111111111111" start-local-pos="14.5" end-local-pos="44.5" name-position="3,-34.5" name-width="85">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="21" y1="-116" x2="214" y2="-105" start-border-pos="0.25" end-border-pos="0.9625" start-local-pos="14.5" end-local-pos="16.5" name-position="21,-30.5" name-width="85">
                       <points>
-                        <point x="468" y="-84" />
-                        <point x="334" y="-74" />
+                        <point x="21" y="-116" />
+                        <point x="214" y="-105" />
                       </points>
                     </layout>
                     <relation from="265681f4b1dd40d58929cd113e5fed0a" from-iid="38ccec047ec94e6db27d7f023ed0c82f" to="c566cfb84d8a49e0ac8394aa11a5a619" to-iid="31421a6929644b78902bb95cfc4bd5e0" />
                   </item>
                   <item id="5a839febbf7244808ddbd47a495a0464" iid="a44393e5b9c74876a817b01ef249c7c7" creation-date="01/03/2024 22:06:13" order-index="27" type="relation">
-                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="192" y1="42" x2="77" y2="-8" start-border-pos="0.9840909090909091" end-border-pos="0.30694444477558136" start-local-pos="17.5" end-local-pos="20.5" name-position="-6,-48.5">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="192" y1="42" x2="77" y2="-8" start-border-pos="0.9840909090909091" end-border-pos="0.30694444477558136" start-local-pos="17.5" end-local-pos="20.5" name-position="-16,-40.5">
                       <points>
                         <point x="192" y="42" />
                         <point x="77" y="-8" />
@@ -673,9 +901,49 @@
                     </layout>
                     <relation from="b89c37b8f58640e7b2ea56b3c3dae7a0" from-iid="6c744b16a0cc4425b5b07bc842c54a46" to="fecaa6995e244dea806ca2fb0840d5af" to-iid="e35db254f8e244399298cb67e5bae22d" />
                   </item>
+                  <item id="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" iid="f14ba3c160ab4471b23d9ff8ddde991f" creation-date="01/04/2024 15:07:53" order-index="39" type="entity">
+                    <layout ax="490.5" ay="-135.5" awidth="135" aheight="90" x="490.5" y="-135.5" width="135" height="90" />
+                  </item>
+                  <item id="23dd2d50be514534bcdccd54ad878195" iid="f6de4b4aa89642f08ef7ef369e9d7cf0" creation-date="01/04/2024 15:08:30" order-index="40" type="relation">
+                    <layout line-style="perpendicular" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="396" y1="32" x2="490" y2="-66" start-border-pos="0.25075757573358715" end-border-pos="0.8069444444444445" start-local-pos="0.5" end-local-pos="69.5" name-position="-5,-81.5">
+                      <points>
+                        <point x="396" y="32" />
+                        <point x="451" y="9" />
+                        <point x="490" y="-66" />
+                      </points>
+                    </layout>
+                    <relation from="2d26ad898a914c97858d884fae43e08d" from-iid="1c452ff4ee684e8486824eddfb513d82" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to-iid="f14ba3c160ab4471b23d9ff8ddde991f" />
+                  </item>
+                  <item id="13959edaa095432ca8f0f13fcd86a2ad" iid="14936e082463442aaef484d4ba093630" creation-date="01/04/2024 15:09:19" order-index="41" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="490" y1="-136" x2="381" y2="32" start-border-pos="0" end-border-pos="0.23161764705882354" start-local-pos="-0.5" end-local-pos="189" name-position="41,-51" name-width="143">
+                      <points>
+                        <point x="490" y="-136" />
+                        <point x="381" y="32" />
+                      </points>
+                    </layout>
+                    <relation from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" from-iid="f14ba3c160ab4471b23d9ff8ddde991f" to="2d26ad898a914c97858d884fae43e08d" to-iid="1c452ff4ee684e8486824eddfb513d82" />
+                  </item>
+                  <item id="a1dedaecaacb4892a1856dc2db3171db" iid="b932750578b94602a76263e12f832785" creation-date="01/04/2024 15:09:53" order-index="42" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="626" y1="-68" x2="752" y2="9" start-border-pos="0.4375" end-border-pos="0.09204545454545454" start-local-pos="67.5" end-local-pos="81" name-position="-12,-27" name-width="179">
+                      <points>
+                        <point x="626" y="-68" />
+                        <point x="752" y="9" />
+                      </points>
+                    </layout>
+                    <relation from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" from-iid="f14ba3c160ab4471b23d9ff8ddde991f" to="4946261b55934b0d9fdee4d28b6803b0" to-iid="d4c803e28a384907afae67c3bfe80c86" />
+                  </item>
+                  <item id="7fb640d67f5147088aaf17ab10b2b332" iid="04846940626b4cc8a67227435da4e739" creation-date="01/04/2024 15:10:15" order-index="43" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="875" y1="9" x2="626" y2="-121" start-border-pos="0.2318181818181818" end-border-pos="0.2902777777777778" start-local-pos="204" end-local-pos="14.5" name-position="-88,-21">
+                      <points>
+                        <point x="875" y="9" />
+                        <point x="626" y="-121" />
+                      </points>
+                    </layout>
+                    <relation from="4946261b55934b0d9fdee4d28b6803b0" from-iid="d4c803e28a384907afae67c3bfe80c86" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to-iid="f14ba3c160ab4471b23d9ff8ddde991f" />
+                  </item>
                 </layer>
               </diagram>
-              <diagram type="gane-sarson-data-flow" id="p31706ca683bb49ce890d7d1527327c96_262376960" name="DFD1_Creator" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default">
+              <diagram type="gane-sarson-data-flow" id="p31706ca683bb49ce890d7d1527327c96_262376960" name="DFD1_Creator" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,43">
                 <style>
                   <background-color index="1" color="#FFFFFFFF" />
                   <background-color index="2" color="#FFFFFFFF" />
@@ -687,25 +955,728 @@
                   </authors>
                   <description />
                   <creation-date>01/03/2024 22:57:55</creation-date>
-                  <change-date>01/03/2024 22:57:55</change-date>
+                  <change-date>01/04/2024 15:19:32</change-date>
                   <revision-count>0</revision-count>
                   <version />
                 </meta>
-                <abstract-items />
-                <layer id="27b55f691a8845188b0b798101c9e069" name="Default" visible="true" enabled="true" locked="false" />
+                <abstract-items>
+                  <item id="600f106d04f24a68b442cb8b7c6d9f91" cid="DFF084" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:19:32" from="e01ebaa93ce24b94bf42cb94c1000931" to="d478096fa0b84541ae1801bda41e7d41" />
+                  <item id="bfb344403c7b4a06bf28bba2a3585e8f" cid="DFF077" type="dfd-data-flow" name="Запрос на добавление данных о видео" creation-date="01/04/2024 15:15:54" from="87a16973244a4a52896b62cf36903714" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="e01ebaa93ce24b94bf42cb94c1000931" cid="DFP014" type="dfd-process" name="Редактировать данные канала" creation-date="01/04/2024 14:39:30" />
+                  <item id="7ee7321bb2b344b58ede496027880d3d" cid="DFF071" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:13:40" from="2db9bfe49ef74bb9b7765aab426fc4a8" to="d478096fa0b84541ae1801bda41e7d41" />
+                  <item id="618c70b03ee846a9b57677e6f23a222c" cid="DFF069" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:13:07" from="597cc54af10d441097b8f1f5279e23ca" to="2db9bfe49ef74bb9b7765aab426fc4a8" />
+                  <item id="8cbf66f139c145d9a5b43e6b35251aad" cid="DFF076" type="dfd-data-flow" name="Данные о видео" creation-date="01/04/2024 15:15:35" from="d478096fa0b84541ae1801bda41e7d41" to="87a16973244a4a52896b62cf36903714" />
+                  <item id="87a16973244a4a52896b62cf36903714" cid="DFP016" type="dfd-process" name="Добавить данные о видео" creation-date="01/04/2024 14:52:21" />
+                  <item id="039861744bc54678b76bbd25807fdc6a" cid="DFP017" type="dfd-process" name="Редактировать данные о видео" creation-date="01/04/2024 14:56:25" />
+                  <item id="539a7e9e37b64dba806d32bac816da8e" cid="DFF068" type="dfd-data-flow" name="Содержимое файла" creation-date="01/04/2024 15:12:46" from="2db9bfe49ef74bb9b7765aab426fc4a8" to="597cc54af10d441097b8f1f5279e23ca" />
+                  <item id="2a17d47e29a745f08cde2e9e1ace43f3" cid="DFF082" type="dfd-data-flow" name="Данные канала" creation-date="01/04/2024 15:19:13" from="d478096fa0b84541ae1801bda41e7d41" to="e01ebaa93ce24b94bf42cb94c1000931" />
+                  <item id="6e4981bbc08b45dc9b2629798b5cf995" cid="DFF070" type="dfd-data-flow" name="Содержимое файла" creation-date="01/04/2024 15:13:22" from="d478096fa0b84541ae1801bda41e7d41" to="2db9bfe49ef74bb9b7765aab426fc4a8" />
+                  <item id="880e6fc77f00461b9a858d9685bc373a" cid="DFF073" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:14:20" from="3a3d757acf054ea6ab6adbd358308227" to="039861744bc54678b76bbd25807fdc6a" />
+                  <item id="3a22b4100e0248e4a56b82c68753d6c3" cid="DFF074" type="dfd-data-flow" name="ИД видео, данные о видео" creation-date="01/04/2024 15:14:57" from="d478096fa0b84541ae1801bda41e7d41" to="039861744bc54678b76bbd25807fdc6a" />
+                  <item id="4d8cfda506244fae986656fb20a40058" cid="DFF072" type="dfd-data-flow" name="Запрос на изменение данных о видео" creation-date="01/04/2024 15:13:53" from="039861744bc54678b76bbd25807fdc6a" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="4ddde84ebba745d8904f3a24991d7ef8" cid="DFF079" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:18:15" from="3a3d757acf054ea6ab6adbd358308227" to="87a16973244a4a52896b62cf36903714" />
+                  <item id="c627af2a72a746ac967635992da13ebe" cid="DFF075" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:15:23" from="039861744bc54678b76bbd25807fdc6a" to="d478096fa0b84541ae1801bda41e7d41" />
+                  <item id="a6be309e78c543d9b767abf305a06f00" cid="DFF083" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:19:22" from="678bef3f024343f8843ff3fc33225cb6" to="e01ebaa93ce24b94bf42cb94c1000931" />
+                  <item id="2db9bfe49ef74bb9b7765aab426fc4a8" cid="DFP018" type="dfd-process" name="Загрузить видеофайл" creation-date="01/04/2024 15:01:36" />
+                  <item id="8bb6e4017e7f4d109ab6c83eb831c0c4" cid="DFF081" type="dfd-data-flow" name="Запрос на редактирование данных канала" creation-date="01/04/2024 15:18:44" from="e01ebaa93ce24b94bf42cb94c1000931" to="678bef3f024343f8843ff3fc33225cb6" />
+                  <item id="78e85ca012964313bfe9d07c492442ba" cid="DFF080" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:18:30" from="87a16973244a4a52896b62cf36903714" to="d478096fa0b84541ae1801bda41e7d41" />
+                </abstract-items>
+                <layer id="27b55f691a8845188b0b798101c9e069" name="Default" visible="true" enabled="true" locked="false">
+                  <item id="d478096fa0b84541ae1801bda41e7d41" iid="4a20804191f64710a9b025f770669431" creation-date="12/25/2023 22:46:18" order-index="0" type="entity">
+                    <layout ax="193" ay="384" awidth="120" aheight="70" x="193" y="384" width="120" height="70" />
+                  </item>
+                  <item id="e01ebaa93ce24b94bf42cb94c1000931" iid="d37092722aa84dff8d16f4cc9453a382" creation-date="01/04/2024 14:39:30" order-index="1" type="entity">
+                    <layout ax="506" ay="235" awidth="120" aheight="90" x="506" y="235" width="120" height="90" />
+                  </item>
+                  <item id="678bef3f024343f8843ff3fc33225cb6" iid="9c8a338def2949428fae0e95c2a9989c" creation-date="01/04/2024 14:42:32" order-index="0" type="entity">
+                    <layout ax="797" ay="255" awidth="120" aheight="50" x="797" y="255" width="120" height="50" />
+                  </item>
+                  <item id="87a16973244a4a52896b62cf36903714" iid="b71ceebc612941d68a6f79c4b17dc7d9" creation-date="01/04/2024 14:52:21" order-index="2" type="entity">
+                    <layout ax="506" ay="374" awidth="120" aheight="90" x="506" y="374" width="120" height="90" />
+                  </item>
+                  <item id="3a3d757acf054ea6ab6adbd358308227" iid="d94ce90f25114efe8ed8e38c2eda754b" creation-date="12/31/2023 17:39:49" order-index="0" type="entity">
+                    <layout ax="770" ay="463" awidth="174" aheight="50" x="770" y="463" width="174" height="50" />
+                  </item>
+                  <item id="039861744bc54678b76bbd25807fdc6a" iid="5e713ab692104571abb88877c9a6b8c1" creation-date="01/04/2024 14:56:25" order-index="3" type="entity">
+                    <layout ax="506" ay="513" awidth="120" aheight="90" x="506" y="513" width="120" height="90" />
+                  </item>
+                  <item id="2db9bfe49ef74bb9b7765aab426fc4a8" iid="6ee2fd9a8dee469286c373ab1c3c3b36" creation-date="01/04/2024 15:01:36" order-index="4" type="entity">
+                    <layout ax="506" ay="652" awidth="120" aheight="90" x="506" y="652" width="120" height="90" />
+                  </item>
+                  <item id="597cc54af10d441097b8f1f5279e23ca" iid="8ee26f0793cf4db4b1f60f26594da1e4" creation-date="12/31/2023 18:05:31" order-index="0" type="entity">
+                    <layout ax="768.5" ay="672" awidth="177" aheight="50" x="768.5" y="672" width="177" height="50" />
+                  </item>
+                  <item id="539a7e9e37b64dba806d32bac816da8e" iid="317689f0f4e041708c8cbec7d1d9b1e2" creation-date="01/04/2024 15:12:46" order-index="5" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="626" y1="726" x2="768" y2="722" start-border-pos="0.45555555555555555" end-border-pos="0.75" start-local-pos="74" end-local-pos="50" name-position="6,33">
+                      <points>
+                        <point x="626" y="726" />
+                        <point x="768" y="722" />
+                      </points>
+                    </layout>
+                    <relation from="2db9bfe49ef74bb9b7765aab426fc4a8" from-iid="6ee2fd9a8dee469286c373ab1c3c3b36" to="597cc54af10d441097b8f1f5279e23ca" to-iid="8ee26f0793cf4db4b1f60f26594da1e4" />
+                  </item>
+                  <item id="618c70b03ee846a9b57677e6f23a222c" iid="0f68ca46c4164ab18e45738c79fd9f52" creation-date="01/04/2024 15:13:07" order-index="6" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="768" y1="682" x2="626" y2="697" start-border-pos="0.95" end-border-pos="0.375" start-local-pos="10" end-local-pos="45" name-position="2,-25">
+                      <points>
+                        <point x="768" y="682" />
+                        <point x="626" y="697" />
+                      </points>
+                    </layout>
+                    <relation from="597cc54af10d441097b8f1f5279e23ca" from-iid="8ee26f0793cf4db4b1f60f26594da1e4" to="2db9bfe49ef74bb9b7765aab426fc4a8" to-iid="6ee2fd9a8dee469286c373ab1c3c3b36" />
+                  </item>
+                  <item id="6e4981bbc08b45dc9b2629798b5cf995" iid="50da060c170b4d6b8c52d7b569243ad6" creation-date="01/04/2024 15:13:22" order-index="7" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="216" y1="454" x2="506" y2="722" start-border-pos="0.7020833333333334" end-border-pos="0.8055555555555556" start-local-pos="23" end-local-pos="70" name-position="121,28">
+                      <points>
+                        <point x="216" y="454" />
+                        <point x="506" y="722" />
+                      </points>
+                    </layout>
+                    <relation from="d478096fa0b84541ae1801bda41e7d41" from-iid="4a20804191f64710a9b025f770669431" to="2db9bfe49ef74bb9b7765aab426fc4a8" to-iid="6ee2fd9a8dee469286c373ab1c3c3b36" />
+                  </item>
+                  <item id="7ee7321bb2b344b58ede496027880d3d" iid="e5a26bc7b68d430fbbc6588006508aba" creation-date="01/04/2024 15:13:40" order-index="8" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="506" y1="683" x2="234" y2="454" start-border-pos="0.9138888888888889" end-border-pos="0.6645833333333333" start-local-pos="31" end-local-pos="41" name-position="66,20">
+                      <points>
+                        <point x="506" y="683" />
+                        <point x="234" y="454" />
+                      </points>
+                    </layout>
+                    <relation from="2db9bfe49ef74bb9b7765aab426fc4a8" from-iid="6ee2fd9a8dee469286c373ab1c3c3b36" to="d478096fa0b84541ae1801bda41e7d41" to-iid="4a20804191f64710a9b025f770669431" />
+                  </item>
+                  <item id="4d8cfda506244fae986656fb20a40058" iid="6d616bc8602941209b1de7ddc40b615f" creation-date="01/04/2024 15:13:53" order-index="9" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="626" y1="584" x2="893" y2="513" start-border-pos="0.4472222222222222" end-border-pos="0.5732758620689655" start-local-pos="71" end-local-pos="123" name-position="-20,25">
+                      <points>
+                        <point x="626" y="584" />
+                        <point x="893" y="513" />
+                      </points>
+                    </layout>
+                    <relation from="039861744bc54678b76bbd25807fdc6a" from-iid="5e713ab692104571abb88877c9a6b8c1" to="3a3d757acf054ea6ab6adbd358308227" to-iid="d94ce90f25114efe8ed8e38c2eda754b" />
+                  </item>
+                  <item id="880e6fc77f00461b9a858d9685bc373a" iid="44d194c2f83c4b658ff84f1f9f75432e" creation-date="01/04/2024 15:14:20" order-index="10" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="830" y1="513" x2="626" y2="547" start-border-pos="0.6637931034482758" end-border-pos="0.34444444444444444" start-local-pos="60" end-local-pos="34" name-position="0,20">
+                      <points>
+                        <point x="830" y="513" />
+                        <point x="626" y="547" />
+                      </points>
+                    </layout>
+                    <relation from="3a3d757acf054ea6ab6adbd358308227" from-iid="d94ce90f25114efe8ed8e38c2eda754b" to="039861744bc54678b76bbd25807fdc6a" to-iid="5e713ab692104571abb88877c9a6b8c1" />
+                  </item>
+                  <item id="3a22b4100e0248e4a56b82c68753d6c3" iid="c9c7b541fda840bcbf5b06b111295189" creation-date="01/04/2024 15:14:57" order-index="11" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="253" y1="454" x2="506" y2="588" start-border-pos="0.625" end-border-pos="0.7916666666666666" start-local-pos="60" end-local-pos="75" name-position="67,23">
+                      <points>
+                        <point x="253" y="454" />
+                        <point x="506" y="588" />
+                      </points>
+                    </layout>
+                    <relation from="d478096fa0b84541ae1801bda41e7d41" from-iid="4a20804191f64710a9b025f770669431" to="039861744bc54678b76bbd25807fdc6a" to-iid="5e713ab692104571abb88877c9a6b8c1" />
+                  </item>
+                  <item id="c627af2a72a746ac967635992da13ebe" iid="221afc11e89a41c98f78c5e390c679ca" creation-date="01/04/2024 15:15:23" order-index="12" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="506" y1="549" x2="280" y2="454" start-border-pos="0.9000000059604645" end-border-pos="0.56875" start-local-pos="45" end-local-pos="95" name-position="28,20">
+                      <points>
+                        <point x="506" y="549" />
+                        <point x="280" y="454" />
+                      </points>
+                    </layout>
+                    <relation from="039861744bc54678b76bbd25807fdc6a" from-iid="5e713ab692104571abb88877c9a6b8c1" to="d478096fa0b84541ae1801bda41e7d41" to-iid="4a20804191f64710a9b025f770669431" />
+                  </item>
+                  <item id="8cbf66f139c145d9a5b43e6b35251aad" iid="12c7212c1b2d4e42a9206b9d377ca741" creation-date="01/04/2024 15:15:35" order-index="13" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="313" y1="435" x2="506" y2="449" start-border-pos="0.43214285714285716" end-border-pos="0.7916666666666666" start-local-pos="51" end-local-pos="75" name-position="0,20">
+                      <points>
+                        <point x="313" y="435" />
+                        <point x="506" y="449" />
+                      </points>
+                    </layout>
+                    <relation from="d478096fa0b84541ae1801bda41e7d41" from-iid="4a20804191f64710a9b025f770669431" to="87a16973244a4a52896b62cf36903714" to-iid="b71ceebc612941d68a6f79c4b17dc7d9" />
+                  </item>
+                  <item id="bfb344403c7b4a06bf28bba2a3585e8f" iid="d978945277ff4d1aad13915dc1fc9499" creation-date="01/04/2024 15:15:54" order-index="14" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="626" y1="434" x2="826" y2="463" start-border-pos="0.41666666666666663" end-border-pos="0.08045977354049683" start-local-pos="70" end-local-pos="56" name-position="-14,-27">
+                      <points>
+                        <point x="626" y="434" />
+                        <point x="826" y="463" />
+                      </points>
+                    </layout>
+                    <relation from="87a16973244a4a52896b62cf36903714" from-iid="b71ceebc612941d68a6f79c4b17dc7d9" to="3a3d757acf054ea6ab6adbd358308227" to-iid="d94ce90f25114efe8ed8e38c2eda754b" />
+                  </item>
+                  <item id="4ddde84ebba745d8904f3a24991d7ef8" iid="980d5930aadf4b53921e4f1d3d5e30ba" creation-date="01/04/2024 15:18:15" order-index="15" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="909" y1="463" x2="626" y2="374" start-border-pos="0.1997126436781609" end-border-pos="0.25" start-local-pos="139" end-local-pos="0" name-position="-39,-21">
+                      <points>
+                        <point x="909" y="463" />
+                        <point x="626" y="374" />
+                      </points>
+                    </layout>
+                    <relation from="3a3d757acf054ea6ab6adbd358308227" from-iid="d94ce90f25114efe8ed8e38c2eda754b" to="87a16973244a4a52896b62cf36903714" to-iid="b71ceebc612941d68a6f79c4b17dc7d9" />
+                  </item>
+                  <item id="78e85ca012964313bfe9d07c492442ba" iid="21bc44cb5b174fb3abf86f795d8fb0d2" creation-date="01/04/2024 15:18:30" order-index="16" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="506" y1="397" x2="313" y2="409" start-border-pos="0.9361111111111111" end-border-pos="0.3392857142857143" start-local-pos="23" end-local-pos="25" name-position="-6,-27">
+                      <points>
+                        <point x="506" y="397" />
+                        <point x="313" y="409" />
+                      </points>
+                    </layout>
+                    <relation from="87a16973244a4a52896b62cf36903714" from-iid="b71ceebc612941d68a6f79c4b17dc7d9" to="d478096fa0b84541ae1801bda41e7d41" to-iid="4a20804191f64710a9b025f770669431" />
+                  </item>
+                  <item id="8bb6e4017e7f4d109ab6c83eb831c0c4" iid="ba75cef74cd7426cabd9cef5a4a5853a" creation-date="01/04/2024 15:18:44" order-index="17" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="626" y1="304" x2="797" y2="305" start-border-pos="0.44166666666666665" end-border-pos="0.75" start-local-pos="69" end-local-pos="50" name-position="92,23" name-width="357">
+                      <points>
+                        <point x="626" y="304" />
+                        <point x="797" y="305" />
+                      </points>
+                    </layout>
+                    <relation from="e01ebaa93ce24b94bf42cb94c1000931" from-iid="d37092722aa84dff8d16f4cc9453a382" to="678bef3f024343f8843ff3fc33225cb6" to-iid="9c8a338def2949428fae0e95c2a9989c" />
+                  </item>
+                  <item id="2a17d47e29a745f08cde2e9e1ace43f3" iid="2284606fda8646c996a123fb7143baab" creation-date="01/04/2024 15:19:13" order-index="18" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="281" y1="384" x2="506" y2="312" start-border-pos="0.18333333333333332" end-border-pos="0.7861111111111111" start-local-pos="88" end-local-pos="77" name-position="0,20">
+                      <points>
+                        <point x="281" y="384" />
+                        <point x="506" y="312" />
+                      </points>
+                    </layout>
+                    <relation from="d478096fa0b84541ae1801bda41e7d41" from-iid="4a20804191f64710a9b025f770669431" to="e01ebaa93ce24b94bf42cb94c1000931" to-iid="d37092722aa84dff8d16f4cc9453a382" />
+                  </item>
+                  <item id="a6be309e78c543d9b767abf305a06f00" iid="eec762aa856a427499f30023e71cd742" creation-date="01/04/2024 15:19:22" order-index="19" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="797" y1="268" x2="626" y2="280" start-border-pos="0.935" end-border-pos="0.375" start-local-pos="13" end-local-pos="45" name-position="-5,-25">
+                      <points>
+                        <point x="797" y="268" />
+                        <point x="626" y="280" />
+                      </points>
+                    </layout>
+                    <relation from="678bef3f024343f8843ff3fc33225cb6" from-iid="9c8a338def2949428fae0e95c2a9989c" to="e01ebaa93ce24b94bf42cb94c1000931" to-iid="d37092722aa84dff8d16f4cc9453a382" />
+                  </item>
+                  <item id="600f106d04f24a68b442cb8b7c6d9f91" iid="5ead62c6ed374b3ea432c25f248e223e" creation-date="01/04/2024 15:19:32" order-index="20" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="506" y1="259" x2="223" y2="384" start-border-pos="0.9333333333333333" end-border-pos="0.0625" start-local-pos="24" end-local-pos="30" name-position="0,20">
+                      <points>
+                        <point x="506" y="259" />
+                        <point x="223" y="384" />
+                      </points>
+                    </layout>
+                    <relation from="e01ebaa93ce24b94bf42cb94c1000931" from-iid="d37092722aa84dff8d16f4cc9453a382" to="d478096fa0b84541ae1801bda41e7d41" to-iid="4a20804191f64710a9b025f770669431" />
+                  </item>
+                </layer>
+              </diagram>
+              <diagram type="gane-sarson-data-flow" id="p1641834526e64edb87e3f3be7ab742af_586266000" name="DFD1_Moderator" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default" view-location="-121,-180">
+                <style>
+                  <background-color index="1" color="#FFFFFFFF" />
+                  <background-color index="2" color="#FFFFFFFF" />
+                  <background-type type="solid" />
+                </style>
+                <meta>
+                  <authors>
+                    <author> </author>
+                  </authors>
+                  <description />
+                  <creation-date>01/04/2024 15:21:14</creation-date>
+                  <change-date>01/04/2024 18:59:42</change-date>
+                  <revision-count>0</revision-count>
+                  <version />
+                </meta>
+                <abstract-items>
+                  <item id="1efb9219ece84e74bd83a38654fe6526" cid="DFF097" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/04/2024 18:58:53" from="587e9d261927435bb9f93ce7800323e8" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="c6a6d734d39c4016aff89fc860a0fe60" cid="DFF085" type="dfd-data-flow" name="Запрос данных видеозаписей" creation-date="01/04/2024 18:48:18" from="05091c4ed78b438087e6d401c8a69f60" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="448b49c0f7ad4ac4b0268057a87c45aa" cid="DFF095" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/04/2024 18:58:21" from="587e9d261927435bb9f93ce7800323e8" to="597cc54af10d441097b8f1f5279e23ca" />
+                  <item id="73cd41ce79f04ce1bfebb2d409f89bf3" cid="DFF093" type="dfd-data-flow" name="Запрос на редактирование " creation-date="01/04/2024 18:57:33" from="587e9d261927435bb9f93ce7800323e8" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="e8568720ef6f48cdb42128223eea47b1" cid="DFF088" type="dfd-data-flow" name="Видеоконтент" creation-date="01/04/2024 18:50:50" from="597cc54af10d441097b8f1f5279e23ca" to="05091c4ed78b438087e6d401c8a69f60" />
+                  <item id="5a9749c7f8404f24be8bbcc4942bac7d" cid="DFF094" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:58:01" from="3a3d757acf054ea6ab6adbd358308227" to="587e9d261927435bb9f93ce7800323e8" />
+                  <item id="0e066100b4704ac19c8705e1174e5338" cid="DFF089" type="dfd-data-flow" name="Запрос комментариев" creation-date="01/04/2024 18:54:13" from="05091c4ed78b438087e6d401c8a69f60" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="ecb763ac4b764bf3ad0a9f4fb82606ea" cid="DFF096" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:58:41" from="597cc54af10d441097b8f1f5279e23ca" to="587e9d261927435bb9f93ce7800323e8" />
+                  <item id="a6b9beeb384a47c18d824f398842a492" cid="DFF091" type="dfd-data-flow" name="Период для модерации, тип данных для модерации" creation-date="01/04/2024 18:56:21" from="978c20af954b4712b73c576cd718f8d9" to="05091c4ed78b438087e6d401c8a69f60" />
+                  <item id="587e9d261927435bb9f93ce7800323e8" cid="DFP021" type="dfd-process" name="Пометить контент как неприемлемый" creation-date="01/04/2024 18:45:14" />
+                  <item id="fc180837dcf74f44a4e0af0b965ea589" cid="DFF086" type="dfd-data-flow" name="Данные видеозаписей" creation-date="01/04/2024 18:49:30" from="3a3d757acf054ea6ab6adbd358308227" to="05091c4ed78b438087e6d401c8a69f60" />
+                  <item id="e5016bec52214dcb9b752fee0140db37" cid="DFF100" type="dfd-data-flow" name="Тип, идентификатор контента" creation-date="01/04/2024 18:59:26" from="978c20af954b4712b73c576cd718f8d9" to="587e9d261927435bb9f93ce7800323e8" />
+                  <item id="bf1b8bd363a14cea940b13320179de76" cid="DFF099" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:59:12" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="587e9d261927435bb9f93ce7800323e8" />
+                  <item id="f71f60f10d004276b8c37af33bb88ba6" cid="DFF101" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:59:42" from="587e9d261927435bb9f93ce7800323e8" to="978c20af954b4712b73c576cd718f8d9" />
+                  <item id="6ef5d033f3934e389bdd100d3bbc64e8" cid="DFF087" type="dfd-data-flow" name="Запрос видеоконтента" creation-date="01/04/2024 18:49:59" from="05091c4ed78b438087e6d401c8a69f60" to="597cc54af10d441097b8f1f5279e23ca" />
+                  <item id="0d99db89670643d48eb526c39802feef" cid="DFF090" type="dfd-data-flow" name="Данные комментариев" creation-date="01/04/2024 18:55:02" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="05091c4ed78b438087e6d401c8a69f60" />
+                  <item id="ed1612d1cf3540d9a909bede6a5de5a9" cid="DFF092" type="dfd-data-flow" name="Контент" creation-date="01/04/2024 18:56:49" from="05091c4ed78b438087e6d401c8a69f60" to="978c20af954b4712b73c576cd718f8d9" />
+                  <item id="05091c4ed78b438087e6d401c8a69f60" cid="DFP020" type="dfd-process" name="Получить контент для модерации" creation-date="01/04/2024 18:40:03" />
+                </abstract-items>
+                <layer id="a0c18fa3d4a94235b0989a116d8c1bbc" name="Default" visible="true" enabled="true" locked="false">
+                  <item id="978c20af954b4712b73c576cd718f8d9" iid="7ff8945cfb694ea192b87bf8a6b288e0" creation-date="12/25/2023 22:43:22" order-index="0" type="entity">
+                    <layout ax="200" ay="138" awidth="120" aheight="70" x="200" y="138" width="120" height="70" />
+                  </item>
+                  <item id="3a3d757acf054ea6ab6adbd358308227" iid="ae2feb16e3c1451f9a4ac8bce259e3c4" creation-date="12/31/2023 17:39:49" order-index="0" type="entity">
+                    <layout ax="867" ay="138" awidth="174" aheight="50" x="867" y="138" width="174" height="50" />
+                  </item>
+                  <item id="597cc54af10d441097b8f1f5279e23ca" iid="0dacb4522b37465fa7a2bede21990c1c" creation-date="12/31/2023 18:05:31" order-index="1" type="entity">
+                    <layout ax="865.5" ay="298" awidth="177" aheight="50" x="865.5" y="298" width="177" height="50" />
+                  </item>
+                  <item id="b89c37b8f58640e7b2ea56b3c3dae7a0" iid="a173f2c253dc492fbb9e6b0cef5d6a0e" creation-date="01/03/2024 21:27:54" order-index="0" type="entity">
+                    <layout ax="865.5" ay="441" awidth="204" aheight="70" x="865.5" y="441" width="204" height="70" />
+                  </item>
+                  <item id="05091c4ed78b438087e6d401c8a69f60" iid="db51233e4d984b10b0a4f21033468ad3" creation-date="01/04/2024 18:40:03" order-index="2" type="entity">
+                    <layout ax="562" ay="-11" awidth="120" aheight="90" x="562" y="-11" width="120" height="90" />
+                  </item>
+                  <item id="587e9d261927435bb9f93ce7800323e8" iid="ef0d52a84c574d528c290daf81c0e01d" creation-date="01/04/2024 18:45:14" order-index="3" type="entity">
+                    <layout ax="562" ay="288" awidth="120" aheight="112" x="562" y="288" width="120" height="112" />
+                  </item>
+                  <item id="c6a6d734d39c4016aff89fc860a0fe60" iid="b42d70f848164231afc1a9e33309b731" creation-date="01/04/2024 18:48:18" order-index="4" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="682" y1="64" x2="895" y2="138" start-border-pos="0.4583333283662796" end-border-pos="0.04022988677024841" start-local-pos="57" end-local-pos="98" name-position="-59,40" name-width="114">
+                      <points>
+                        <point x="682" y="64" />
+                        <point x="895" y="65" />
+                        <point x="895" y="138" />
+                      </points>
+                    </layout>
+                    <relation from="05091c4ed78b438087e6d401c8a69f60" from-iid="db51233e4d984b10b0a4f21033468ad3" to="3a3d757acf054ea6ab6adbd358308227" to-iid="ae2feb16e3c1451f9a4ac8bce259e3c4" />
+                  </item>
+                  <item id="fc180837dcf74f44a4e0af0b965ea589" iid="fcf33b8a0cdd4b538722a8927ed3d583" creation-date="01/04/2024 18:49:30" order-index="5" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="923" y1="138" x2="682" y2="51" start-border-pos="0.08045977354049683" end-border-pos="0.42222222685813904" start-local-pos="72" end-local-pos="62" name-position="130,41" name-width="85">
+                      <points>
+                        <point x="923" y="138" />
+                        <point x="682" y="51" />
+                      </points>
+                    </layout>
+                    <relation from="3a3d757acf054ea6ab6adbd358308227" from-iid="ae2feb16e3c1451f9a4ac8bce259e3c4" to="05091c4ed78b438087e6d401c8a69f60" to-iid="db51233e4d984b10b0a4f21033468ad3" />
+                  </item>
+                  <item id="6ef5d033f3934e389bdd100d3bbc64e8" iid="d0dda3878387464f88eb848e700b3744" creation-date="01/04/2024 18:49:59" order-index="6" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="682" y1="34" x2="896" y2="298" start-border-pos="0.375" end-border-pos="0.04307909682393074" start-local-pos="45" end-local-pos="30.5" name-position="-99,147">
+                      <points>
+                        <point x="682" y="34" />
+                        <point x="1069.5" y="60" />
+                        <point x="1070" y="230" />
+                        <point x="896" y="298" />
+                      </points>
+                    </layout>
+                    <relation from="05091c4ed78b438087e6d401c8a69f60" from-iid="db51233e4d984b10b0a4f21033468ad3" to="597cc54af10d441097b8f1f5279e23ca" to-iid="0dacb4522b37465fa7a2bede21990c1c" />
+                  </item>
+                  <item id="e8568720ef6f48cdb42128223eea47b1" iid="b92dfc7b9e4e4398b5c887d042f23b90" creation-date="01/04/2024 18:50:50" order-index="7" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="923" y1="298" x2="682" y2="21" start-border-pos="0.08121468926553672" end-border-pos="0.3388888888888889" start-local-pos="57.5" end-local-pos="32" name-position="-109,212">
+                      <points>
+                        <point x="923" y="298" />
+                        <point x="1089" y="277" />
+                        <point x="1088" y="22.5" />
+                        <point x="682" y="21" />
+                      </points>
+                    </layout>
+                    <relation from="597cc54af10d441097b8f1f5279e23ca" from-iid="0dacb4522b37465fa7a2bede21990c1c" to="05091c4ed78b438087e6d401c8a69f60" to-iid="db51233e4d984b10b0a4f21033468ad3" />
+                  </item>
+                  <item id="0e066100b4704ac19c8705e1174e5338" iid="293512f201aa4031b4b14c46c60c5997" creation-date="01/04/2024 18:54:13" order-index="8" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="682" y1="6" x2="892" y2="441" start-border-pos="0.29722222313284874" end-border-pos="0.032475490123033524" start-local-pos="17" end-local-pos="26.5" name-position="-142,251">
+                      <points>
+                        <point x="682" y="6" />
+                        <point x="1126" y="6.5" />
+                        <point x="1123" y="385" />
+                        <point x="892" y="441" />
+                      </points>
+                    </layout>
+                    <relation from="05091c4ed78b438087e6d401c8a69f60" from-iid="db51233e4d984b10b0a4f21033468ad3" to="b89c37b8f58640e7b2ea56b3c3dae7a0" to-iid="a173f2c253dc492fbb9e6b0cef5d6a0e" />
+                  </item>
+                  <item id="0d99db89670643d48eb526c39802feef" iid="27e432c765bb4d729f1a0c13e5587afc" creation-date="01/04/2024 18:55:02" order-index="9" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="930" y1="441" x2="682" y2="-11" start-border-pos="0.07904411852359772" end-border-pos="0.25" start-local-pos="85.5" end-local-pos="0" name-position="-132,311">
+                      <points>
+                        <point x="930" y="441" />
+                        <point x="1148" y="418" />
+                        <point x="1147" y="-11" />
+                        <point x="682" y="-11" />
+                      </points>
+                    </layout>
+                    <relation from="b89c37b8f58640e7b2ea56b3c3dae7a0" from-iid="a173f2c253dc492fbb9e6b0cef5d6a0e" to="05091c4ed78b438087e6d401c8a69f60" to-iid="db51233e4d984b10b0a4f21033468ad3" />
+                  </item>
+                  <item id="a6b9beeb384a47c18d824f398842a492" iid="65dc82532b6743ac9b85b29bf6e838d6" creation-date="01/04/2024 18:56:21" order-index="10" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="290" y1="138" x2="562" y2="58" start-border-pos="0.1875" end-border-pos="0.8083333333333333" start-local-pos="90" end-local-pos="69" name-position="35,35">
+                      <points>
+                        <point x="290" y="138" />
+                        <point x="562" y="58" />
+                      </points>
+                    </layout>
+                    <relation from="978c20af954b4712b73c576cd718f8d9" from-iid="7ff8945cfb694ea192b87bf8a6b288e0" to="05091c4ed78b438087e6d401c8a69f60" to-iid="db51233e4d984b10b0a4f21033468ad3" />
+                  </item>
+                  <item id="ed1612d1cf3540d9a909bede6a5de5a9" iid="7a9987e1f7ae450f9d008a023997267c" creation-date="01/04/2024 18:56:49" order-index="11" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="562" y1="11" x2="238" y2="138" start-border-pos="0.9388888888888889" end-border-pos="0.07916666666666666" start-local-pos="22" end-local-pos="38" name-position="0,20">
+                      <points>
+                        <point x="562" y="11" />
+                        <point x="238" y="138" />
+                      </points>
+                    </layout>
+                    <relation from="05091c4ed78b438087e6d401c8a69f60" from-iid="db51233e4d984b10b0a4f21033468ad3" to="978c20af954b4712b73c576cd718f8d9" to-iid="7ff8945cfb694ea192b87bf8a6b288e0" />
+                  </item>
+                  <item id="73cd41ce79f04ce1bfebb2d409f89bf3" iid="5eeb05f0aa794085a73c8e99b34256ac" creation-date="01/04/2024 18:57:33" order-index="12" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="637" y1="288" x2="867" y2="188" start-border-pos="0.15625" end-border-pos="0.75" start-local-pos="75" end-local-pos="35" name-position="44,28">
+                      <points>
+                        <point x="637" y="288" />
+                        <point x="867" y="188" />
+                      </points>
+                    </layout>
+                    <relation from="587e9d261927435bb9f93ce7800323e8" from-iid="ef0d52a84c574d528c290daf81c0e01d" to="3a3d757acf054ea6ab6adbd358308227" to-iid="ae2feb16e3c1451f9a4ac8bce259e3c4" />
+                  </item>
+                  <item id="5a9749c7f8404f24be8bbcc4942bac7d" iid="c7bb0641ba984bcdad5c1dc7d54d50f4" creation-date="01/04/2024 18:58:01" order-index="13" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="867" y1="148" x2="594" y2="288" start-border-pos="0.95" end-border-pos="0.06666666666666667" start-local-pos="10" end-local-pos="32" name-position="33,16">
+                      <points>
+                        <point x="867" y="148" />
+                        <point x="594" y="288" />
+                      </points>
+                    </layout>
+                    <relation from="3a3d757acf054ea6ab6adbd358308227" from-iid="ae2feb16e3c1451f9a4ac8bce259e3c4" to="587e9d261927435bb9f93ce7800323e8" to-iid="ef0d52a84c574d528c290daf81c0e01d" />
+                  </item>
+                  <item id="448b49c0f7ad4ac4b0268057a87c45aa" iid="844998267fd54726a700346cb35da043" creation-date="01/04/2024 18:58:21" order-index="14" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="682" y1="370" x2="888" y2="348" start-border-pos="0.4330357164144516" end-border-pos="0.7182203389830508" start-local-pos="82" end-local-pos="22.5" name-position="-8,28">
+                      <points>
+                        <point x="682" y="370" />
+                        <point x="888" y="348" />
+                      </points>
+                    </layout>
+                    <relation from="587e9d261927435bb9f93ce7800323e8" from-iid="ef0d52a84c574d528c290daf81c0e01d" to="597cc54af10d441097b8f1f5279e23ca" to-iid="0dacb4522b37465fa7a2bede21990c1c" />
+                  </item>
+                  <item id="ecb763ac4b764bf3ad0a9f4fb82606ea" iid="86ec9d308fc343c989409f00eec48220" creation-date="01/04/2024 18:58:41" order-index="15" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="866" y1="323" x2="682" y2="333" start-border-pos="0.875" end-border-pos="0.3504464285714286" start-local-pos="25" end-local-pos="45" name-position="0,20">
+                      <points>
+                        <point x="866" y="323" />
+                        <point x="682" y="333" />
+                      </points>
+                    </layout>
+                    <relation from="597cc54af10d441097b8f1f5279e23ca" from-iid="0dacb4522b37465fa7a2bede21990c1c" to="587e9d261927435bb9f93ce7800323e8" to-iid="ef0d52a84c574d528c290daf81c0e01d" />
+                  </item>
+                  <item id="1efb9219ece84e74bd83a38654fe6526" iid="18a225e94f424150a681f27b2a98a59c" creation-date="01/04/2024 18:58:53" order-index="16" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="602" y1="400" x2="866" y2="493" start-border-pos="0.6666666666666666" end-border-pos="0.8142857142857143" start-local-pos="40" end-local-pos="52" name-position="41,20">
+                      <points>
+                        <point x="602" y="400" />
+                        <point x="866" y="493" />
+                      </points>
+                    </layout>
+                    <relation from="587e9d261927435bb9f93ce7800323e8" from-iid="ef0d52a84c574d528c290daf81c0e01d" to="b89c37b8f58640e7b2ea56b3c3dae7a0" to-iid="a173f2c253dc492fbb9e6b0cef5d6a0e" />
+                  </item>
+                  <item id="bf1b8bd363a14cea940b13320179de76" iid="945167f8e5104044acbe1b09e39909ed" creation-date="01/04/2024 18:59:12" order-index="17" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="866" y1="461" x2="640" y2="400" start-border-pos="0.9285714285714286" end-border-pos="0.5875" start-local-pos="20" end-local-pos="78" name-position="0,20">
+                      <points>
+                        <point x="866" y="461" />
+                        <point x="640" y="400" />
+                      </points>
+                    </layout>
+                    <relation from="b89c37b8f58640e7b2ea56b3c3dae7a0" from-iid="a173f2c253dc492fbb9e6b0cef5d6a0e" to="587e9d261927435bb9f93ce7800323e8" to-iid="ef0d52a84c574d528c290daf81c0e01d" />
+                  </item>
+                  <item id="e5016bec52214dcb9b752fee0140db37" iid="9f4c5d07534b4ac6a7bc899b2c7fd503" creation-date="01/04/2024 18:59:26" order-index="18" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="241" y1="208" x2="562" y2="380" start-border-pos="0.6645833333333333" end-border-pos="0.7946428571428571" start-local-pos="41" end-local-pos="92" name-position="79,21">
+                      <points>
+                        <point x="241" y="208" />
+                        <point x="562" y="380" />
+                      </points>
+                    </layout>
+                    <relation from="978c20af954b4712b73c576cd718f8d9" from-iid="7ff8945cfb694ea192b87bf8a6b288e0" to="587e9d261927435bb9f93ce7800323e8" to-iid="ef0d52a84c574d528c290daf81c0e01d" />
+                  </item>
+                  <item id="f71f60f10d004276b8c37af33bb88ba6" iid="87d5949672134f68806093e442517631" creation-date="01/04/2024 18:59:42" order-index="19" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="562" y1="334" x2="290" y2="208" start-border-pos="0.8973214285714286" end-border-pos="0.5625" start-local-pos="46" end-local-pos="90" name-position="29,20">
+                      <points>
+                        <point x="562" y="334" />
+                        <point x="290" y="208" />
+                      </points>
+                    </layout>
+                    <relation from="587e9d261927435bb9f93ce7800323e8" from-iid="ef0d52a84c574d528c290daf81c0e01d" to="978c20af954b4712b73c576cd718f8d9" to-iid="7ff8945cfb694ea192b87bf8a6b288e0" />
+                  </item>
+                </layer>
+              </diagram>
+              <diagram type="gane-sarson-data-flow" id="p404951bcec7944a8a4c662cc79b2ad0e_409941689" name="DFD1_Admin" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default" view-location="0,80">
+                <style>
+                  <background-color index="1" color="#FFFFFFFF" />
+                  <background-color index="2" color="#FFFFFFFF" />
+                  <background-type type="solid" />
+                </style>
+                <meta>
+                  <authors>
+                    <author> </author>
+                  </authors>
+                  <description />
+                  <creation-date>01/04/2024 19:02:18</creation-date>
+                  <change-date>01/04/2024 19:19:26</change-date>
+                  <revision-count>0</revision-count>
+                  <version />
+                </meta>
+                <abstract-items>
+                  <item id="12375d3151b54b1a8d907b60cbafc444" cid="DFF106" type="dfd-data-flow" name="ИД пользователя, тип роли, действие (добавить/удалить)" creation-date="01/04/2024 19:18:02" from="ec602cbb626c4f038dc724a99acf7a62" to="4c2fa6b151b74d7984ad5e1c822be8d9" />
+                  <item id="1a61d1bf7db64937a842879ae6f40dad" cid="DFF104" type="dfd-data-flow" name="Список пользователей (с данными)" creation-date="01/04/2024 19:08:40" from="4e64774890604c6e9b9581f2e904ea96" to="3f248f3edb2a4bf6b134d5dd3daf8b79" />
+                  <item id="52eb5a4596c442edb85e18963e37ee8d" cid="DFF108" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:19:14" from="997211866b8b4d38bd6593051fa444af" to="4c2fa6b151b74d7984ad5e1c822be8d9" />
+                  <item id="997211866b8b4d38bd6593051fa444af" cid="DFS015" type="dfd-data-store" name="Права пользователей" creation-date="01/04/2024 19:14:28" />
+                  <item id="9a5e25e9d8744fccbf32bd82cf4e2c88" cid="DFF103" type="dfd-data-flow" name="Запрос на поиск пользователей" creation-date="01/04/2024 19:08:16" from="3f248f3edb2a4bf6b134d5dd3daf8b79" to="4e64774890604c6e9b9581f2e904ea96" />
+                  <item id="2ac64928b2a34076b56e09ea15a38f37" cid="DFF107" type="dfd-data-flow" name="Запрос на изменение роли пользователя" creation-date="01/04/2024 19:18:48" from="4c2fa6b151b74d7984ad5e1c822be8d9" to="997211866b8b4d38bd6593051fa444af" />
+                  <item id="08e2ef0e3e21409ba0d47a35f921710a" cid="DFF109" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:19:26" from="4c2fa6b151b74d7984ad5e1c822be8d9" to="ec602cbb626c4f038dc724a99acf7a62" />
+                  <item id="c4d0f9c0c5b3473389f4b478e8717382" cid="DFF105" type="dfd-data-flow" name="Список пользователей (с данными)" creation-date="01/04/2024 19:11:39" from="3f248f3edb2a4bf6b134d5dd3daf8b79" to="ec602cbb626c4f038dc724a99acf7a62" />
+                  <item id="4c2fa6b151b74d7984ad5e1c822be8d9" cid="DFP023" type="dfd-process" name="Редактировать права пользователей" creation-date="01/04/2024 19:17:35" />
+                  <item id="4e64774890604c6e9b9581f2e904ea96" cid="DFS014" type="dfd-data-store" name="Данные пользователей" creation-date="01/04/2024 19:07:24" />
+                  <item id="3f248f3edb2a4bf6b134d5dd3daf8b79" cid="DFP022" type="dfd-process" name="Получить данные пользователей по запросу" creation-date="01/04/2024 19:06:06" />
+                  <item id="cfd002914f0649e49804c5bdfa004421" cid="DFF102" type="dfd-data-flow" name="Запрос (ИД пользователя, имя пользователя)" creation-date="01/04/2024 19:07:55" from="ec602cbb626c4f038dc724a99acf7a62" to="3f248f3edb2a4bf6b134d5dd3daf8b79" />
+                </abstract-items>
+                <layer id="79e8d5d0fa42480fba307f6cc4119a02" name="Default" visible="true" enabled="true" locked="false">
+                  <item id="ec602cbb626c4f038dc724a99acf7a62" iid="ca99e3102ff74217ac32a0ca49dedd63" creation-date="12/25/2023 22:43:41" order-index="0" type="entity">
+                    <layout ax="363" ay="320" awidth="137" aheight="70" x="363" y="320" width="137" height="70" />
+                  </item>
+                  <item id="3f248f3edb2a4bf6b134d5dd3daf8b79" iid="bbd99fcfd7cf4b3da53493e5b000503f" creation-date="01/04/2024 19:06:06" order-index="1" type="entity">
+                    <layout ax="657" ay="298.5" awidth="151" aheight="113" x="657" y="298.5" width="151" height="113" />
+                  </item>
+                  <item id="4e64774890604c6e9b9581f2e904ea96" iid="c3e5351251664bb4b76d250edbcd4142" creation-date="01/04/2024 19:07:24" order-index="2" type="entity">
+                    <layout ax="965" ay="320" awidth="172" aheight="50.5" x="965" y="320" width="172" height="50.5" />
+                  </item>
+                  <item id="cfd002914f0649e49804c5bdfa004421" iid="8504fc5191fe4338bed9493a4a2e4f12" creation-date="01/04/2024 19:07:55" order-index="3" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="500" y1="373" x2="657" y2="380" start-border-pos="0.4392857142857143" end-border-pos="0.8191371681415929" start-local-pos="53" end-local-pos="81.75" name-position="2,46">
+                      <points>
+                        <point x="500" y="373" />
+                        <point x="657" y="380" />
+                      </points>
+                    </layout>
+                    <relation from="ec602cbb626c4f038dc724a99acf7a62" from-iid="ca99e3102ff74217ac32a0ca49dedd63" to="3f248f3edb2a4bf6b134d5dd3daf8b79" to-iid="bbd99fcfd7cf4b3da53493e5b000503f" />
+                  </item>
+                  <item id="9a5e25e9d8744fccbf32bd82cf4e2c88" iid="0e7faa5ebcb340d390611a87a2375a95" creation-date="01/04/2024 19:08:16" order-index="4" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="808" y1="392" x2="1012" y2="370" start-border-pos="0.456858407079646" end-border-pos="0.6816860465116279" start-local-pos="93.5" end-local-pos="47" name-position="0,38">
+                      <points>
+                        <point x="808" y="392" />
+                        <point x="1012" y="370" />
+                      </points>
+                    </layout>
+                    <relation from="3f248f3edb2a4bf6b134d5dd3daf8b79" from-iid="bbd99fcfd7cf4b3da53493e5b000503f" to="4e64774890604c6e9b9581f2e904ea96" to-iid="c3e5351251664bb4b76d250edbcd4142" />
+                  </item>
+                  <item id="1a61d1bf7db64937a842879ae6f40dad" iid="609027207de34ee2bec407a6f7414821" creation-date="01/04/2024 19:08:40" order-index="5" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="965" y1="331" x2="808" y2="355" start-border-pos="0.9455445544554455" end-border-pos="0.375" start-local-pos="11" end-local-pos="56.5" name-position="-1,-51">
+                      <points>
+                        <point x="965" y="331" />
+                        <point x="808" y="355" />
+                      </points>
+                    </layout>
+                    <relation from="4e64774890604c6e9b9581f2e904ea96" from-iid="c3e5351251664bb4b76d250edbcd4142" to="3f248f3edb2a4bf6b134d5dd3daf8b79" to-iid="bbd99fcfd7cf4b3da53493e5b000503f" />
+                  </item>
+                  <item id="c4d0f9c0c5b3473389f4b478e8717382" iid="8bed9826b8bb4ae6809b43deb900a811" creation-date="01/04/2024 19:11:39" order-index="6" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="657" y1="333" x2="500" y2="337" start-border-pos="0.9236725663716814" end-border-pos="0.3107142857142857" start-local-pos="34.5" end-local-pos="17" name-position="-2,-42">
+                      <points>
+                        <point x="657" y="333" />
+                        <point x="500" y="337" />
+                      </points>
+                    </layout>
+                    <relation from="3f248f3edb2a4bf6b134d5dd3daf8b79" from-iid="bbd99fcfd7cf4b3da53493e5b000503f" to="ec602cbb626c4f038dc724a99acf7a62" to-iid="ca99e3102ff74217ac32a0ca49dedd63" />
+                  </item>
+                  <item id="997211866b8b4d38bd6593051fa444af" iid="d863e05eebcc45278e4cc70b79ad9557" creation-date="01/04/2024 19:14:28" order-index="7" type="entity">
+                    <layout ax="962.5" ay="501" awidth="177" aheight="50" x="962.5" y="501" width="177" height="50" />
+                  </item>
+                  <item id="4c2fa6b151b74d7984ad5e1c822be8d9" iid="83069741f9e749428b1333e30fd89dd0" creation-date="01/04/2024 19:17:35" order-index="8" type="entity">
+                    <layout ax="657" ay="465" awidth="151" aheight="102" x="657" y="465" width="151" height="102" />
+                  </item>
+                  <item id="12375d3151b54b1a8d907b60cbafc444" iid="f6f4b00fac394b2f8defc6c2ea4f2411" creation-date="01/04/2024 19:18:02" order-index="9" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="394" y1="390" x2="657" y2="552" start-border-pos="0.6934306569343066" end-border-pos="0.7867647058823529" start-local-pos="31" end-local-pos="87" name-position="76,38">
+                      <points>
+                        <point x="394" y="390" />
+                        <point x="657" y="552" />
+                      </points>
+                    </layout>
+                    <relation from="ec602cbb626c4f038dc724a99acf7a62" from-iid="ca99e3102ff74217ac32a0ca49dedd63" to="4c2fa6b151b74d7984ad5e1c822be8d9" to-iid="83069741f9e749428b1333e30fd89dd0" />
+                  </item>
+                  <item id="2ac64928b2a34076b56e09ea15a38f37" iid="9606a471adf64bfa8b13dcddc3845574" creation-date="01/04/2024 19:18:48" order-index="10" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="808" y1="537" x2="962" y2="537" start-border-pos="0.42647058823529416" end-border-pos="0.8200000000000001" start-local-pos="72" end-local-pos="36" name-position="2,34">
+                      <points>
+                        <point x="808" y="537" />
+                        <point x="962" y="537" />
+                      </points>
+                    </layout>
+                    <relation from="4c2fa6b151b74d7984ad5e1c822be8d9" from-iid="83069741f9e749428b1333e30fd89dd0" to="997211866b8b4d38bd6593051fa444af" to-iid="d863e05eebcc45278e4cc70b79ad9557" />
+                  </item>
+                  <item id="52eb5a4596c442edb85e18963e37ee8d" iid="a453e416bde84d36af18a2cd742e9e14" creation-date="01/04/2024 19:19:14" order-index="11" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="962" y1="514" x2="808" y2="505" start-border-pos="0.935" end-border-pos="0.3480392156862745" start-local-pos="13" end-local-pos="40" name-position="4,-23">
+                      <points>
+                        <point x="962" y="514" />
+                        <point x="808" y="505" />
+                      </points>
+                    </layout>
+                    <relation from="997211866b8b4d38bd6593051fa444af" from-iid="d863e05eebcc45278e4cc70b79ad9557" to="4c2fa6b151b74d7984ad5e1c822be8d9" to-iid="83069741f9e749428b1333e30fd89dd0" />
+                  </item>
+                  <item id="08e2ef0e3e21409ba0d47a35f921710a" iid="c901b5add8a54d49b146bf558039be4f" creation-date="01/04/2024 19:19:26" order-index="12" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="657" y1="502" x2="432" y2="390" start-border-pos="0.9093137254901961" end-border-pos="0.6240875912408759" start-local-pos="37" end-local-pos="69" name-position="0,20">
+                      <points>
+                        <point x="657" y="502" />
+                        <point x="432" y="390" />
+                      </points>
+                    </layout>
+                    <relation from="4c2fa6b151b74d7984ad5e1c822be8d9" from-iid="83069741f9e749428b1333e30fd89dd0" to="ec602cbb626c4f038dc724a99acf7a62" to-iid="ca99e3102ff74217ac32a0ca49dedd63" />
+                  </item>
+                </layer>
+              </diagram>
+              <diagram type="gane-sarson-data-flow" id="p00422d2449794e969593f14e4f0e3de1_448825508" name="DFD1_Advertiser" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default">
+                <style>
+                  <background-color index="1" color="#FFFFFFFF" />
+                  <background-color index="2" color="#FFFFFFFF" />
+                  <background-type type="solid" />
+                </style>
+                <meta>
+                  <authors>
+                    <author> </author>
+                  </authors>
+                  <description />
+                  <creation-date>01/04/2024 19:20:38</creation-date>
+                  <change-date>01/04/2024 19:37:35</change-date>
+                  <revision-count>0</revision-count>
+                  <version />
+                </meta>
+                <abstract-items>
+                  <item id="5071120c1df34460b9d22d1a2cd7faaf" cid="DFF116" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:32:24" from="3134f526a5054268a56ce01e401ef03e" to="43f664ccc0854e5ea60d9472edbd22f8" />
+                  <item id="02f8b922a474446aafb1e1d59353cba0" cid="DFF120" type="dfd-data-flow" name="Список объявлений" creation-date="01/04/2024 19:34:17" from="22b132451125402dbd9ef4182df9202f" to="5017a589130c42f299e75e1d0ea03e12" />
+                  <item id="aff06ad180224c29abf1b2629041e48d" cid="DFF123" type="dfd-data-flow" name="Данные статистики" creation-date="01/04/2024 19:37:25" from="f52dc7f918a544d19fc5adc6083ca267" to="471888d7fc9e4f9dbe9c6f01300292b7" />
+                  <item id="869e42f51df84531800fa487574972b4" cid="DFF118" type="dfd-data-flow" name="Данные рекламных объявлений" creation-date="01/04/2024 19:33:45" from="6ef8ea42cde946228963ba81f410f8e5" to="22b132451125402dbd9ef4182df9202f" />
+                  <item id="6605e98e3af84ef1997a6970e129e473" cid="DFF115" type="dfd-data-flow" name="Запрос на редактирование настроек показа объявления" creation-date="01/04/2024 19:29:54" from="43f664ccc0854e5ea60d9472edbd22f8" to="3134f526a5054268a56ce01e401ef03e" />
+                  <item id="f52dc7f918a544d19fc5adc6083ca267" cid="DFS018" type="dfd-data-store" name="Статистика показов рекламных объявлений" creation-date="01/04/2024 19:26:02" />
+                  <item id="6ef8ea42cde946228963ba81f410f8e5" cid="DFS016" type="dfd-data-store" name="Рекламные объявления" creation-date="01/04/2024 19:21:22" />
+                  <item id="9f523417c0454b0489e4e6a8b7eb7887" cid="DFF124" type="dfd-data-flow" name="Данные статистики" creation-date="01/04/2024 19:37:35" from="471888d7fc9e4f9dbe9c6f01300292b7" to="5017a589130c42f299e75e1d0ea03e12" />
+                  <item id="5d8c7fafba824d06af1f2e6e670a3fd7" cid="DFF110" type="dfd-data-flow" name="ИД объявления (при редактировании), контент объявления, настройки показа" creation-date="01/04/2024 19:27:14" from="5017a589130c42f299e75e1d0ea03e12" to="43f664ccc0854e5ea60d9472edbd22f8" />
+                  <item id="471888d7fc9e4f9dbe9c6f01300292b7" cid="DFP025" type="dfd-process" name="Отобразить статистику показов рекламного объявления" creation-date="01/04/2024 19:26:35" />
+                  <item id="711bf902531343fabffdf123c671db3d" cid="DFF122" type="dfd-data-flow" name="Запрос на получение статистики по объявлению" creation-date="01/04/2024 19:37:05" from="471888d7fc9e4f9dbe9c6f01300292b7" to="f52dc7f918a544d19fc5adc6083ca267" />
+                  <item id="43f664ccc0854e5ea60d9472edbd22f8" cid="DFP024" type="dfd-process" name="Настроить рекламное объявление" creation-date="01/04/2024 19:25:41" />
+                  <item id="c626d9a9a2134930aeab6b9bfc9972f0" cid="DFF113" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:29:32" from="6ef8ea42cde946228963ba81f410f8e5" to="43f664ccc0854e5ea60d9472edbd22f8" />
+                  <item id="1043d95097e44747bab5edd6758573c1" cid="DFF119" type="dfd-data-flow" name="Запрос на получение списка объявлений" creation-date="01/04/2024 19:34:01" from="5017a589130c42f299e75e1d0ea03e12" to="22b132451125402dbd9ef4182df9202f" />
+                  <item id="2412ab59c5994d408fa050bf27b65261" cid="DFF121" type="dfd-data-flow" name="ИД объявления" creation-date="01/04/2024 19:36:33" from="5017a589130c42f299e75e1d0ea03e12" to="471888d7fc9e4f9dbe9c6f01300292b7" />
+                  <item id="22b132451125402dbd9ef4182df9202f" cid="DFP026" type="dfd-process" name="Отобразить список рекламных объявлений" creation-date="01/04/2024 19:32:43" />
+                  <item id="0778a45b1c734414be8558fedef159f8" cid="DFF117" type="dfd-data-flow" name="Запрос на получение объявлений рекламодателя" creation-date="01/04/2024 19:33:20" from="22b132451125402dbd9ef4182df9202f" to="6ef8ea42cde946228963ba81f410f8e5" />
+                  <item id="e0ecd2ba86f6494396fe71e25ded6654" cid="DFF114" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:29:42" from="43f664ccc0854e5ea60d9472edbd22f8" to="5017a589130c42f299e75e1d0ea03e12" />
+                  <item id="409c7c819c34492db2e82f3ce2605ddf" cid="DFF112" type="dfd-data-flow" name="Запрос на редактирование объявления" creation-date="01/04/2024 19:29:11" from="43f664ccc0854e5ea60d9472edbd22f8" to="6ef8ea42cde946228963ba81f410f8e5" />
+                  <item id="3134f526a5054268a56ce01e401ef03e" cid="DFS017" type="dfd-data-store" name="Настройки показа рекламных объявлений" creation-date="01/04/2024 19:21:58" />
+                </abstract-items>
+                <layer id="df190c92610d44dab64d39da87b9fc4f" name="Default" visible="true" enabled="true" locked="false">
+                  <item id="5017a589130c42f299e75e1d0ea03e12" iid="c5772c50863c40a898526fea3fd56952" creation-date="12/25/2023 22:43:52" order-index="0" type="entity">
+                    <layout ax="230" ay="264" awidth="137" aheight="70" x="230" y="264" width="137" height="70" />
+                  </item>
+                  <item id="6ef8ea42cde946228963ba81f410f8e5" iid="16240c3fe8bd4d3786c61d99ad7eb383" creation-date="01/04/2024 19:21:22" order-index="1" type="entity">
+                    <layout ax="887" ay="154" awidth="175" aheight="45" x="887" y="154" width="175" height="45" />
+                  </item>
+                  <item id="3134f526a5054268a56ce01e401ef03e" iid="9527f130bccf41ac9f4d162c736d6618" creation-date="01/04/2024 19:21:58" order-index="2" type="entity">
+                    <layout ax="887" ay="248" awidth="240" aheight="45" x="887" y="248" width="240" height="50" />
+                  </item>
+                  <item id="43f664ccc0854e5ea60d9472edbd22f8" iid="7d66dbb22ea1447b9708963b9d77910c" creation-date="01/04/2024 19:25:41" order-index="3" type="entity">
+                    <layout ax="569" ay="168" awidth="120" aheight="90" x="569" y="168" width="120" height="90" />
+                  </item>
+                  <item id="f52dc7f918a544d19fc5adc6083ca267" iid="27ddac2ab23b4920be3614deaaa047e7" creation-date="01/04/2024 19:26:02" order-index="4" type="entity">
+                    <layout ax="893.5" ay="378" awidth="227" aheight="70" x="893.5" y="378" width="227" height="70" />
+                  </item>
+                  <item id="471888d7fc9e4f9dbe9c6f01300292b7" iid="981f0de57f81462f9425ae7195edb627" creation-date="01/04/2024 19:26:35" order-index="5" type="entity">
+                    <layout ax="484" ay="356" awidth="193" aheight="114" x="484" y="356" width="193" height="114" />
+                  </item>
+                  <item id="5d8c7fafba824d06af1f2e6e670a3fd7" iid="ae2fdf7f22444fb69d0b90d4a0903df0" creation-date="01/04/2024 19:27:14" order-index="6" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="331" y1="264" x2="569" y2="244" start-border-pos="0.1843065693430657" end-border-pos="0.7888888888888889" start-local-pos="101" end-local-pos="76" name-position="35,48">
+                      <points>
+                        <point x="331" y="264" />
+                        <point x="569" y="244" />
+                      </points>
+                    </layout>
+                    <relation from="5017a589130c42f299e75e1d0ea03e12" from-iid="c5772c50863c40a898526fea3fd56952" to="43f664ccc0854e5ea60d9472edbd22f8" to-iid="7d66dbb22ea1447b9708963b9d77910c" />
+                  </item>
+                  <item id="409c7c819c34492db2e82f3ce2605ddf" iid="962bce99340849c0bdd070820314d49d" creation-date="01/04/2024 19:29:11" order-index="7" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="689" y1="192" x2="887" y2="188" start-border-pos="0.31666666666666665" end-border-pos="0.8111111111111111" start-local-pos="24" end-local-pos="34" name-position="2,34">
+                      <points>
+                        <point x="689" y="192" />
+                        <point x="887" y="188" />
+                      </points>
+                    </layout>
+                    <relation from="43f664ccc0854e5ea60d9472edbd22f8" from-iid="7d66dbb22ea1447b9708963b9d77910c" to="6ef8ea42cde946228963ba81f410f8e5" to-iid="16240c3fe8bd4d3786c61d99ad7eb383" />
+                  </item>
+                  <item id="c626d9a9a2134930aeab6b9bfc9972f0" iid="5954d18c09174c66a247d0571a92de18" creation-date="01/04/2024 19:29:32" order-index="8" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="887" y1="166" x2="689" y2="179" start-border-pos="0.9333333333333333" end-border-pos="0.28055555555555556" start-local-pos="12" end-local-pos="11" name-position="-1,-33">
+                      <points>
+                        <point x="887" y="166" />
+                        <point x="689" y="179" />
+                      </points>
+                    </layout>
+                    <relation from="6ef8ea42cde946228963ba81f410f8e5" from-iid="16240c3fe8bd4d3786c61d99ad7eb383" to="43f664ccc0854e5ea60d9472edbd22f8" to-iid="7d66dbb22ea1447b9708963b9d77910c" />
+                  </item>
+                  <item id="e0ecd2ba86f6494396fe71e25ded6654" iid="d0a2a6d7630749a28de91f32ac2fa611" creation-date="01/04/2024 19:29:42" order-index="9" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="569" y1="191" x2="317" y2="264" start-border-pos="0.9361111111111111" end-border-pos="0.15875912408759124" start-local-pos="23" end-local-pos="87" name-position="0,20">
+                      <points>
+                        <point x="569" y="191" />
+                        <point x="317" y="264" />
+                      </points>
+                    </layout>
+                    <relation from="43f664ccc0854e5ea60d9472edbd22f8" from-iid="7d66dbb22ea1447b9708963b9d77910c" to="5017a589130c42f299e75e1d0ea03e12" to-iid="c5772c50863c40a898526fea3fd56952" />
+                  </item>
+                  <item id="6605e98e3af84ef1997a6970e129e473" iid="ae983bd579ed4e9d9ece2413a6d183a0" creation-date="01/04/2024 19:29:54" order-index="10" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="605" y1="258" x2="887" y2="293" start-border-pos="0.675" end-border-pos="0.75" start-local-pos="36" end-local-pos="45" name-position="22,20">
+                      <points>
+                        <point x="605" y="258" />
+                        <point x="887" y="293" />
+                      </points>
+                    </layout>
+                    <relation from="43f664ccc0854e5ea60d9472edbd22f8" from-iid="7d66dbb22ea1447b9708963b9d77910c" to="3134f526a5054268a56ce01e401ef03e" to-iid="9527f130bccf41ac9f4d162c736d6618" />
+                  </item>
+                  <item id="5071120c1df34460b9d22d1a2cd7faaf" iid="bf97879bec3445fcb2ed004ab9c856d0" creation-date="01/04/2024 19:32:24" order-index="11" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="887" y1="280" x2="669" y2="258" start-border-pos="0.8222222253680229" end-border-pos="0.5416666666666666" start-local-pos="32" end-local-pos="100" name-position="-1,-16">
+                      <points>
+                        <point x="887" y="280" />
+                        <point x="669" y="258" />
+                      </points>
+                    </layout>
+                    <relation from="3134f526a5054268a56ce01e401ef03e" from-iid="9527f130bccf41ac9f4d162c736d6618" to="43f664ccc0854e5ea60d9472edbd22f8" to-iid="7d66dbb22ea1447b9708963b9d77910c" />
+                  </item>
+                  <item id="22b132451125402dbd9ef4182df9202f" iid="5a2f04b8eea440a496673ae3746bcec4" creation-date="01/04/2024 19:32:43" order-index="12" type="entity">
+                    <layout ax="569" ay="25" awidth="150" aheight="90" x="569" y="25" width="150" height="90" />
+                  </item>
+                  <item id="0778a45b1c734414be8558fedef159f8" iid="9eb7392631244093b54726852837e585" creation-date="01/04/2024 19:33:20" order-index="13" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="719" y1="90" x2="992" y2="154" start-border-pos="0.4305555555555556" end-border-pos="0.15" start-local-pos="65" end-local-pos="105" name-position="-30,21">
+                      <points>
+                        <point x="719" y="90" />
+                        <point x="992" y="154" />
+                      </points>
+                    </layout>
+                    <relation from="22b132451125402dbd9ef4182df9202f" from-iid="5a2f04b8eea440a496673ae3746bcec4" to="6ef8ea42cde946228963ba81f410f8e5" to-iid="16240c3fe8bd4d3786c61d99ad7eb383" />
+                  </item>
+                  <item id="869e42f51df84531800fa487574972b4" iid="0a9ae2af779446baa99aa20060e60e26" creation-date="01/04/2024 19:33:45" order-index="14" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1028" y1="154" x2="719" y2="70" start-border-pos="0.20142857142857143" end-border-pos="0.375" start-local-pos="141" end-local-pos="45" name-position="-22,-15">
+                      <points>
+                        <point x="1028" y="154" />
+                        <point x="719" y="70" />
+                      </points>
+                    </layout>
+                    <relation from="6ef8ea42cde946228963ba81f410f8e5" from-iid="16240c3fe8bd4d3786c61d99ad7eb383" to="22b132451125402dbd9ef4182df9202f" to-iid="5a2f04b8eea440a496673ae3746bcec4" />
+                  </item>
+                  <item id="02f8b922a474446aafb1e1d59353cba0" iid="a9b42b0eab7d43e2a91fea3bd33f03d5" creation-date="01/04/2024 19:34:17" order-index="16" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="569" y1="57" x2="267" y2="264" start-border-pos="0.9111111111111111" end-border-pos="0.06751824817518248" start-local-pos="32" end-local-pos="37" name-position="69,22">
+                      <points>
+                        <point x="569" y="57" />
+                        <point x="267" y="264" />
+                      </points>
+                    </layout>
+                    <relation from="22b132451125402dbd9ef4182df9202f" from-iid="5a2f04b8eea440a496673ae3746bcec4" to="5017a589130c42f299e75e1d0ea03e12" to-iid="c5772c50863c40a898526fea3fd56952" />
+                  </item>
+                  <item id="2412ab59c5994d408fa050bf27b65261" iid="cc77a625313a49bc85b032083d0f07c9" creation-date="01/04/2024 19:36:33" order-index="17" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="266" y1="334" x2="484" y2="456" start-border-pos="0.6843065693430657" end-border-pos="0.7807017543859649" start-local-pos="36" end-local-pos="100" name-position="46,23">
+                      <points>
+                        <point x="266" y="334" />
+                        <point x="484" y="456" />
+                      </points>
+                    </layout>
+                    <relation from="5017a589130c42f299e75e1d0ea03e12" from-iid="c5772c50863c40a898526fea3fd56952" to="471888d7fc9e4f9dbe9c6f01300292b7" to-iid="981f0de57f81462f9425ae7195edb627" />
+                  </item>
+                  <item id="711bf902531343fabffdf123c671db3d" iid="a0fe6bd6bf504db09e23e3d03bdf1ff2" creation-date="01/04/2024 19:37:05" order-index="18" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="677" y1="433" x2="894" y2="437" start-border-pos="0.41885964912280704" end-border-pos="0.7892857142857143" start-local-pos="77" end-local-pos="59" name-position="4,35">
+                      <points>
+                        <point x="677" y="433" />
+                        <point x="894" y="437" />
+                      </points>
+                    </layout>
+                    <relation from="471888d7fc9e4f9dbe9c6f01300292b7" from-iid="981f0de57f81462f9425ae7195edb627" to="f52dc7f918a544d19fc5adc6083ca267" to-iid="27ddac2ab23b4920be3614deaaa047e7" />
+                  </item>
+                  <item id="aff06ad180224c29abf1b2629041e48d" iid="dfc81e4fdc6f42169b027a514abacd02" creation-date="01/04/2024 19:37:25" order-index="19" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="894" y1="399" x2="677" y2="400" start-border-pos="0.925" end-border-pos="0.3464912280701754" start-local-pos="21" end-local-pos="44" name-position="4,-21">
+                      <points>
+                        <point x="894" y="399" />
+                        <point x="677" y="400" />
+                      </points>
+                    </layout>
+                    <relation from="f52dc7f918a544d19fc5adc6083ca267" from-iid="27ddac2ab23b4920be3614deaaa047e7" to="471888d7fc9e4f9dbe9c6f01300292b7" to-iid="981f0de57f81462f9425ae7195edb627" />
+                  </item>
+                  <item id="9f523417c0454b0489e4e6a8b7eb7887" iid="e34972e8829440489cb47cdb35ad2f7b" creation-date="01/04/2024 19:37:35" order-index="20" type="relation">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="484" y1="402" x2="298" y2="334" start-border-pos="0.8991228070175439" end-border-pos="0.6259124087591241" start-local-pos="46" end-local-pos="68" name-position="0,20">
+                      <points>
+                        <point x="484" y="402" />
+                        <point x="298" y="334" />
+                      </points>
+                    </layout>
+                    <relation from="471888d7fc9e4f9dbe9c6f01300292b7" from-iid="981f0de57f81462f9425ae7195edb627" to="5017a589130c42f299e75e1d0ea03e12" to-iid="c5772c50863c40a898526fea3fd56952" />
+                  </item>
+                </layer>
               </diagram>
             </nested-diagrams>
           </item>
-          <item id="2d26ad898a914c97858d884fae43e08d" cid="DFE003" type="dfd-external" name="Авторизованный пользователь" creation-date="12/25/2023 22:38:58" />
           <item id="7ee75dedfa3c427b8d8fefd61a87a10e" cid="DFF010" type="dfd-data-flow" name="Команды по управлению &#xD;&#xA;правами пользователей" creation-date="12/25/2023 22:50:58" from="ec602cbb626c4f038dc724a99acf7a62" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="978c20af954b4712b73c576cd718f8d9" cid="DFE004" type="dfd-external" name="Модератор" creation-date="12/25/2023 22:43:22" />
-          <item id="e430729db4024ffb8e8f0c5957a80df9" cid="DFF009" type="dfd-data-flow" name="Статистика &#xD;&#xA;канала" creation-date="12/25/2023 22:49:32" from="e84eae42809d45b2b87e51d296e85c3a" to="d478096fa0b84541ae1801bda41e7d41" />
           <item id="c980cf45d9594f86a0d4dfc28424077e" cid="DFF002" type="dfd-data-flow" name="Видеоконтент, &#xD;&#xA;каталоги видео" creation-date="12/25/2023 22:34:42" from="e84eae42809d45b2b87e51d296e85c3a" to="98b07c7c3a9f4763a6284b71ad557e91" />
-          <item id="ec602cbb626c4f038dc724a99acf7a62" cid="DFE005" type="dfd-external" name="Администратор" creation-date="12/25/2023 22:43:41" />
-          <item id="5017a589130c42f299e75e1d0ea03e12" cid="DFE006" type="dfd-external" name="Рекламодатель" creation-date="12/25/2023 22:43:52" />
-          <item id="d478096fa0b84541ae1801bda41e7d41" cid="DFE007" type="dfd-external" name="Автор видео" creation-date="12/25/2023 22:46:18" />
-          <item id="50fd9ace5d3945f1a8bc4ed52d75366e" cid="DFF004" type="dfd-data-flow" name="Оценки видео, &#xD;&#xA;управление библиотекой,&#xD;&#xA;комментарии" creation-date="12/25/2023 22:39:37" from="2d26ad898a914c97858d884fae43e08d" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="1fd8f0d085494b67928edf4d5851dd20" cid="DFF001" type="dfd-data-flow" name="Запросы видео" creation-date="12/25/2023 22:33:33" from="98b07c7c3a9f4763a6284b71ad557e91" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="31fd726ac4ff45549890c8b04d145a16" cid="DFF011" type="dfd-data-flow" name="Данные рекламных объявлений, настройки рекламных кампаний" creation-date="12/25/2023 22:54:26" from="5017a589130c42f299e75e1d0ea03e12" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="bf234b1da39643c3917e9613cf9dfd28" cid="DFF005" type="dfd-data-flow" name="Данные библиотеки, &#xD;&#xA;рекомендации" creation-date="12/25/2023 22:40:42" from="e84eae42809d45b2b87e51d296e85c3a" to="2d26ad898a914c97858d884fae43e08d" />
+          <item id="978c20af954b4712b73c576cd718f8d9" cid="DFE004" type="dfd-external" name="Модератор" creation-date="12/25/2023 22:43:22" />
+          <item id="a38bf6f6c969459489d89493192b024f" cid="DFF008" type="dfd-data-flow" name="Видеоконтент" creation-date="12/25/2023 22:48:42" from="d478096fa0b84541ae1801bda41e7d41" to="e84eae42809d45b2b87e51d296e85c3a" />
           <item id="4313a93f2b8f41dfb92c668d49e054e7" cid="DFF006" type="dfd-data-flow" name="Команды по управлению каталогом" creation-date="12/25/2023 22:44:46" from="978c20af954b4712b73c576cd718f8d9" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="b884df10f25344ef84dd36c09a04bf4e" cid="DFF012" type="dfd-data-flow" name="Статистика показов &#xD;&#xA;обьявлений, аналитика" creation-date="12/25/2023 22:55:10" from="e84eae42809d45b2b87e51d296e85c3a" to="5017a589130c42f299e75e1d0ea03e12" />
+          <item id="50fd9ace5d3945f1a8bc4ed52d75366e" cid="DFF004" type="dfd-data-flow" name="Оценки видео, &#xD;&#xA;управление библиотекой,&#xD;&#xA;комментарии,&#xD;&#xA;подписки" creation-date="12/25/2023 22:39:37" from="2d26ad898a914c97858d884fae43e08d" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="f60d0c01ecd04e53833546f28bacd778" cid="DFF007" type="dfd-data-flow" name="Видеоконтент, &#xD;&#xA;комментарии" creation-date="12/25/2023 22:46:45" from="e84eae42809d45b2b87e51d296e85c3a" to="978c20af954b4712b73c576cd718f8d9" />
+          <item id="e430729db4024ffb8e8f0c5957a80df9" cid="DFF009" type="dfd-data-flow" name="Статистика &#xD;&#xA;канала" creation-date="12/25/2023 22:49:32" from="e84eae42809d45b2b87e51d296e85c3a" to="d478096fa0b84541ae1801bda41e7d41" />
+          <item id="98b07c7c3a9f4763a6284b71ad557e91" cid="DFE002" type="dfd-external" name="Пользователь" creation-date="12/25/2023 22:27:42" />
+          <item id="5017a589130c42f299e75e1d0ea03e12" cid="DFE006" type="dfd-external" name="Рекламодатель" creation-date="12/25/2023 22:43:52" />
         </abstract-items>
         <layer id="cc6b460afd9d481cb7a9db686f08e6f0" name="Default" visible="true" enabled="true" locked="false">
           <item id="e84eae42809d45b2b87e51d296e85c3a" iid="d1b69754d26a4096b9f5c6fc020763b0" creation-date="12/16/2023 00:10:48" order-index="0" type="entity">
@@ -735,7 +1706,7 @@
             <relation from="e84eae42809d45b2b87e51d296e85c3a" from-iid="d1b69754d26a4096b9f5c6fc020763b0" to="98b07c7c3a9f4763a6284b71ad557e91" to-iid="fe4b6b8f547a48c086abc3b73d7abd19" />
           </item>
           <item id="50fd9ace5d3945f1a8bc4ed52d75366e" iid="0d9af6b56ab04a4da87eee311ca9249c" creation-date="12/25/2023 22:39:37" order-index="5" type="relation">
-            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="406" y1="489" x2="600" y2="368" start-border-pos="0.12580645161290321" end-border-pos="0.8738317757009346" start-local-pos="78" end-local-pos="54" name-position="33,50">
+            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="406" y1="489" x2="600" y2="368" start-border-pos="0.12580645161290321" end-border-pos="0.8738317757009346" start-local-pos="78" end-local-pos="54" name-position="37,57" name-width="123">
               <points>
                 <point x="406" y="489" />
                 <point x="408" y="368" />

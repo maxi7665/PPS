@@ -5,11 +5,11 @@
     <authors> </authors>
     <description />
   </meta>
-  <counters diagrams="10" models="1">
+  <counters diagrams="11" models="1">
     <entity-names>
       <counter>
         <item-type type-id="dfd-process" type="Process" />
-        <value>30</value>
+        <value>33</value>
       </counter>
       <counter>
         <item-type type-id="dfd-external" type="External" />
@@ -23,7 +23,7 @@
     <entity-ids>
       <counter>
         <item-type type-id="dfd-process" type="Process" />
-        <value>31</value>
+        <value>34</value>
       </counter>
       <counter>
         <item-type type-id="dfd-external" type="External" />
@@ -31,7 +31,7 @@
       </counter>
       <counter>
         <item-type type-id="dfd-data-flow" type="Data Flow" />
-        <value>137</value>
+        <value>154</value>
       </counter>
       <counter>
         <item-type type-id="dfd-data-store" type="Data Store" />
@@ -105,9 +105,20 @@
           <version />
         </meta>
         <abstract-items>
-          <item id="2d26ad898a914c97858d884fae43e08d" cid="DFE003" type="dfd-external" name="Авторизованный пользователь" creation-date="12/25/2023 22:38:58" />
-          <item id="d478096fa0b84541ae1801bda41e7d41" cid="DFE007" type="dfd-external" name="Автор видео" creation-date="12/25/2023 22:46:18" />
+          <item id="50fd9ace5d3945f1a8bc4ed52d75366e" cid="DFF004" type="dfd-data-flow" name="Оценки видео, &#xD;&#xA;управление библиотекой,&#xD;&#xA;комментарии,&#xD;&#xA;подписки" creation-date="12/25/2023 22:39:37" from="2d26ad898a914c97858d884fae43e08d" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="978c20af954b4712b73c576cd718f8d9" cid="DFE004" type="dfd-external" name="Модератор" creation-date="12/25/2023 22:43:22" />
           <item id="ec602cbb626c4f038dc724a99acf7a62" cid="DFE005" type="dfd-external" name="Администратор" creation-date="12/25/2023 22:43:41" />
+          <item id="e430729db4024ffb8e8f0c5957a80df9" cid="DFF009" type="dfd-data-flow" name="Статистика &#xD;&#xA;канала" creation-date="12/25/2023 22:49:32" from="e84eae42809d45b2b87e51d296e85c3a" to="d478096fa0b84541ae1801bda41e7d41" />
+          <item id="c980cf45d9594f86a0d4dfc28424077e" cid="DFF002" type="dfd-data-flow" name="Видеоконтент, &#xD;&#xA;каталоги видео" creation-date="12/25/2023 22:34:42" from="e84eae42809d45b2b87e51d296e85c3a" to="98b07c7c3a9f4763a6284b71ad557e91" />
+          <item id="f60d0c01ecd04e53833546f28bacd778" cid="DFF007" type="dfd-data-flow" name="Видеоконтент, &#xD;&#xA;комментарии" creation-date="12/25/2023 22:46:45" from="e84eae42809d45b2b87e51d296e85c3a" to="978c20af954b4712b73c576cd718f8d9" />
+          <item id="7ee75dedfa3c427b8d8fefd61a87a10e" cid="DFF010" type="dfd-data-flow" name="Команды по управлению &#xD;&#xA;правами пользователей" creation-date="12/25/2023 22:50:58" from="ec602cbb626c4f038dc724a99acf7a62" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="1fd8f0d085494b67928edf4d5851dd20" cid="DFF001" type="dfd-data-flow" name="Запросы видео" creation-date="12/25/2023 22:33:33" from="98b07c7c3a9f4763a6284b71ad557e91" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="bf234b1da39643c3917e9613cf9dfd28" cid="DFF005" type="dfd-data-flow" name="Данные библиотеки, &#xD;&#xA;рекомендации" creation-date="12/25/2023 22:40:42" from="e84eae42809d45b2b87e51d296e85c3a" to="2d26ad898a914c97858d884fae43e08d" />
+          <item id="31fd726ac4ff45549890c8b04d145a16" cid="DFF011" type="dfd-data-flow" name="Данные рекламных объявлений, настройки рекламных кампаний" creation-date="12/25/2023 22:54:26" from="5017a589130c42f299e75e1d0ea03e12" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="d478096fa0b84541ae1801bda41e7d41" cid="DFE007" type="dfd-external" name="Автор видео" creation-date="12/25/2023 22:46:18" />
+          <item id="2d26ad898a914c97858d884fae43e08d" cid="DFE003" type="dfd-external" name="Авторизованный пользователь" creation-date="12/25/2023 22:38:58" />
+          <item id="4313a93f2b8f41dfb92c668d49e054e7" cid="DFF006" type="dfd-data-flow" name="Команды по управлению каталогом" creation-date="12/25/2023 22:44:46" from="978c20af954b4712b73c576cd718f8d9" to="e84eae42809d45b2b87e51d296e85c3a" />
+          <item id="5017a589130c42f299e75e1d0ea03e12" cid="DFE006" type="dfd-external" name="Рекламодатель" creation-date="12/25/2023 22:43:52" />
           <item id="e84eae42809d45b2b87e51d296e85c3a" cid="" type="dfd-process" name="Сервис для хостинга и просмотра видео" creator="" creation-date="12/16/2023 00:10:48">
             <nested-diagrams>
               <diagram type="gane-sarson-data-flow" id="p6bdcd444b5384b458fecf5167d0cc008_125068403" name="DFD1_User" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,-190">
@@ -127,23 +138,31 @@
                   <version />
                 </meta>
                 <abstract-items>
-                  <item id="223a7da060464a0eada96eb611a34775" cid="DFF061" type="dfd-data-flow" name="Названия, метаданные каналов" creation-date="01/04/2024 14:41:16" from="2bb26c90d88547ca92279334b7bd1b0f" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="13b7cb2f5c50441aa413aba5bedf1ed4" cid="DFP012" type="dfd-process" name="Показать комментарии к видео" creation-date="01/03/2024 21:25:10" />
-                  <item id="9ed5a7f85d3e4c31bcf167db1a1f2f1a" cid="DFF020" type="dfd-data-flow" name="Видеопоток" creation-date="12/31/2023 18:14:45" from="aee2c09f0d5444f6976ad2f15dc12424" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="aee2c09f0d5444f6976ad2f15dc12424" cid="DFP003" type="dfd-process" name="Воспроизвести видеопоток" creation-date="12/31/2023 18:08:00" />
-                  <item id="a545257a42114685a752133f9d76c2c7" cid="DFF033" type="dfd-data-flow" name="Идентификатор видео" creation-date="01/03/2024 21:30:06" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="a0df2e3a15a64b7f80a32c4d5904d597" cid="DFF031" type="dfd-data-flow" name="Запрос с идентификатором видео" creation-date="01/03/2024 21:28:26" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="578d8c2ab54b4a8d8f59f17b9033df4b" cid="DFF025" type="dfd-data-flow" name="Данные сессии авторизации" creation-date="01/03/2024 20:29:23" from="6c726091b717467286f76b782ea76081" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="7aeeb6cb4cdd4351b01e089a13552ab3" cid="DFF023" type="dfd-data-flow" name="Запрос, сверяющий учетные данные&#xD;&#xA;(логин, хеш пароля)" creation-date="12/31/2023 18:22:46" from="6c726091b717467286f76b782ea76081" to="d0eb480834fb40ab9530d60d4f28aa6b" />
+                  <item id="37283b78c3a74cc8bfc7d9468f958c5c" cid="DFF024" type="dfd-data-flow" name="Результат выполнения запроса" creation-date="01/03/2024 20:14:19" from="d0eb480834fb40ab9530d60d4f28aa6b" to="6c726091b717467286f76b782ea76081" />
                   <item id="9e9669d399774e2db2c3fbcd30c5b76f" cid="DFF019" type="dfd-data-flow" name="Содержимое файла" creation-date="12/31/2023 18:12:44" from="597cc54af10d441097b8f1f5279e23ca" to="aee2c09f0d5444f6976ad2f15dc12424" />
-                  <item id="200cfb69510a4753bacbe5ddcbfa88ad" cid="DFF032" type="dfd-data-flow" name="Данные комментариев" creation-date="01/03/2024 21:29:27" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="13b7cb2f5c50441aa413aba5bedf1ed4" />
-                  <item id="d7f6042698204ffd9fa5c3eb790e4fad" cid="DFF062" type="dfd-data-flow" name="Запрос к таблице данных каналов" creation-date="01/04/2024 14:42:43" from="2bb26c90d88547ca92279334b7bd1b0f" to="678bef3f024343f8843ff3fc33225cb6" />
+                  <item id="7aeeb6cb4cdd4351b01e089a13552ab3" cid="DFF023" type="dfd-data-flow" name="Запрос, сверяющий учетные данные&#xD;&#xA;(логин, хеш пароля)" creation-date="12/31/2023 18:22:46" from="6c726091b717467286f76b782ea76081" to="d0eb480834fb40ab9530d60d4f28aa6b" />
+                  <item id="b1e553ab483344c0b34204fa361f0352" cid="DFF015" type="dfd-data-flow" name="Список видеозаписей с метаданными" creation-date="12/31/2023 18:02:14" from="3a3d757acf054ea6ab6adbd358308227" to="4c750e365bac44bf9eeb745e073856e3" />
+                  <item id="18c54a6fee384f3889f95dda9c701a6b" cid="DFF021" type="dfd-data-flow" name="Данные, введенные в форме входа" creation-date="12/31/2023 18:20:50" from="98b07c7c3a9f4763a6284b71ad557e91" to="6c726091b717467286f76b782ea76081" />
+                  <item id="285ae41639a94892957f25f33738adfd" cid="DFF016" type="dfd-data-flow" name="Названия, метаданные видеозаписей" creation-date="12/31/2023 18:04:06" from="4c750e365bac44bf9eeb745e073856e3" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="578d8c2ab54b4a8d8f59f17b9033df4b" cid="DFF025" type="dfd-data-flow" name="Данные сессии авторизации" creation-date="01/03/2024 20:29:23" from="6c726091b717467286f76b782ea76081" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="7e6162b9b8d04e12bd000f7792fc7222" cid="DFF014" type="dfd-data-flow" name="Запрос к таблице видеозаписей" creation-date="12/31/2023 18:01:28" from="4c750e365bac44bf9eeb745e073856e3" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="2bb26c90d88547ca92279334b7bd1b0f" cid="DFP015" type="dfd-process" name="Показать список каналов по запросу" creation-date="01/04/2024 14:40:18" />
                   <item id="1169a647d5c84fccba1ed23c676e8c38" cid="DFF034" type="dfd-data-flow" name="Список комментариев" creation-date="01/03/2024 21:33:44" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="597cc54af10d441097b8f1f5279e23ca" cid="DFS002" type="dfd-data-store" name="Хранилище видеоконтента" creation-date="12/31/2023 18:05:31" />
+                  <item id="ceac03df30024d1583d503a0523849f7" cid="DFF013" type="dfd-data-flow" name="Поисковый запрос" creation-date="12/31/2023 18:01:04" from="98b07c7c3a9f4763a6284b71ad557e91" to="4c750e365bac44bf9eeb745e073856e3" />
+                  <item id="a0df2e3a15a64b7f80a32c4d5904d597" cid="DFF031" type="dfd-data-flow" name="Запрос с идентификатором видео" creation-date="01/03/2024 21:28:26" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="868b86e5a94e44099ce62302fc7648c6" cid="DFF017" type="dfd-data-flow" name="Идентификатор видео" creation-date="12/31/2023 18:08:56" from="98b07c7c3a9f4763a6284b71ad557e91" to="aee2c09f0d5444f6976ad2f15dc12424" />
+                  <item id="f7bbfd0c88d84bcca0b159147db63788" cid="DFF060" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/04/2024 14:40:57" from="98b07c7c3a9f4763a6284b71ad557e91" to="2bb26c90d88547ca92279334b7bd1b0f" />
                   <item id="b89c37b8f58640e7b2ea56b3c3dae7a0" cid="DFS006" type="dfd-data-store" name="Комментарии к видео" creation-date="01/03/2024 21:27:54" />
-                  <item id="6c726091b717467286f76b782ea76081" cid="DFP004" type="dfd-process" name="Авторизовать пользователя" creation-date="12/31/2023 18:19:44" />
+                  <item id="aee2c09f0d5444f6976ad2f15dc12424" cid="DFP003" type="dfd-process" name="Воспроизвести видеопоток" creation-date="12/31/2023 18:08:00" />
+                  <item id="d7f6042698204ffd9fa5c3eb790e4fad" cid="DFF062" type="dfd-data-flow" name="Запрос к таблице данных каналов" creation-date="01/04/2024 14:42:43" from="2bb26c90d88547ca92279334b7bd1b0f" to="678bef3f024343f8843ff3fc33225cb6" />
+                  <item id="3a3d757acf054ea6ab6adbd358308227" cid="DFS001" type="dfd-data-store" name="Данные видеозаписей" creation-date="12/31/2023 17:39:49" />
+                  <item id="7870a874a4c349b59033aea6a340389a" cid="DFF018" type="dfd-data-flow" name="Запрос содержимого файла" creation-date="12/31/2023 18:11:17" from="aee2c09f0d5444f6976ad2f15dc12424" to="597cc54af10d441097b8f1f5279e23ca" />
+                  <item id="13b7cb2f5c50441aa413aba5bedf1ed4" cid="DFP012" type="dfd-process" name="Показать комментарии к видео" creation-date="01/03/2024 21:25:10" />
+                  <item id="678bef3f024343f8843ff3fc33225cb6" cid="DFS011" type="dfd-data-store" name="Данные каналов" creation-date="01/04/2024 14:42:32" />
                   <item id="4c750e365bac44bf9eeb745e073856e3" cid="DFP002" type="dfd-process" name="Показать список видео по запросу" creation-date="12/31/2023 18:00:11">
                     <nested-diagrams>
-                      <diagram type="gane-sarson-data-flow" id="pb688692a65ed424b82dc774efb7a2a5d_162641734" name="DFD2_002_VideoSearch" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default" view-location="0,-270">
+                      <diagram type="gane-sarson-data-flow" id="pb688692a65ed424b82dc774efb7a2a5d_162641734" name="DFD2_002_VideoSearch" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,-270">
                         <style>
                           <background-color index="1" color="#FFFFFFFF" />
                           <background-color index="2" color="#FFFFFFFF" />
@@ -155,37 +174,43 @@
                           </authors>
                           <description />
                           <creation-date>01/04/2024 19:50:35</creation-date>
-                          <change-date>01/04/2024 20:55:22</change-date>
+                          <change-date>01/05/2024 13:40:55</change-date>
                           <revision-count>0</revision-count>
                           <version />
                         </meta>
                         <abstract-items>
-                          <item id="ea03546eda0a45a58b520b80251e132b" cid="DFF126" type="dfd-data-flow" name="Запрос поиска плейлистов по поисковому запросу" creation-date="01/04/2024 20:47:33" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="4e14021aee0f40c5881ca3b285a12991" />
-                          <item id="c29258c56fc24fcfa0f626d2b1ccfa8c" cid="DFP029" type="dfd-process" name="Собрать идентификаторы видео из плейлистов" creation-date="01/04/2024 20:46:29" />
-                          <item id="1854c8d369254da7879e69ba162b794b" cid="DFP028" type="dfd-process" name="Выполнить поиск видео" creation-date="01/04/2024 20:43:55" />
-                          <item id="cb56c9c1e9ef4b1fb0682941ce370d21" cid="DFF131" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/04/2024 20:51:49" from="7f5562318139411988e4c493ae37b9ee" to="0a83dc2533474cd9a9fc81e0c2c20545" />
-                          <item id="2f516307607a4377b96e183206b198b3" cid="DFF132" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:52:08" from="0a83dc2533474cd9a9fc81e0c2c20545" to="7f5562318139411988e4c493ae37b9ee" />
-                          <item id="7f5562318139411988e4c493ae37b9ee" cid="DFP027" type="dfd-process" name="Собрать идентификаторы видео из связанных сущностей" creation-date="01/04/2024 20:39:41" />
-                          <item id="720e67acc1c949888309db42161aca51" cid="DFF130" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:49:51" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="7f5562318139411988e4c493ae37b9ee" />
-                          <item id="839e2303c0904f2e9f7b6342b582e84d" cid="DFF135" type="dfd-data-flow" name="Запрос поиска видео на каналах" creation-date="01/04/2024 20:54:54" from="0a83dc2533474cd9a9fc81e0c2c20545" to="3a3d757acf054ea6ab6adbd358308227" />
-                          <item id="53c88bf09f834ed981342e73e738cf6f" cid="DFF129" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:49:32" from="83353f82cbf54b94b13204443e09b291" to="c29258c56fc24fcfa0f626d2b1ccfa8c" />
+                          <item id="0a83dc2533474cd9a9fc81e0c2c20545" cid="DFP002.3" type="dfd-process" name="Собрать идентификаторы видео из каналов" creation-date="01/04/2024 20:51:21" />
                           <item id="f8eaeadec0d741de905d1cac754449df" cid="DFF125" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/04/2024 20:47:00" from="7f5562318139411988e4c493ae37b9ee" to="c29258c56fc24fcfa0f626d2b1ccfa8c" />
-                          <item id="0a83dc2533474cd9a9fc81e0c2c20545" cid="DFP030" type="dfd-process" name="Собрать идентификаторы видео из каналов" creation-date="01/04/2024 20:51:21" />
-                          <item id="6d51c74ca15c48b4bb342949e398be8d" cid="DFF128" type="dfd-data-flow" name="Запрос поиска видео в плейлистах по запросу" creation-date="01/04/2024 20:48:42" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="83353f82cbf54b94b13204443e09b291" />
-                          <item id="e90fa233c12d46febae2e6b8a31db37a" cid="DFF127" type="dfd-data-flow" name="Данные плейлистов" creation-date="01/04/2024 20:48:11" from="4e14021aee0f40c5881ca3b285a12991" to="c29258c56fc24fcfa0f626d2b1ccfa8c" />
                           <item id="3f196a4ebad44f01a8048af82f338523" cid="DFF136" type="dfd-data-flow" creation-date="01/04/2024 20:55:22" from="3a3d757acf054ea6ab6adbd358308227" to="0a83dc2533474cd9a9fc81e0c2c20545" />
-                          <item id="a58e7f112d354ba6b77e914f616e2261" cid="DFF133" type="dfd-data-flow" name="Запрос поиска каналов" creation-date="01/04/2024 20:54:17" from="0a83dc2533474cd9a9fc81e0c2c20545" to="678bef3f024343f8843ff3fc33225cb6" />
+                          <item id="839e2303c0904f2e9f7b6342b582e84d" cid="DFF135" type="dfd-data-flow" name="Запрос поиска видео на каналах" creation-date="01/04/2024 20:54:54" from="0a83dc2533474cd9a9fc81e0c2c20545" to="3a3d757acf054ea6ab6adbd358308227" />
+                          <item id="0593536d87304bf59b5e77d8d44682e8" cid="DFF143" type="dfd-data-flow" name="Список найденных видеозаписей" creation-date="01/05/2024 13:40:55" from="7f5562318139411988e4c493ae37b9ee" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                          <item id="2f516307607a4377b96e183206b198b3" cid="DFF132" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:52:08" from="0a83dc2533474cd9a9fc81e0c2c20545" to="7f5562318139411988e4c493ae37b9ee" />
+                          <item id="1854c8d369254da7879e69ba162b794b" cid="DFP002.4" type="dfd-process" name="Выполнить поиск видео" creation-date="01/04/2024 20:43:55" />
+                          <item id="cb56c9c1e9ef4b1fb0682941ce370d21" cid="DFF131" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/04/2024 20:51:49" from="7f5562318139411988e4c493ae37b9ee" to="0a83dc2533474cd9a9fc81e0c2c20545" />
+                          <item id="53c88bf09f834ed981342e73e738cf6f" cid="DFF129" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:49:32" from="83353f82cbf54b94b13204443e09b291" to="c29258c56fc24fcfa0f626d2b1ccfa8c" />
+                          <item id="526e5460de23409bac521c7594b26380" cid="DFF140" type="dfd-data-flow" name="Запрос поиска видео по метаданным или ИД" creation-date="01/05/2024 13:39:09" from="1854c8d369254da7879e69ba162b794b" to="3a3d757acf054ea6ab6adbd358308227" />
+                          <item id="6d51c74ca15c48b4bb342949e398be8d" cid="DFF128" type="dfd-data-flow" name="Запрос поиска видео в плейлистах по запросу" creation-date="01/04/2024 20:48:42" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="83353f82cbf54b94b13204443e09b291" />
+                          <item id="7f5562318139411988e4c493ae37b9ee" cid="DFP002.2" type="dfd-process" name="Собрать идентификаторы видео из связанных сущностей" creation-date="01/04/2024 20:39:41" />
+                          <item id="ea03546eda0a45a58b520b80251e132b" cid="DFF126" type="dfd-data-flow" name="Запрос поиска плейлистов по поисковому запросу" creation-date="01/04/2024 20:47:33" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="4e14021aee0f40c5881ca3b285a12991" />
+                          <item id="79d36dc9b5dd4314a73557711f7ef247" cid="DFF137" type="dfd-data-flow" name="Поисковый запрос, ИД видеозаписей" creation-date="01/05/2024 13:37:56" from="7f5562318139411988e4c493ae37b9ee" to="1854c8d369254da7879e69ba162b794b" />
                           <item id="a17ae81ce20e4847ad135b143a5c709d" cid="DFF134" type="dfd-data-flow" name="Данные каналов" creation-date="01/04/2024 20:54:42" from="678bef3f024343f8843ff3fc33225cb6" to="0a83dc2533474cd9a9fc81e0c2c20545" />
+                          <item id="bdc11bc1d50145b1afa149e4d416d563" cid="DFF142" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/05/2024 13:40:43" from="98b07c7c3a9f4763a6284b71ad557e91" to="7f5562318139411988e4c493ae37b9ee" />
+                          <item id="a58e7f112d354ba6b77e914f616e2261" cid="DFF133" type="dfd-data-flow" name="Запрос поиска каналов" creation-date="01/04/2024 20:54:17" from="0a83dc2533474cd9a9fc81e0c2c20545" to="678bef3f024343f8843ff3fc33225cb6" />
+                          <item id="638502f1b80a4acd8c9564af0f148b97" cid="DFF138" type="dfd-data-flow" name="Список найденных видеозаписей" creation-date="01/05/2024 13:38:32" from="1854c8d369254da7879e69ba162b794b" to="7f5562318139411988e4c493ae37b9ee" />
+                          <item id="4c1f8979a9cc46fbbf68425fc8aa1808" cid="DFF141" type="dfd-data-flow" name="Список найденных видеозаписей" creation-date="01/05/2024 13:40:29" from="3a3d757acf054ea6ab6adbd358308227" to="1854c8d369254da7879e69ba162b794b" />
+                          <item id="e90fa233c12d46febae2e6b8a31db37a" cid="DFF127" type="dfd-data-flow" name="Данные плейлистов" creation-date="01/04/2024 20:48:11" from="4e14021aee0f40c5881ca3b285a12991" to="c29258c56fc24fcfa0f626d2b1ccfa8c" />
+                          <item id="c29258c56fc24fcfa0f626d2b1ccfa8c" cid="DFP002.1" type="dfd-process" name="Собрать идентификаторы видео из плейлистов" creation-date="01/04/2024 20:46:29" />
+                          <item id="720e67acc1c949888309db42161aca51" cid="DFF130" type="dfd-data-flow" name="ИД видеозаписей" creation-date="01/04/2024 20:49:51" from="c29258c56fc24fcfa0f626d2b1ccfa8c" to="7f5562318139411988e4c493ae37b9ee" />
                         </abstract-items>
                         <layer id="6eece9cde2f24dcf8a797da3d2636bd1" name="Default" visible="true" enabled="true" locked="false">
-                          <item id="98b07c7c3a9f4763a6284b71ad557e91" iid="bb69e01a882049c981561b294ff0bb1e" creation-date="12/25/2023 22:27:42" order-index="0" type="entity">
-                            <layout ax="101" ay="182.5" awidth="155" aheight="70" x="101" y="182.5" width="155" height="70" />
-                          </item>
-                          <item id="3a3d757acf054ea6ab6adbd358308227" iid="f715af77bfdd46f29d16d11b70eb58e8" creation-date="12/31/2023 17:39:49" order-index="1" type="entity">
-                            <layout ax="795" ay="369" awidth="174" aheight="50" x="795" y="369" width="174" height="50" />
-                          </item>
                           <item id="678bef3f024343f8843ff3fc33225cb6" iid="9c1db6f69bd74334a1286aa6c1e8b50d" creation-date="01/04/2024 14:42:32" order-index="0" type="entity">
                             <layout ax="1130" ay="105" awidth="120" aheight="50" x="1130" y="105" width="120" height="50" />
+                          </item>
+                          <item id="3a3d757acf054ea6ab6adbd358308227" iid="f715af77bfdd46f29d16d11b70eb58e8" creation-date="12/31/2023 17:39:49" order-index="1" type="entity">
+                            <layout ax="794" ay="349" awidth="174" aheight="50" x="794" y="349" width="174" height="50" />
+                          </item>
+                          <item id="98b07c7c3a9f4763a6284b71ad557e91" iid="bb69e01a882049c981561b294ff0bb1e" creation-date="12/25/2023 22:27:42" order-index="0" type="entity">
+                            <layout ax="101" ay="182.5" awidth="155" aheight="70" x="101" y="182.5" width="155" height="70" />
                           </item>
                           <item id="7f5562318139411988e4c493ae37b9ee" iid="d66edadb52fa40d08556f0f4cae63433" creation-date="01/04/2024 20:39:41" order-index="2" type="entity">
                             <layout ax="436" ay="148" awidth="209" aheight="116" x="436" y="148" width="209" height="116" />
@@ -193,11 +218,11 @@
                           <item id="1854c8d369254da7879e69ba162b794b" iid="2186ac0330f14c349f66b08a5256972b" creation-date="01/04/2024 20:43:55" order-index="3" type="entity">
                             <layout ax="480.5" ay="349" awidth="120" aheight="90" x="480.5" y="349" width="120" height="90" />
                           </item>
-                          <item id="83353f82cbf54b94b13204443e09b291" iid="88dde744cddd492b955d9e79ce100677" creation-date="01/03/2024 21:39:05" order-index="0" type="entity">
-                            <layout ax="807" ay="55" awidth="155" aheight="50" x="807" y="55" width="155" height="50" />
-                          </item>
                           <item id="4e14021aee0f40c5881ca3b285a12991" iid="0cf0ba5a88bc47879648e56176eed761" creation-date="01/03/2024 21:53:49" order-index="1" type="entity">
                             <layout ax="808" ay="-92" awidth="153" aheight="50" x="808" y="-92" width="153" height="50" />
+                          </item>
+                          <item id="83353f82cbf54b94b13204443e09b291" iid="88dde744cddd492b955d9e79ce100677" creation-date="01/03/2024 21:39:05" order-index="0" type="entity">
+                            <layout ax="807" ay="55" awidth="155" aheight="50" x="807" y="55" width="155" height="50" />
                           </item>
                           <item id="c29258c56fc24fcfa0f626d2b1ccfa8c" iid="8dd0b78e58f14066aa7d0730d6312ed9" creation-date="01/04/2024 20:46:29" order-index="4" type="entity">
                             <layout ax="453.5" ay="-76" awidth="174" aheight="90" x="453.5" y="-76" width="174" height="90" />
@@ -209,7 +234,7 @@
                                 <point x="476" y="14" />
                               </points>
                             </layout>
-                            <relation from="7f5562318139411988e4c493ae37b9ee" from-iid="d66edadb52fa40d08556f0f4cae63433" to="c29258c56fc24fcfa0f626d2b1ccfa8c" to-iid="8dd0b78e58f14066aa7d0730d6312ed9" />
+                            <relation />
                           </item>
                           <item id="ea03546eda0a45a58b520b80251e132b" iid="1c13f9d474014dd48a36cff72622d8dc" creation-date="01/04/2024 20:47:33" order-index="6" type="relation">
                             <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="628" y1="-64" x2="808" y2="-64" start-border-pos="0.2833333333333333" end-border-pos="0.86" start-local-pos="12" end-local-pos="25" name-position="1,48">
@@ -218,7 +243,7 @@
                                 <point x="808" y="-64" />
                               </points>
                             </layout>
-                            <relation from="c29258c56fc24fcfa0f626d2b1ccfa8c" from-iid="8dd0b78e58f14066aa7d0730d6312ed9" to="4e14021aee0f40c5881ca3b285a12991" to-iid="0cf0ba5a88bc47879648e56176eed761" />
+                            <relation />
                           </item>
                           <item id="e90fa233c12d46febae2e6b8a31db37a" iid="8e6efa32a501408ab1b76bcd8ae595f4" creation-date="01/04/2024 20:48:11" order-index="7" type="relation">
                             <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="874" y1="-92" x2="572" y2="-76" start-border-pos="0.10784313827753067" end-border-pos="0.17025862634181976" start-local-pos="66" end-local-pos="118.5" name-position="-6,34">
@@ -227,7 +252,7 @@
                                 <point x="572" y="-76" />
                               </points>
                             </layout>
-                            <relation from="4e14021aee0f40c5881ca3b285a12991" from-iid="0cf0ba5a88bc47879648e56176eed761" to="c29258c56fc24fcfa0f626d2b1ccfa8c" to-iid="8dd0b78e58f14066aa7d0730d6312ed9" />
+                            <relation />
                           </item>
                           <item id="6d51c74ca15c48b4bb342949e398be8d" iid="fa7351bb402e445fa986ad67a3c3de60" creation-date="01/04/2024 20:48:42" order-index="8" type="relation">
                             <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="573" y1="14" x2="807" y2="93" start-border-pos="0.5783045962452888" end-border-pos="0.8099999986588955" start-local-pos="131.5" end-local-pos="38" name-position="66,31">
@@ -236,7 +261,7 @@
                                 <point x="807" y="93" />
                               </points>
                             </layout>
-                            <relation from="c29258c56fc24fcfa0f626d2b1ccfa8c" from-iid="8dd0b78e58f14066aa7d0730d6312ed9" to="83353f82cbf54b94b13204443e09b291" to-iid="88dde744cddd492b955d9e79ce100677" />
+                            <relation />
                           </item>
                           <item id="53c88bf09f834ed981342e73e738cf6f" iid="00808d963db34e6982e77529bbe7be51" creation-date="01/04/2024 20:49:32" order-index="9" type="relation">
                             <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="807" y1="65" x2="600" y2="14" start-border-pos="0.95" end-border-pos="0.5387931034482759" start-local-pos="10" end-local-pos="147" name-position="15,-19">
@@ -245,7 +270,7 @@
                                 <point x="600" y="14" />
                               </points>
                             </layout>
-                            <relation from="83353f82cbf54b94b13204443e09b291" from-iid="88dde744cddd492b955d9e79ce100677" to="c29258c56fc24fcfa0f626d2b1ccfa8c" to-iid="8dd0b78e58f14066aa7d0730d6312ed9" />
+                            <relation />
                           </item>
                           <item id="720e67acc1c949888309db42161aca51" iid="47e224c793494f10817e203a3cb25d6c" creation-date="01/04/2024 20:49:51" order-index="10" type="relation">
                             <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="500" y1="14" x2="501" y2="148" start-border-pos="0.6831896603107452" end-border-pos="0.07775119692087173" start-local-pos="70.5" end-local-pos="89" name-position="38,-5" name-width="57">
@@ -254,7 +279,7 @@
                                 <point x="501" y="148" />
                               </points>
                             </layout>
-                            <relation from="c29258c56fc24fcfa0f626d2b1ccfa8c" from-iid="8dd0b78e58f14066aa7d0730d6312ed9" to="7f5562318139411988e4c493ae37b9ee" to-iid="d66edadb52fa40d08556f0f4cae63433" />
+                            <relation />
                           </item>
                           <item id="0a83dc2533474cd9a9fc81e0c2c20545" iid="33d07328f6c14f07bdb39e00be911819" creation-date="01/04/2024 20:51:21" order-index="11" type="entity">
                             <layout ax="807" ay="151.5" awidth="161" aheight="101" x="807" y="151.5" width="161" height="101" />
@@ -266,7 +291,7 @@
                                 <point x="807" y="235" />
                               </points>
                             </layout>
-                            <relation from="7f5562318139411988e4c493ae37b9ee" from-iid="d66edadb52fa40d08556f0f4cae63433" to="0a83dc2533474cd9a9fc81e0c2c20545" to-iid="33d07328f6c14f07bdb39e00be911819" />
+                            <relation />
                           </item>
                           <item id="2f516307607a4377b96e183206b198b3" iid="44604da629674660a82c2e221b5a8677" creation-date="01/04/2024 20:52:08" order-index="13" type="relation">
                             <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="807" y1="193" x2="645" y2="193" start-border-pos="0.8972772277227723" end-border-pos="0.34698276221752167" start-local-pos="37.5" end-local-pos="45" name-position="-2,-22">
@@ -275,10 +300,7 @@
                                 <point x="645" y="193" />
                               </points>
                             </layout>
-                            <relation from="0a83dc2533474cd9a9fc81e0c2c20545" from-iid="33d07328f6c14f07bdb39e00be911819" to="7f5562318139411988e4c493ae37b9ee" to-iid="d66edadb52fa40d08556f0f4cae63433" />
-                          </item>
-                          <item id="3a3d757acf054ea6ab6adbd358308227" iid="1c4ff392eace4bb6b5eb659bbac5ac93" creation-date="12/31/2023 17:39:49" order-index="0" type="entity">
-                            <layout ax="1130" ay="228" awidth="174" aheight="50" x="1130" y="228" width="174" height="50" />
+                            <relation />
                           </item>
                           <item id="a58e7f112d354ba6b77e914f616e2261" iid="50cda99548954b02acad3358f3c53636" creation-date="01/04/2024 20:54:17" order-index="14" type="relation">
                             <layout line-style="perpendicular" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="968" y1="152" x2="1130" y2="155" start-border-pos="0.2512376237427816" end-border-pos="0.75" start-local-pos="0.5" end-local-pos="50" name-position="6,28">
@@ -287,7 +309,7 @@
                                 <point x="1130" y="155" />
                               </points>
                             </layout>
-                            <relation from="0a83dc2533474cd9a9fc81e0c2c20545" from-iid="33d07328f6c14f07bdb39e00be911819" to="678bef3f024343f8843ff3fc33225cb6" to-iid="9c1db6f69bd74334a1286aa6c1e8b50d" />
+                            <relation />
                           </item>
                           <item id="a17ae81ce20e4847ad135b143a5c709d" iid="6a5cfa3ba51945e2948e2a2c3eb9317a" creation-date="01/04/2024 20:54:42" order-index="15" type="relation">
                             <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1130" y1="120" x2="943" y2="152" start-border-pos="0.925" end-border-pos="0.2111801242236025" start-local-pos="15" end-local-pos="136" name-position="7,19">
@@ -296,45 +318,91 @@
                                 <point x="943" y="152" />
                               </points>
                             </layout>
-                            <relation from="678bef3f024343f8843ff3fc33225cb6" from-iid="9c1db6f69bd74334a1286aa6c1e8b50d" to="0a83dc2533474cd9a9fc81e0c2c20545" to-iid="33d07328f6c14f07bdb39e00be911819" />
+                            <relation />
                           </item>
                           <item id="839e2303c0904f2e9f7b6342b582e84d" iid="959251175c0340b38d0b9240bb4e7275" creation-date="01/04/2024 20:54:54" order-index="16" type="relation">
-                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="867" y1="252" x2="868" y2="369" start-border-pos="0.656832292675972" end-border-pos="0.1048850566148758" start-local-pos="60" end-local-pos="74" name-position="-68,-8" name-width="114">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="867" y1="252.5" x2="866" y2="349" start-border-pos="0.656832292675972" end-border-pos="0.1034482792019844" start-local-pos="60" end-local-pos="72" name-position="-68,-8" name-width="114">
                               <points>
-                                <point x="867" y="252" />
-                                <point x="868" y="369" />
+                                <point x="867" y="252.5" />
+                                <point x="866" y="349" />
                               </points>
                             </layout>
-                            <relation from="0a83dc2533474cd9a9fc81e0c2c20545" from-iid="33d07328f6c14f07bdb39e00be911819" to="3a3d757acf054ea6ab6adbd358308227" to-iid="f715af77bfdd46f29d16d11b70eb58e8" />
+                            <relation to="3a3d757acf054ea6ab6adbd358308227" to-iid="f715af77bfdd46f29d16d11b70eb58e8" />
                           </item>
                           <item id="3f196a4ebad44f01a8048af82f338523" iid="eff13910cfb245439af5d3473c43e0e8" creation-date="01/04/2024 20:55:22" order-index="17" type="relation">
-                            <layout line-style="perpendicular" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="929" y1="369" x2="928" y2="252" start-border-pos="0.19252873957157135" end-border-pos="0.5621118023991585" start-local-pos="151" end-local-pos="121" name-position="0,20">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="928" y1="349" x2="928" y2="252" start-border-pos="0.19252873957157135" end-border-pos="0.5621118023991585" start-local-pos="134" end-local-pos="121" name-position="0,20">
                               <points>
-                                <point x="929" y="369" />
+                                <point x="928" y="349" />
                                 <point x="928" y="252" />
                               </points>
                             </layout>
-                            <relation from="3a3d757acf054ea6ab6adbd358308227" from-iid="f715af77bfdd46f29d16d11b70eb58e8" to="0a83dc2533474cd9a9fc81e0c2c20545" to-iid="33d07328f6c14f07bdb39e00be911819" />
+                            <relation from="3a3d757acf054ea6ab6adbd358308227" from-iid="f715af77bfdd46f29d16d11b70eb58e8" />
+                          </item>
+                          <item id="79d36dc9b5dd4314a73557711f7ef247" iid="05bc243e00894b898ebda3a67ba878d3" creation-date="01/05/2024 13:37:56" order-index="18" type="relation">
+                            <layout line-style="oblique" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="496" y1="264" x2="496" y2="349" start-border-pos="0.6782296650717703" end-border-pos="0.03229166666666667" start-local-pos="60" end-local-pos="15.5" name-position="-94,0" name-width="187">
+                              <points>
+                                <point x="496" y="264" />
+                                <point x="496" y="349" />
+                              </points>
+                            </layout>
+                            <relation from="7f5562318139411988e4c493ae37b9ee" from-iid="d66edadb52fa40d08556f0f4cae63433" to="1854c8d369254da7879e69ba162b794b" to-iid="2186ac0330f14c349f66b08a5256972b" />
+                          </item>
+                          <item id="638502f1b80a4acd8c9564af0f148b97" iid="a4faa7385a9d494d88cc95061d111582" creation-date="01/05/2024 13:38:32" order-index="19" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="578" y1="349" x2="579" y2="264" start-border-pos="0.203125" end-border-pos="0.5789473684210527" start-local-pos="97.5" end-local-pos="143" name-position="74,5" name-width="125">
+                              <points>
+                                <point x="578" y="349" />
+                                <point x="579" y="264" />
+                              </points>
+                            </layout>
+                            <relation from="1854c8d369254da7879e69ba162b794b" from-iid="2186ac0330f14c349f66b08a5256972b" to="7f5562318139411988e4c493ae37b9ee" to-iid="d66edadb52fa40d08556f0f4cae63433" />
+                          </item>
+                          <item id="526e5460de23409bac521c7594b26380" iid="374f62827ec943b18fbc3cebf52713c8" creation-date="01/05/2024 13:39:09" order-index="20" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="600" y1="427" x2="837" y2="399" start-border-pos="0.4666666666666667" end-border-pos="0.6882183908045977" start-local-pos="78" end-local-pos="43" name-position="1,36">
+                              <points>
+                                <point x="600" y="427" />
+                                <point x="837" y="399" />
+                              </points>
+                            </layout>
+                            <relation from="1854c8d369254da7879e69ba162b794b" from-iid="2186ac0330f14c349f66b08a5256972b" to="3a3d757acf054ea6ab6adbd358308227" to-iid="f715af77bfdd46f29d16d11b70eb58e8" />
+                          </item>
+                          <item id="4c1f8979a9cc46fbbf68425fc8aa1808" iid="e9da501cfd234a3db8486ccba1c99182" creation-date="01/05/2024 13:40:29" order-index="21" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="794" y1="374" x2="600" y2="369" start-border-pos="0.875" end-border-pos="0.3055555555555556" start-local-pos="25" end-local-pos="20" name-position="3,27">
+                              <points>
+                                <point x="794" y="374" />
+                                <point x="600" y="369" />
+                              </points>
+                            </layout>
+                            <relation from="3a3d757acf054ea6ab6adbd358308227" from-iid="f715af77bfdd46f29d16d11b70eb58e8" to="1854c8d369254da7879e69ba162b794b" to-iid="2186ac0330f14c349f66b08a5256972b" />
+                          </item>
+                          <item id="bdc11bc1d50145b1afa149e4d416d563" iid="eb1b3c3fd2364208833a0ac4ad0d6600" creation-date="01/05/2024 13:40:43" order-index="22" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="256" y1="233" x2="436" y2="233" start-border-pos="0.4303571432828903" end-border-pos="0.8168103448275862" start-local-pos="50.5" end-local-pos="89" name-position="0,20">
+                              <points>
+                                <point x="256" y="233" />
+                                <point x="436" y="233" />
+                              </points>
+                            </layout>
+                            <relation from="98b07c7c3a9f4763a6284b71ad557e91" from-iid="bb69e01a882049c981561b294ff0bb1e" to="7f5562318139411988e4c493ae37b9ee" to-iid="d66edadb52fa40d08556f0f4cae63433" />
+                          </item>
+                          <item id="0593536d87304bf59b5e77d8d44682e8" iid="bf64d2fba32848bcaaf616c91fdf2719" creation-date="01/05/2024 13:40:55" order-index="23" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="436" y1="191" x2="256" y2="191" start-border-pos="0.9073275923728943" end-border-pos="0.28035714285714286" start-local-pos="43" end-local-pos="11.5" name-position="4,-32">
+                              <points>
+                                <point x="436" y="191" />
+                                <point x="256" y="191" />
+                              </points>
+                            </layout>
+                            <relation from="7f5562318139411988e4c493ae37b9ee" from-iid="d66edadb52fa40d08556f0f4cae63433" to="98b07c7c3a9f4763a6284b71ad557e91" to-iid="bb69e01a882049c981561b294ff0bb1e" />
                           </item>
                         </layer>
                       </diagram>
                     </nested-diagrams>
                   </item>
-                  <item id="678bef3f024343f8843ff3fc33225cb6" cid="DFS011" type="dfd-data-store" name="Данные каналов" creation-date="01/04/2024 14:42:32" />
-                  <item id="eaa79dc195cb485c854807d1c72bc3a3" cid="DFF063" type="dfd-data-flow" name="Список каналов" creation-date="01/04/2024 14:43:19" from="678bef3f024343f8843ff3fc33225cb6" to="2bb26c90d88547ca92279334b7bd1b0f" />
-                  <item id="b1e553ab483344c0b34204fa361f0352" cid="DFF015" type="dfd-data-flow" name="Список видеозаписей с метаданными" creation-date="12/31/2023 18:02:14" from="3a3d757acf054ea6ab6adbd358308227" to="4c750e365bac44bf9eeb745e073856e3" />
-                  <item id="3a3d757acf054ea6ab6adbd358308227" cid="DFS001" type="dfd-data-store" name="Данные видеозаписей" creation-date="12/31/2023 17:39:49" />
-                  <item id="597cc54af10d441097b8f1f5279e23ca" cid="DFS002" type="dfd-data-store" name="Хранилище видеоконтента" creation-date="12/31/2023 18:05:31" />
-                  <item id="ceac03df30024d1583d503a0523849f7" cid="DFF013" type="dfd-data-flow" name="Поисковый запрос" creation-date="12/31/2023 18:01:04" from="98b07c7c3a9f4763a6284b71ad557e91" to="4c750e365bac44bf9eeb745e073856e3" />
                   <item id="d0eb480834fb40ab9530d60d4f28aa6b" cid="DFS003" type="dfd-data-store" name="Учетные данные пользователей" creation-date="01/03/2024 20:17:55" />
-                  <item id="7870a874a4c349b59033aea6a340389a" cid="DFF018" type="dfd-data-flow" name="Запрос содержимого файла" creation-date="12/31/2023 18:11:17" from="aee2c09f0d5444f6976ad2f15dc12424" to="597cc54af10d441097b8f1f5279e23ca" />
-                  <item id="37283b78c3a74cc8bfc7d9468f958c5c" cid="DFF024" type="dfd-data-flow" name="Результат выполнения запроса" creation-date="01/03/2024 20:14:19" from="d0eb480834fb40ab9530d60d4f28aa6b" to="6c726091b717467286f76b782ea76081" />
-                  <item id="f7bbfd0c88d84bcca0b159147db63788" cid="DFF060" type="dfd-data-flow" name="Поисковый запрос" creation-date="01/04/2024 14:40:57" from="98b07c7c3a9f4763a6284b71ad557e91" to="2bb26c90d88547ca92279334b7bd1b0f" />
-                  <item id="868b86e5a94e44099ce62302fc7648c6" cid="DFF017" type="dfd-data-flow" name="Идентификатор видео" creation-date="12/31/2023 18:08:56" from="98b07c7c3a9f4763a6284b71ad557e91" to="aee2c09f0d5444f6976ad2f15dc12424" />
-                  <item id="2bb26c90d88547ca92279334b7bd1b0f" cid="DFP015" type="dfd-process" name="Показать список каналов по запросу" creation-date="01/04/2024 14:40:18" />
-                  <item id="285ae41639a94892957f25f33738adfd" cid="DFF016" type="dfd-data-flow" name="Названия, метаданные видеозаписей" creation-date="12/31/2023 18:04:06" from="4c750e365bac44bf9eeb745e073856e3" to="98b07c7c3a9f4763a6284b71ad557e91" />
-                  <item id="7e6162b9b8d04e12bd000f7792fc7222" cid="DFF014" type="dfd-data-flow" name="Запрос к таблице видеозаписей" creation-date="12/31/2023 18:01:28" from="4c750e365bac44bf9eeb745e073856e3" to="3a3d757acf054ea6ab6adbd358308227" />
-                  <item id="18c54a6fee384f3889f95dda9c701a6b" cid="DFF021" type="dfd-data-flow" name="Данные, введенные в форме входа" creation-date="12/31/2023 18:20:50" from="98b07c7c3a9f4763a6284b71ad557e91" to="6c726091b717467286f76b782ea76081" />
+                  <item id="200cfb69510a4753bacbe5ddcbfa88ad" cid="DFF032" type="dfd-data-flow" name="Данные комментариев" creation-date="01/03/2024 21:29:27" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="13b7cb2f5c50441aa413aba5bedf1ed4" />
+                  <item id="6c726091b717467286f76b782ea76081" cid="DFP004" type="dfd-process" name="Авторизовать пользователя" creation-date="12/31/2023 18:19:44" />
+                  <item id="a545257a42114685a752133f9d76c2c7" cid="DFF033" type="dfd-data-flow" name="Идентификатор видео" creation-date="01/03/2024 21:30:06" from="13b7cb2f5c50441aa413aba5bedf1ed4" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="9ed5a7f85d3e4c31bcf167db1a1f2f1a" cid="DFF020" type="dfd-data-flow" name="Видеопоток" creation-date="12/31/2023 18:14:45" from="aee2c09f0d5444f6976ad2f15dc12424" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="223a7da060464a0eada96eb611a34775" cid="DFF061" type="dfd-data-flow" name="Названия, метаданные каналов" creation-date="01/04/2024 14:41:16" from="2bb26c90d88547ca92279334b7bd1b0f" to="98b07c7c3a9f4763a6284b71ad557e91" />
+                  <item id="eaa79dc195cb485c854807d1c72bc3a3" cid="DFF063" type="dfd-data-flow" name="Список каналов" creation-date="01/04/2024 14:43:19" from="678bef3f024343f8843ff3fc33225cb6" to="2bb26c90d88547ca92279334b7bd1b0f" />
                 </abstract-items>
                 <layer id="8d8a4f1a121948ac920be1860ec70675" name="Default" visible="true" enabled="true" locked="false">
                   <item id="98b07c7c3a9f4763a6284b71ad557e91" iid="9199d322ddd842d0a9007e5196f042fd" creation-date="12/25/2023 22:27:42" order-index="0" type="entity">
@@ -554,7 +622,7 @@
                   </item>
                 </layer>
               </diagram>
-              <diagram type="gane-sarson-data-flow" id="p88cd88555bbd43a29df8b738f3390189_945888016" name="DFD1_AuthorizedUser" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-366,-229" zoom="0.9">
+              <diagram type="gane-sarson-data-flow" id="p88cd88555bbd43a29df8b738f3390189_945888016" name="DFD1_AuthorizedUser" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-329,-206" zoom="0.9">
                 <style>
                   <background-color index="1" color="#FFFFFFFF" />
                   <background-color index="2" color="#FFFFFFFF" />
@@ -571,49 +639,191 @@
                   <version />
                 </meta>
                 <abstract-items>
-                  <item id="c1f81bb325a04fcd88eed535739084a0" cid="DFP013" type="dfd-process" name="Создать плейлист" creation-date="01/03/2024 21:54:19" />
-                  <item id="2708e663f7cc4748b0c7f0f6d0776f1c" cid="DFF036" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:49:09" from="d7492fbb903141a59c78654aa8d146b2" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="1f32dd7a0951493a91b82a84d6d03cfd" cid="DFF038" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:50:18" from="83353f82cbf54b94b13204443e09b291" to="d7492fbb903141a59c78654aa8d146b2" />
-                  <item id="3ea51b8a58ee433d816aab9177e55721" cid="DFF046" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:03:13" from="265681f4b1dd40d58929cd113e5fed0a" to="c566cfb84d8a49e0ac8394aa11a5a619" />
-                  <item id="3a53ebcc0d4943ac842846605ac71df0" cid="DFF044" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:01:37" from="c566cfb84d8a49e0ac8394aa11a5a619" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="b2409d16df3f4af5b10bb4bdba67abf5" cid="DFF048" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:30" from="2d26ad898a914c97858d884fae43e08d" to="a7ef503595884e4dbd740a62ba5dd084" />
-                  <item id="5977f88b7e004e6284c1102e1b42bb14" cid="DFF037" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/03/2024 21:49:33" from="d7492fbb903141a59c78654aa8d146b2" to="83353f82cbf54b94b13204443e09b291" />
-                  <item id="064037c3eb264786b00d864cd9e106d8" cid="DFF040" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:58:52" from="c1f81bb325a04fcd88eed535739084a0" />
-                  <item id="7fb640d67f5147088aaf17ab10b2b332" cid="DFF067" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:10:15" from="4946261b55934b0d9fdee4d28b6803b0" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" />
-                  <item id="5d65fd9be10f46afa0fa078492b4af17" cid="DFF055" type="dfd-data-flow" name="Запрос на редактирование комментария" creation-date="01/03/2024 22:47:05" from="171a453d806a4f7996d9b32e12de6d8d" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="4e14021aee0f40c5881ca3b285a12991" cid="DFS010" type="dfd-data-store" name="Плейлисты" creation-date="01/03/2024 21:53:49" />
-                  <item id="c6a083b4e00f4578adedf4413b3e5e9f" cid="DFF051" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:08:29" from="a7ef503595884e4dbd740a62ba5dd084" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="a1dedaecaacb4892a1856dc2db3171db" cid="DFF066" type="dfd-data-flow" name="Запрос на изменение данных с ИД канала" creation-date="01/04/2024 15:09:53" from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to="4946261b55934b0d9fdee4d28b6803b0" />
-                  <item id="b628295c5b31460685f979a123050b0c" cid="DFF054" type="dfd-data-flow" name="Запрос на добавление комментария" creation-date="01/03/2024 22:46:33" from="a7ef503595884e4dbd740a62ba5dd084" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="6c5d9cd42bda4d8ca62445168bbab04c" cid="DFF057" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:47:55" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="a7ef503595884e4dbd740a62ba5dd084" />
-                  <item id="265681f4b1dd40d58929cd113e5fed0a" cid="DFS009" type="dfd-data-store" name="Оценки видео" creation-date="01/03/2024 21:44:13" />
                   <item id="171a453d806a4f7996d9b32e12de6d8d" cid="DFP011" type="dfd-process" name="Редактировать комментарий" creation-date="01/03/2024 21:21:14" />
-                  <item id="053e7917dbd2438eaf7b24643c6854ac" cid="DFF028" type="dfd-data-flow" name="Запрос к таблице с идентификатором пользователя" creation-date="01/03/2024 20:56:39" from="2cc1eeaecb444834a89fa8290a61d80c" to="4946261b55934b0d9fdee4d28b6803b0" />
-                  <item id="fd36e955c3e7459a8513e0811b7901b4" cid="DFF030" type="dfd-data-flow" name="Список подписок" creation-date="01/03/2024 21:00:25" from="2cc1eeaecb444834a89fa8290a61d80c" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="d7492fbb903141a59c78654aa8d146b2" cid="DFP009" type="dfd-process" name="Редактировать плейлист" creation-date="01/03/2024 21:08:23" />
-                  <item id="ab9fce038f444a469db31bc80b7099d6" cid="DFF043" type="dfd-data-flow" name="Оценка, ИД видео" creation-date="01/03/2024 22:01:05" from="2d26ad898a914c97858d884fae43e08d" to="c566cfb84d8a49e0ac8394aa11a5a619" />
-                  <item id="cc4c0b77e7d140e4a6a6e20fa9d74170" cid="DFF059" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:48:26" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="fecaa6995e244dea806ca2fb0840d5af" />
-                  <item id="fecaa6995e244dea806ca2fb0840d5af" cid="DFP008" type="dfd-process" name="Удалить комментарий" creation-date="01/03/2024 21:08:09" />
-                  <item id="c02ae94dcd434118a5e9b383fa87e636" cid="DFF029" type="dfd-data-flow" name="Список подписок" creation-date="01/03/2024 20:57:35" from="4946261b55934b0d9fdee4d28b6803b0" to="2cc1eeaecb444834a89fa8290a61d80c" />
-                  <item id="8552a4bc1c0042cb8a31bdbfa06e5359" cid="DFF050" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:08:08" from="171a453d806a4f7996d9b32e12de6d8d" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="5a839febbf7244808ddbd47a495a0464" cid="DFF047" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:13" from="2d26ad898a914c97858d884fae43e08d" to="fecaa6995e244dea806ca2fb0840d5af" />
-                  <item id="13959edaa095432ca8f0f13fcd86a2ad" cid="DFF065" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:09:19" from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="93e82e361b8e4f63a3eae58dbfef709a" cid="DFF042" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:00:15" from="4e14021aee0f40c5881ca3b285a12991" to="c1f81bb325a04fcd88eed535739084a0" />
-                  <item id="1470e6b2c9ad4c4f85f3f43e65ef15b6" cid="DFF035" type="dfd-data-flow" name="Команда (добавить, удалить видео), ИД" creation-date="01/03/2024 21:47:21" from="2d26ad898a914c97858d884fae43e08d" to="d7492fbb903141a59c78654aa8d146b2" />
-                  <item id="bc2627f919c147568a856811bc106400" cid="DFF045" type="dfd-data-flow" name="Запрос на создание оценки" creation-date="01/03/2024 22:02:39" from="c566cfb84d8a49e0ac8394aa11a5a619" to="265681f4b1dd40d58929cd113e5fed0a" />
-                  <item id="56634e50b3744c99984f80834b0ea7d0" cid="DFF049" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:41" from="2d26ad898a914c97858d884fae43e08d" to="171a453d806a4f7996d9b32e12de6d8d" />
-                  <item id="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" cid="DFP019" type="dfd-process" name="Подписаться на канал/отписаться от канала" creation-date="01/04/2024 15:07:53" />
-                  <item id="4946261b55934b0d9fdee4d28b6803b0" cid="DFS005" type="dfd-data-store" name="Подписки пользователей" creation-date="01/03/2024 20:44:30" />
-                  <item id="23dd2d50be514534bcdccd54ad878195" cid="DFF064" type="dfd-data-flow" name="ИД канала, действие" creation-date="01/04/2024 15:08:30" from="2d26ad898a914c97858d884fae43e08d" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" />
-                  <item id="83353f82cbf54b94b13204443e09b291" cid="DFS008" type="dfd-data-store" name="Видео в плейлистах" creation-date="01/03/2024 21:39:05" />
-                  <item id="00d38288adb3447fbd1f46d31074271c" cid="DFF041" type="dfd-data-flow" name="Запрос на создание плейлиста" creation-date="01/03/2024 21:59:32" from="c1f81bb325a04fcd88eed535739084a0" to="4e14021aee0f40c5881ca3b285a12991" />
-                  <item id="246a22db5024427ead115299cf411604" cid="DFF053" type="dfd-data-flow" name="Запрос на удаление комментария" creation-date="01/03/2024 22:46:12" from="fecaa6995e244dea806ca2fb0840d5af" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="c566cfb84d8a49e0ac8394aa11a5a619" cid="DFP007" type="dfd-process" name="Оценить видео" creation-date="01/03/2024 21:00:57" />
-                  <item id="ba281e582c694132892033f6b2d9a5d5" cid="DFF052" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:11:39" from="fecaa6995e244dea806ca2fb0840d5af" to="2d26ad898a914c97858d884fae43e08d" />
-                  <item id="2cc1eeaecb444834a89fa8290a61d80c" cid="DFP006" type="dfd-process" name="Показать список подписок" creation-date="01/03/2024 20:44:09" />
+                  <item id="7fb640d67f5147088aaf17ab10b2b332" cid="DFF067" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:10:15" from="4946261b55934b0d9fdee4d28b6803b0" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" />
                   <item id="a7ef503595884e4dbd740a62ba5dd084" cid="DFP010" type="dfd-process" name="Добавить комментарий" creation-date="01/03/2024 21:11:30" />
-                  <item id="3aaeb26988ad4608afe20ede6488fefc" cid="DFF039" type="dfd-data-flow" name="Название" creation-date="01/03/2024 21:58:26" from="2d26ad898a914c97858d884fae43e08d" to="c1f81bb325a04fcd88eed535739084a0" />
+                  <item id="ba281e582c694132892033f6b2d9a5d5" cid="DFF052" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:11:39" from="fecaa6995e244dea806ca2fb0840d5af" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="13959edaa095432ca8f0f13fcd86a2ad" cid="DFF065" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:09:19" from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="fd36e955c3e7459a8513e0811b7901b4" cid="DFF030" type="dfd-data-flow" name="Список подписок" creation-date="01/03/2024 21:00:25" from="2cc1eeaecb444834a89fa8290a61d80c" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="3a53ebcc0d4943ac842846605ac71df0" cid="DFF044" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:01:37" from="c566cfb84d8a49e0ac8394aa11a5a619" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="064037c3eb264786b00d864cd9e106d8" cid="DFF040" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:58:52" from="c1f81bb325a04fcd88eed535739084a0" />
+                  <item id="5a839febbf7244808ddbd47a495a0464" cid="DFF047" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:13" from="2d26ad898a914c97858d884fae43e08d" to="fecaa6995e244dea806ca2fb0840d5af" />
+                  <item id="5977f88b7e004e6284c1102e1b42bb14" cid="DFF037" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/03/2024 21:49:33" from="d7492fbb903141a59c78654aa8d146b2" to="83353f82cbf54b94b13204443e09b291" />
+                  <item id="a1dedaecaacb4892a1856dc2db3171db" cid="DFF066" type="dfd-data-flow" name="Запрос на изменение данных с ИД канала" creation-date="01/04/2024 15:09:53" from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to="4946261b55934b0d9fdee4d28b6803b0" />
+                  <item id="00d38288adb3447fbd1f46d31074271c" cid="DFF041" type="dfd-data-flow" name="Запрос на создание плейлиста" creation-date="01/03/2024 21:59:32" from="c1f81bb325a04fcd88eed535739084a0" to="4e14021aee0f40c5881ca3b285a12991" />
+                  <item id="265681f4b1dd40d58929cd113e5fed0a" cid="DFS009" type="dfd-data-store" name="Оценки видео" creation-date="01/03/2024 21:44:13" />
+                  <item id="3ea51b8a58ee433d816aab9177e55721" cid="DFF046" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:03:13" from="265681f4b1dd40d58929cd113e5fed0a" to="c566cfb84d8a49e0ac8394aa11a5a619" />
+                  <item id="fecaa6995e244dea806ca2fb0840d5af" cid="DFP008" type="dfd-process" name="Удалить комментарий" creation-date="01/03/2024 21:08:09" />
+                  <item id="2cc1eeaecb444834a89fa8290a61d80c" cid="DFP006" type="dfd-process" name="Показать список подписок" creation-date="01/03/2024 20:44:09" />
+                  <item id="1f32dd7a0951493a91b82a84d6d03cfd" cid="DFF038" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:50:18" from="83353f82cbf54b94b13204443e09b291" to="d7492fbb903141a59c78654aa8d146b2" />
+                  <item id="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" cid="DFP019" type="dfd-process" name="Подписаться на канал/отписаться от канала" creation-date="01/04/2024 15:07:53" />
+                  <item id="1470e6b2c9ad4c4f85f3f43e65ef15b6" cid="DFF035" type="dfd-data-flow" name="Команда (добавить, удалить видео), ИД" creation-date="01/03/2024 21:47:21" from="2d26ad898a914c97858d884fae43e08d" to="d7492fbb903141a59c78654aa8d146b2" />
+                  <item id="b2409d16df3f4af5b10bb4bdba67abf5" cid="DFF048" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:30" from="2d26ad898a914c97858d884fae43e08d" to="a7ef503595884e4dbd740a62ba5dd084" />
+                  <item id="4e14021aee0f40c5881ca3b285a12991" cid="DFS010" type="dfd-data-store" name="Плейлисты" creation-date="01/03/2024 21:53:49" />
+                  <item id="5d65fd9be10f46afa0fa078492b4af17" cid="DFF055" type="dfd-data-flow" name="Запрос на редактирование комментария" creation-date="01/03/2024 22:47:05" from="171a453d806a4f7996d9b32e12de6d8d" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="246a22db5024427ead115299cf411604" cid="DFF053" type="dfd-data-flow" name="Запрос на удаление комментария" creation-date="01/03/2024 22:46:12" from="fecaa6995e244dea806ca2fb0840d5af" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="83353f82cbf54b94b13204443e09b291" cid="DFS008" type="dfd-data-store" name="Видео в плейлистах" creation-date="01/03/2024 21:39:05" />
+                  <item id="053e7917dbd2438eaf7b24643c6854ac" cid="DFF028" type="dfd-data-flow" name="Запрос к таблице с идентификатором пользователя" creation-date="01/03/2024 20:56:39" from="2cc1eeaecb444834a89fa8290a61d80c" to="4946261b55934b0d9fdee4d28b6803b0" />
+                  <item id="c1f81bb325a04fcd88eed535739084a0" cid="DFP013" type="dfd-process" name="Создать плейлист" creation-date="01/03/2024 21:54:19" />
+                  <item id="56634e50b3744c99984f80834b0ea7d0" cid="DFF049" type="dfd-data-flow" name="ИД видео" creation-date="01/03/2024 22:06:41" from="2d26ad898a914c97858d884fae43e08d" to="171a453d806a4f7996d9b32e12de6d8d" />
+                  <item id="6c5d9cd42bda4d8ca62445168bbab04c" cid="DFF057" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:47:55" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="a7ef503595884e4dbd740a62ba5dd084" />
+                  <item id="c566cfb84d8a49e0ac8394aa11a5a619" cid="DFP007" type="dfd-process" name="Оценить видео" creation-date="01/03/2024 21:00:57" />
+                  <item id="23dd2d50be514534bcdccd54ad878195" cid="DFF064" type="dfd-data-flow" name="ИД канала, действие" creation-date="01/04/2024 15:08:30" from="2d26ad898a914c97858d884fae43e08d" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" />
+                  <item id="c02ae94dcd434118a5e9b383fa87e636" cid="DFF029" type="dfd-data-flow" name="Список подписок" creation-date="01/03/2024 20:57:35" from="4946261b55934b0d9fdee4d28b6803b0" to="2cc1eeaecb444834a89fa8290a61d80c" />
+                  <item id="d7492fbb903141a59c78654aa8d146b2" cid="DFP009" type="dfd-process" name="Редактировать плейлист" creation-date="01/03/2024 21:08:23">
+                    <nested-diagrams>
+                      <diagram type="gane-sarson-data-flow" id="p6ed1d13d4e9d4a2887cc416d171035f2_838319962" name="DFD2_009_EditPlaylist" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default">
+                        <style>
+                          <background-color index="1" color="#FFFFFFFF" />
+                          <background-color index="2" color="#FFFFFFFF" />
+                          <background-type type="solid" />
+                        </style>
+                        <meta>
+                          <authors>
+                            <author> </author>
+                          </authors>
+                          <description />
+                          <creation-date>01/05/2024 13:52:53</creation-date>
+                          <change-date>01/05/2024 13:58:10</change-date>
+                          <revision-count>0</revision-count>
+                          <version />
+                        </meta>
+                        <abstract-items>
+                          <item id="5e165ee5375f43e183aad72f54383978" cid="DFF149" type="dfd-data-flow" name="Статус операции" creation-date="01/05/2024 13:56:29" from="3c23d34b375343e3969a38dfff4cedbb" to="c6515dab12f6424b84e807a4e0e31b14" />
+                          <item id="954a27d0b05d45d78b2d8760dba871e8" cid="DFF145" type="dfd-data-flow" name="Статус операции" creation-date="01/05/2024 13:55:45" from="c6515dab12f6424b84e807a4e0e31b14" to="2d26ad898a914c97858d884fae43e08d" />
+                          <item id="75969998b31a4893b3c368229044e130" cid="DFF150" type="dfd-data-flow" name="Запрос на добавление видео в плейлист" creation-date="01/05/2024 13:56:52" from="3c23d34b375343e3969a38dfff4cedbb" to="83353f82cbf54b94b13204443e09b291" />
+                          <item id="aa8c64d2e5b945c9b3c09cb8c6d6e218" cid="DFF147" type="dfd-data-flow" name="ИД видео, ИД плейлиста" creation-date="01/05/2024 13:56:14" from="c6515dab12f6424b84e807a4e0e31b14" to="70a5a134815e49bda91d054c807efdd1" />
+                          <item id="00d80ce594ab40a7acc71724e9dba2c7" cid="DFF151" type="dfd-data-flow" name="Запрос на удаление видео из плейлиста" creation-date="01/05/2024 13:57:46" from="70a5a134815e49bda91d054c807efdd1" to="83353f82cbf54b94b13204443e09b291" />
+                          <item id="9d0b6a6a23c04befb8fc75cc01595ff8" cid="DFF152" type="dfd-data-flow" name="Статус операции" creation-date="01/05/2024 13:58:00" from="83353f82cbf54b94b13204443e09b291" to="70a5a134815e49bda91d054c807efdd1" />
+                          <item id="70a5a134815e49bda91d054c807efdd1" cid="DFP009.3" type="dfd-process" name="Удалить видео из плейлиста" creation-date="01/05/2024 13:55:26" />
+                          <item id="c6515dab12f6424b84e807a4e0e31b14" cid="DFP009.2" type="dfd-process" name="Выбрать операцию добавления или удаления" creation-date="01/05/2024 13:54:38" />
+                          <item id="e7aaf49120194a2998eb31b417e458bd" cid="DFF146" type="dfd-data-flow" name="ИД видео, ИД плейлиста" creation-date="01/05/2024 13:56:05" from="c6515dab12f6424b84e807a4e0e31b14" to="3c23d34b375343e3969a38dfff4cedbb" />
+                          <item id="3c23d34b375343e3969a38dfff4cedbb" cid="DFP009.1" type="dfd-process" name="Добавить видео в плейлист" creation-date="01/05/2024 13:55:15" />
+                          <item id="7329c3c506494f1c9da7c1932b897ee7" cid="DFF148" type="dfd-data-flow" name="Статус операции" creation-date="01/05/2024 13:56:21" from="70a5a134815e49bda91d054c807efdd1" to="c6515dab12f6424b84e807a4e0e31b14" />
+                          <item id="2096d9e452fb4b36a20cdbd2274c6fa4" cid="DFF144" type="dfd-data-flow" name="ИД видео, ИД плейлиста, операция" creation-date="01/05/2024 13:55:02" from="2d26ad898a914c97858d884fae43e08d" to="c6515dab12f6424b84e807a4e0e31b14" />
+                          <item id="909a6bf368b940a484633ebcd4dd2801" cid="DFF153" type="dfd-data-flow" name="Статус операции" creation-date="01/05/2024 13:58:10" from="83353f82cbf54b94b13204443e09b291" to="3c23d34b375343e3969a38dfff4cedbb" />
+                        </abstract-items>
+                        <layer id="a48e0be8844e42dea61bb44a3c1e4d0a" name="Default" visible="true" enabled="true" locked="false">
+                          <item id="2d26ad898a914c97858d884fae43e08d" iid="c764db053b3848379e1dafee1f66581f" creation-date="12/25/2023 22:38:58" order-index="0" type="entity">
+                            <layout ax="229" ay="298" awidth="168" aheight="67" x="229" y="298" width="168" height="67" />
+                          </item>
+                          <item id="83353f82cbf54b94b13204443e09b291" iid="e482e909b68a4bda8bbd87432f416550" creation-date="01/03/2024 21:39:05" order-index="1" type="entity">
+                            <layout ax="1002" ay="315" awidth="155" aheight="50" x="1002" y="315" width="155" height="50" />
+                          </item>
+                          <item id="c6515dab12f6424b84e807a4e0e31b14" iid="f6fb7edb3d714cd3868354285532e8f1" creation-date="01/05/2024 13:54:38" order-index="2" type="entity">
+                            <layout ax="504" ay="274.5" awidth="155" aheight="114" x="504" y="274.5" width="155" height="114" />
+                          </item>
+                          <item id="2096d9e452fb4b36a20cdbd2274c6fa4" iid="c5e23b7d39644d11ba5e70d21b7227a3" creation-date="01/05/2024 13:55:02" order-index="3" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="397" y1="350" x2="504" y2="351" start-border-pos="0.44402985074626866" end-border-pos="0.8322368421052632" start-local-pos="52" end-local-pos="76.5" name-position="3,50">
+                              <points>
+                                <point x="397" y="350" />
+                                <point x="504" y="351" />
+                              </points>
+                            </layout>
+                            <relation from="2d26ad898a914c97858d884fae43e08d" from-iid="c764db053b3848379e1dafee1f66581f" to="c6515dab12f6424b84e807a4e0e31b14" to-iid="f6fb7edb3d714cd3868354285532e8f1" />
+                          </item>
+                          <item id="3c23d34b375343e3969a38dfff4cedbb" iid="90b20c18165f4ae18ad9d089fdbb1bc7" creation-date="01/05/2024 13:55:15" order-index="4" type="entity">
+                            <layout ax="781" ay="173" awidth="120" aheight="90" x="781" y="173" width="120" height="90" />
+                          </item>
+                          <item id="70a5a134815e49bda91d054c807efdd1" iid="da258f15a7714409b70f0e6512c691c0" creation-date="01/05/2024 13:55:26" order-index="5" type="entity">
+                            <layout ax="781" ay="388.5" awidth="120" aheight="90" x="781" y="388.5" width="120" height="90" />
+                          </item>
+                          <item id="954a27d0b05d45d78b2d8760dba871e8" iid="bc38d165beee4dce89ff4123615ec12f" creation-date="01/05/2024 13:55:45" order-index="6" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="504" y1="308" x2="397" y2="309" start-border-pos="0.9265350877192983" end-border-pos="0.29104477539658546" start-local-pos="32.5" end-local-pos="15" name-position="-3,-44">
+                              <points>
+                                <point x="504" y="308" />
+                                <point x="397" y="309" />
+                              </points>
+                            </layout>
+                            <relation from="c6515dab12f6424b84e807a4e0e31b14" from-iid="f6fb7edb3d714cd3868354285532e8f1" to="2d26ad898a914c97858d884fae43e08d" to-iid="c764db053b3848379e1dafee1f66581f" />
+                          </item>
+                          <item id="e7aaf49120194a2998eb31b417e458bd" iid="b8c8947ca614424fa32832f0031e0a04" creation-date="01/05/2024 13:56:05" order-index="7" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="600" y1="274" x2="781" y2="238" start-border-pos="0.15483870967741936" end-border-pos="0.8194444444444444" start-local-pos="96" end-local-pos="65" name-position="36,29" name-width="141">
+                              <points>
+                                <point x="600" y="274" />
+                                <point x="781" y="238" />
+                              </points>
+                            </layout>
+                            <relation from="c6515dab12f6424b84e807a4e0e31b14" from-iid="f6fb7edb3d714cd3868354285532e8f1" to="3c23d34b375343e3969a38dfff4cedbb" to-iid="90b20c18165f4ae18ad9d089fdbb1bc7" />
+                          </item>
+                          <item id="aa8c64d2e5b945c9b3c09cb8c6d6e218" iid="5e6ae1e36644495499f5060ee028f0f1" creation-date="01/05/2024 13:56:14" order-index="8" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="550" y1="388" x2="781" y2="456" start-border-pos="0.6758064516129032" end-border-pos="0.8125" start-local-pos="46" end-local-pos="67.5" name-position="0,20">
+                              <points>
+                                <point x="550" y="388" />
+                                <point x="781" y="456" />
+                              </points>
+                            </layout>
+                            <relation from="c6515dab12f6424b84e807a4e0e31b14" from-iid="f6fb7edb3d714cd3868354285532e8f1" to="70a5a134815e49bda91d054c807efdd1" to-iid="da258f15a7714409b70f0e6512c691c0" />
+                          </item>
+                          <item id="7329c3c506494f1c9da7c1932b897ee7" iid="fc86c101f71248d3bbfd7a24dc128e29" creation-date="01/05/2024 13:56:21" order-index="9" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="781" y1="424" x2="609" y2="388" start-border-pos="0.9013888888888889" end-border-pos="0.5806451612903226" start-local-pos="35.5" end-local-pos="105" name-position="21,-18">
+                              <points>
+                                <point x="781" y="424" />
+                                <point x="609" y="388" />
+                              </points>
+                            </layout>
+                            <relation from="70a5a134815e49bda91d054c807efdd1" from-iid="da258f15a7714409b70f0e6512c691c0" to="c6515dab12f6424b84e807a4e0e31b14" to-iid="f6fb7edb3d714cd3868354285532e8f1" />
+                          </item>
+                          <item id="5e165ee5375f43e183aad72f54383978" iid="24e1ef30d69e4d9aa3ad705114afbd33" creation-date="01/05/2024 13:56:29" order-index="10" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="781" y1="199" x2="537" y2="274" start-border-pos="0.9277777777777778" end-border-pos="0.0532258064516129" start-local-pos="26" end-local-pos="33" name-position="0,20">
+                              <points>
+                                <point x="781" y="199" />
+                                <point x="537" y="274" />
+                              </points>
+                            </layout>
+                            <relation from="3c23d34b375343e3969a38dfff4cedbb" from-iid="90b20c18165f4ae18ad9d089fdbb1bc7" to="c6515dab12f6424b84e807a4e0e31b14" to-iid="f6fb7edb3d714cd3868354285532e8f1" />
+                          </item>
+                          <item id="75969998b31a4893b3c368229044e130" iid="48ecaef470f2479d9e878d21b991304a" creation-date="01/05/2024 13:56:52" order-index="11" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="901" y1="240" x2="1047" y2="315" start-border-pos="0.4361111111111111" end-border-pos="0.07258064516129033" start-local-pos="67" end-local-pos="45" name-position="-43,38">
+                              <points>
+                                <point x="901" y="240" />
+                                <point x="1047" y="315" />
+                              </points>
+                            </layout>
+                            <relation from="3c23d34b375343e3969a38dfff4cedbb" from-iid="90b20c18165f4ae18ad9d089fdbb1bc7" to="83353f82cbf54b94b13204443e09b291" to-iid="e482e909b68a4bda8bbd87432f416550" />
+                          </item>
+                          <item id="00d80ce594ab40a7acc71724e9dba2c7" iid="7ddb34d5cd8f4a62854ea5273654ebf3" creation-date="01/05/2024 13:57:46" order-index="12" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="901" y1="460" x2="1124" y2="365" start-border-pos="0.44861111111111107" end-border-pos="0.5532258064516129" start-local-pos="71.5" end-local-pos="122" name-position="-31,31">
+                              <points>
+                                <point x="901" y="460" />
+                                <point x="1124" y="365" />
+                              </points>
+                            </layout>
+                            <relation from="70a5a134815e49bda91d054c807efdd1" from-iid="da258f15a7714409b70f0e6512c691c0" to="83353f82cbf54b94b13204443e09b291" to-iid="e482e909b68a4bda8bbd87432f416550" />
+                          </item>
+                          <item id="9d0b6a6a23c04befb8fc75cc01595ff8" iid="8fa36c114a014bd19bfd65625821af80" creation-date="01/05/2024 13:58:00" order-index="13" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1061" y1="365" x2="901" y2="424" start-border-pos="0.6548387096774193" end-border-pos="0.3486111111111111" start-local-pos="59" end-local-pos="35.5" name-position="0,20">
+                              <points>
+                                <point x="1061" y="365" />
+                                <point x="901" y="424" />
+                              </points>
+                            </layout>
+                            <relation from="83353f82cbf54b94b13204443e09b291" from-iid="e482e909b68a4bda8bbd87432f416550" to="70a5a134815e49bda91d054c807efdd1" to-iid="da258f15a7714409b70f0e6512c691c0" />
+                          </item>
+                          <item id="909a6bf368b940a484633ebcd4dd2801" iid="d0f3d98ba39741bf863002fd9f3c2d3c" creation-date="01/05/2024 13:58:10" order-index="14" type="relation">
+                            <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="1116" y1="315" x2="901" y2="204" start-border-pos="0.18387096774193548" end-border-pos="0.33611111111111114" start-local-pos="114" end-local-pos="31" name-position="-32,-21">
+                              <points>
+                                <point x="1116" y="315" />
+                                <point x="901" y="204" />
+                              </points>
+                            </layout>
+                            <relation from="83353f82cbf54b94b13204443e09b291" from-iid="e482e909b68a4bda8bbd87432f416550" to="3c23d34b375343e3969a38dfff4cedbb" to-iid="90b20c18165f4ae18ad9d089fdbb1bc7" />
+                          </item>
+                        </layer>
+                      </diagram>
+                    </nested-diagrams>
+                  </item>
+                  <item id="cc4c0b77e7d140e4a6a6e20fa9d74170" cid="DFF059" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:48:26" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="fecaa6995e244dea806ca2fb0840d5af" />
+                  <item id="bc2627f919c147568a856811bc106400" cid="DFF045" type="dfd-data-flow" name="Запрос на создание оценки" creation-date="01/03/2024 22:02:39" from="c566cfb84d8a49e0ac8394aa11a5a619" to="265681f4b1dd40d58929cd113e5fed0a" />
                   <item id="b50ba526c17d43e096d6b2572d4e8e9e" cid="DFF056" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:47:35" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="171a453d806a4f7996d9b32e12de6d8d" />
+                  <item id="8552a4bc1c0042cb8a31bdbfa06e5359" cid="DFF050" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:08:08" from="171a453d806a4f7996d9b32e12de6d8d" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="3aaeb26988ad4608afe20ede6488fefc" cid="DFF039" type="dfd-data-flow" name="Название" creation-date="01/03/2024 21:58:26" from="2d26ad898a914c97858d884fae43e08d" to="c1f81bb325a04fcd88eed535739084a0" />
+                  <item id="ab9fce038f444a469db31bc80b7099d6" cid="DFF043" type="dfd-data-flow" name="Оценка, ИД видео" creation-date="01/03/2024 22:01:05" from="2d26ad898a914c97858d884fae43e08d" to="c566cfb84d8a49e0ac8394aa11a5a619" />
+                  <item id="93e82e361b8e4f63a3eae58dbfef709a" cid="DFF042" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:00:15" from="4e14021aee0f40c5881ca3b285a12991" to="c1f81bb325a04fcd88eed535739084a0" />
+                  <item id="c6a083b4e00f4578adedf4413b3e5e9f" cid="DFF051" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 22:08:29" from="a7ef503595884e4dbd740a62ba5dd084" to="2d26ad898a914c97858d884fae43e08d" />
+                  <item id="4946261b55934b0d9fdee4d28b6803b0" cid="DFS005" type="dfd-data-store" name="Подписки пользователей" creation-date="01/03/2024 20:44:30" />
+                  <item id="b628295c5b31460685f979a123050b0c" cid="DFF054" type="dfd-data-flow" name="Запрос на добавление комментария" creation-date="01/03/2024 22:46:33" from="a7ef503595884e4dbd740a62ba5dd084" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="2708e663f7cc4748b0c7f0f6d0776f1c" cid="DFF036" type="dfd-data-flow" name="Статус операции" creation-date="01/03/2024 21:49:09" from="d7492fbb903141a59c78654aa8d146b2" to="2d26ad898a914c97858d884fae43e08d" />
                 </abstract-items>
                 <layer id="349f880afb2a439595c624f63182c091" name="Default" visible="true" enabled="true" locked="false">
                   <item id="2d26ad898a914c97858d884fae43e08d" iid="1c452ff4ee684e8486824eddfb513d82" creation-date="12/25/2023 22:38:58" order-index="0" type="entity">
@@ -902,41 +1112,41 @@
                     <relation from="b89c37b8f58640e7b2ea56b3c3dae7a0" from-iid="6c744b16a0cc4425b5b07bc842c54a46" to="fecaa6995e244dea806ca2fb0840d5af" to-iid="e35db254f8e244399298cb67e5bae22d" />
                   </item>
                   <item id="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" iid="f14ba3c160ab4471b23d9ff8ddde991f" creation-date="01/04/2024 15:07:53" order-index="39" type="entity">
-                    <layout ax="490.5" ay="-135.5" awidth="135" aheight="90" x="490.5" y="-135.5" width="135" height="90" />
+                    <layout ax="490.5" ay="-163.5" awidth="135" aheight="118" x="490.5" y="-163.5" width="135" height="118" />
                   </item>
                   <item id="23dd2d50be514534bcdccd54ad878195" iid="f6de4b4aa89642f08ef7ef369e9d7cf0" creation-date="01/04/2024 15:08:30" order-index="40" type="relation">
-                    <layout line-style="perpendicular" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="396" y1="32" x2="490" y2="-66" start-border-pos="0.25075757573358715" end-border-pos="0.8069444444444445" start-local-pos="0.5" end-local-pos="69.5" name-position="-5,-81.5">
+                    <layout line-style="perpendicular" start-auto-side="false" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="396" y1="32" x2="490" y2="-72" start-border-pos="0.25075757573358715" end-border-pos="0.8069444444444445" start-local-pos="0.5" end-local-pos="69.5" name-position="-5,-81.5">
                       <points>
                         <point x="396" y="32" />
                         <point x="451" y="9" />
-                        <point x="490" y="-66" />
+                        <point x="490" y="-72" />
                       </points>
                     </layout>
                     <relation from="2d26ad898a914c97858d884fae43e08d" from-iid="1c452ff4ee684e8486824eddfb513d82" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to-iid="f14ba3c160ab4471b23d9ff8ddde991f" />
                   </item>
                   <item id="13959edaa095432ca8f0f13fcd86a2ad" iid="14936e082463442aaef484d4ba093630" creation-date="01/04/2024 15:09:19" order-index="41" type="relation">
-                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="490" y1="-136" x2="381" y2="32" start-border-pos="0" end-border-pos="0.23161764705882354" start-local-pos="-0.5" end-local-pos="189" name-position="41,-51" name-width="143">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="490" y1="-164" x2="381" y2="32" start-border-pos="0" end-border-pos="0.23161764705882354" start-local-pos="-0.5" end-local-pos="189" name-position="41,-51" name-width="143">
                       <points>
-                        <point x="490" y="-136" />
+                        <point x="490" y="-164" />
                         <point x="381" y="32" />
                       </points>
                     </layout>
                     <relation from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" from-iid="f14ba3c160ab4471b23d9ff8ddde991f" to="2d26ad898a914c97858d884fae43e08d" to-iid="1c452ff4ee684e8486824eddfb513d82" />
                   </item>
                   <item id="a1dedaecaacb4892a1856dc2db3171db" iid="b932750578b94602a76263e12f832785" creation-date="01/04/2024 15:09:53" order-index="42" type="relation">
-                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="626" y1="-68" x2="752" y2="9" start-border-pos="0.4375" end-border-pos="0.09204545454545454" start-local-pos="67.5" end-local-pos="81" name-position="-12,-27" name-width="179">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="626" y1="-75" x2="752" y2="9" start-border-pos="0.4375" end-border-pos="0.09204545454545454" start-local-pos="67.5" end-local-pos="81" name-position="-12,-27" name-width="179">
                       <points>
-                        <point x="626" y="-68" />
+                        <point x="626" y="-75" />
                         <point x="752" y="9" />
                       </points>
                     </layout>
                     <relation from="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" from-iid="f14ba3c160ab4471b23d9ff8ddde991f" to="4946261b55934b0d9fdee4d28b6803b0" to-iid="d4c803e28a384907afae67c3bfe80c86" />
                   </item>
                   <item id="7fb640d67f5147088aaf17ab10b2b332" iid="04846940626b4cc8a67227435da4e739" creation-date="01/04/2024 15:10:15" order-index="43" type="relation">
-                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="875" y1="9" x2="626" y2="-121" start-border-pos="0.2318181818181818" end-border-pos="0.2902777777777778" start-local-pos="204" end-local-pos="14.5" name-position="-88,-21">
+                    <layout line-style="perpendicular" lock-start-point="true" lock-end-point="true" lock-to-fields="false" auto-path="" x1="875" y1="9" x2="626" y2="-144" start-border-pos="0.2318181818181818" end-border-pos="0.2902777777777778" start-local-pos="204" end-local-pos="14.5" name-position="-88,-21">
                       <points>
                         <point x="875" y="9" />
-                        <point x="626" y="-121" />
+                        <point x="626" y="-144" />
                       </points>
                     </layout>
                     <relation from="4946261b55934b0d9fdee4d28b6803b0" from-iid="d4c803e28a384907afae67c3bfe80c86" to="c9cbe6eec5e84d6aaf8dcec7e5dcb23c" to-iid="f14ba3c160ab4471b23d9ff8ddde991f" />
@@ -960,26 +1170,26 @@
                   <version />
                 </meta>
                 <abstract-items>
-                  <item id="600f106d04f24a68b442cb8b7c6d9f91" cid="DFF084" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:19:32" from="e01ebaa93ce24b94bf42cb94c1000931" to="d478096fa0b84541ae1801bda41e7d41" />
-                  <item id="bfb344403c7b4a06bf28bba2a3585e8f" cid="DFF077" type="dfd-data-flow" name="Запрос на добавление данных о видео" creation-date="01/04/2024 15:15:54" from="87a16973244a4a52896b62cf36903714" to="3a3d757acf054ea6ab6adbd358308227" />
-                  <item id="e01ebaa93ce24b94bf42cb94c1000931" cid="DFP014" type="dfd-process" name="Редактировать данные канала" creation-date="01/04/2024 14:39:30" />
-                  <item id="7ee7321bb2b344b58ede496027880d3d" cid="DFF071" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:13:40" from="2db9bfe49ef74bb9b7765aab426fc4a8" to="d478096fa0b84541ae1801bda41e7d41" />
-                  <item id="618c70b03ee846a9b57677e6f23a222c" cid="DFF069" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:13:07" from="597cc54af10d441097b8f1f5279e23ca" to="2db9bfe49ef74bb9b7765aab426fc4a8" />
-                  <item id="8cbf66f139c145d9a5b43e6b35251aad" cid="DFF076" type="dfd-data-flow" name="Данные о видео" creation-date="01/04/2024 15:15:35" from="d478096fa0b84541ae1801bda41e7d41" to="87a16973244a4a52896b62cf36903714" />
-                  <item id="87a16973244a4a52896b62cf36903714" cid="DFP016" type="dfd-process" name="Добавить данные о видео" creation-date="01/04/2024 14:52:21" />
                   <item id="039861744bc54678b76bbd25807fdc6a" cid="DFP017" type="dfd-process" name="Редактировать данные о видео" creation-date="01/04/2024 14:56:25" />
-                  <item id="539a7e9e37b64dba806d32bac816da8e" cid="DFF068" type="dfd-data-flow" name="Содержимое файла" creation-date="01/04/2024 15:12:46" from="2db9bfe49ef74bb9b7765aab426fc4a8" to="597cc54af10d441097b8f1f5279e23ca" />
-                  <item id="2a17d47e29a745f08cde2e9e1ace43f3" cid="DFF082" type="dfd-data-flow" name="Данные канала" creation-date="01/04/2024 15:19:13" from="d478096fa0b84541ae1801bda41e7d41" to="e01ebaa93ce24b94bf42cb94c1000931" />
+                  <item id="8bb6e4017e7f4d109ab6c83eb831c0c4" cid="DFF081" type="dfd-data-flow" name="Запрос на редактирование данных канала" creation-date="01/04/2024 15:18:44" from="e01ebaa93ce24b94bf42cb94c1000931" to="678bef3f024343f8843ff3fc33225cb6" />
                   <item id="6e4981bbc08b45dc9b2629798b5cf995" cid="DFF070" type="dfd-data-flow" name="Содержимое файла" creation-date="01/04/2024 15:13:22" from="d478096fa0b84541ae1801bda41e7d41" to="2db9bfe49ef74bb9b7765aab426fc4a8" />
-                  <item id="880e6fc77f00461b9a858d9685bc373a" cid="DFF073" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:14:20" from="3a3d757acf054ea6ab6adbd358308227" to="039861744bc54678b76bbd25807fdc6a" />
-                  <item id="3a22b4100e0248e4a56b82c68753d6c3" cid="DFF074" type="dfd-data-flow" name="ИД видео, данные о видео" creation-date="01/04/2024 15:14:57" from="d478096fa0b84541ae1801bda41e7d41" to="039861744bc54678b76bbd25807fdc6a" />
-                  <item id="4d8cfda506244fae986656fb20a40058" cid="DFF072" type="dfd-data-flow" name="Запрос на изменение данных о видео" creation-date="01/04/2024 15:13:53" from="039861744bc54678b76bbd25807fdc6a" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="e01ebaa93ce24b94bf42cb94c1000931" cid="DFP014" type="dfd-process" name="Редактировать данные канала" creation-date="01/04/2024 14:39:30" />
+                  <item id="78e85ca012964313bfe9d07c492442ba" cid="DFF080" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:18:30" from="87a16973244a4a52896b62cf36903714" to="d478096fa0b84541ae1801bda41e7d41" />
+                  <item id="618c70b03ee846a9b57677e6f23a222c" cid="DFF069" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:13:07" from="597cc54af10d441097b8f1f5279e23ca" to="2db9bfe49ef74bb9b7765aab426fc4a8" />
+                  <item id="2db9bfe49ef74bb9b7765aab426fc4a8" cid="DFP018" type="dfd-process" name="Загрузить видеофайл" creation-date="01/04/2024 15:01:36" />
+                  <item id="a6be309e78c543d9b767abf305a06f00" cid="DFF083" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:19:22" from="678bef3f024343f8843ff3fc33225cb6" to="e01ebaa93ce24b94bf42cb94c1000931" />
                   <item id="4ddde84ebba745d8904f3a24991d7ef8" cid="DFF079" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:18:15" from="3a3d757acf054ea6ab6adbd358308227" to="87a16973244a4a52896b62cf36903714" />
                   <item id="c627af2a72a746ac967635992da13ebe" cid="DFF075" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:15:23" from="039861744bc54678b76bbd25807fdc6a" to="d478096fa0b84541ae1801bda41e7d41" />
-                  <item id="a6be309e78c543d9b767abf305a06f00" cid="DFF083" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:19:22" from="678bef3f024343f8843ff3fc33225cb6" to="e01ebaa93ce24b94bf42cb94c1000931" />
-                  <item id="2db9bfe49ef74bb9b7765aab426fc4a8" cid="DFP018" type="dfd-process" name="Загрузить видеофайл" creation-date="01/04/2024 15:01:36" />
-                  <item id="8bb6e4017e7f4d109ab6c83eb831c0c4" cid="DFF081" type="dfd-data-flow" name="Запрос на редактирование данных канала" creation-date="01/04/2024 15:18:44" from="e01ebaa93ce24b94bf42cb94c1000931" to="678bef3f024343f8843ff3fc33225cb6" />
-                  <item id="78e85ca012964313bfe9d07c492442ba" cid="DFF080" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:18:30" from="87a16973244a4a52896b62cf36903714" to="d478096fa0b84541ae1801bda41e7d41" />
+                  <item id="880e6fc77f00461b9a858d9685bc373a" cid="DFF073" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:14:20" from="3a3d757acf054ea6ab6adbd358308227" to="039861744bc54678b76bbd25807fdc6a" />
+                  <item id="539a7e9e37b64dba806d32bac816da8e" cid="DFF068" type="dfd-data-flow" name="Содержимое файла" creation-date="01/04/2024 15:12:46" from="2db9bfe49ef74bb9b7765aab426fc4a8" to="597cc54af10d441097b8f1f5279e23ca" />
+                  <item id="600f106d04f24a68b442cb8b7c6d9f91" cid="DFF084" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:19:32" from="e01ebaa93ce24b94bf42cb94c1000931" to="d478096fa0b84541ae1801bda41e7d41" />
+                  <item id="8cbf66f139c145d9a5b43e6b35251aad" cid="DFF076" type="dfd-data-flow" name="Данные о видео" creation-date="01/04/2024 15:15:35" from="d478096fa0b84541ae1801bda41e7d41" to="87a16973244a4a52896b62cf36903714" />
+                  <item id="3a22b4100e0248e4a56b82c68753d6c3" cid="DFF074" type="dfd-data-flow" name="ИД видео, данные о видео" creation-date="01/04/2024 15:14:57" from="d478096fa0b84541ae1801bda41e7d41" to="039861744bc54678b76bbd25807fdc6a" />
+                  <item id="4d8cfda506244fae986656fb20a40058" cid="DFF072" type="dfd-data-flow" name="Запрос на изменение данных о видео" creation-date="01/04/2024 15:13:53" from="039861744bc54678b76bbd25807fdc6a" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="2a17d47e29a745f08cde2e9e1ace43f3" cid="DFF082" type="dfd-data-flow" name="Данные канала" creation-date="01/04/2024 15:19:13" from="d478096fa0b84541ae1801bda41e7d41" to="e01ebaa93ce24b94bf42cb94c1000931" />
+                  <item id="87a16973244a4a52896b62cf36903714" cid="DFP016" type="dfd-process" name="Добавить данные о видео" creation-date="01/04/2024 14:52:21" />
+                  <item id="7ee7321bb2b344b58ede496027880d3d" cid="DFF071" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 15:13:40" from="2db9bfe49ef74bb9b7765aab426fc4a8" to="d478096fa0b84541ae1801bda41e7d41" />
+                  <item id="bfb344403c7b4a06bf28bba2a3585e8f" cid="DFF077" type="dfd-data-flow" name="Запрос на добавление данных о видео" creation-date="01/04/2024 15:15:54" from="87a16973244a4a52896b62cf36903714" to="3a3d757acf054ea6ab6adbd358308227" />
                 </abstract-items>
                 <layer id="27b55f691a8845188b0b798101c9e069" name="Default" visible="true" enabled="true" locked="false">
                   <item id="d478096fa0b84541ae1801bda41e7d41" iid="4a20804191f64710a9b025f770669431" creation-date="12/25/2023 22:46:18" order-index="0" type="entity">
@@ -1152,7 +1362,7 @@
                   </item>
                 </layer>
               </diagram>
-              <diagram type="gane-sarson-data-flow" id="p1641834526e64edb87e3f3be7ab742af_586266000" name="DFD1_Moderator" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default" view-location="-121,-180">
+              <diagram type="gane-sarson-data-flow" id="p1641834526e64edb87e3f3be7ab742af_586266000" name="DFD1_Moderator" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="-121,-180">
                 <style>
                   <background-color index="1" color="#FFFFFFFF" />
                   <background-color index="2" color="#FFFFFFFF" />
@@ -1169,24 +1379,24 @@
                   <version />
                 </meta>
                 <abstract-items>
-                  <item id="1efb9219ece84e74bd83a38654fe6526" cid="DFF097" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/04/2024 18:58:53" from="587e9d261927435bb9f93ce7800323e8" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="c6a6d734d39c4016aff89fc860a0fe60" cid="DFF085" type="dfd-data-flow" name="Запрос данных видеозаписей" creation-date="01/04/2024 18:48:18" from="05091c4ed78b438087e6d401c8a69f60" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="ed1612d1cf3540d9a909bede6a5de5a9" cid="DFF092" type="dfd-data-flow" name="Контент" creation-date="01/04/2024 18:56:49" from="05091c4ed78b438087e6d401c8a69f60" to="978c20af954b4712b73c576cd718f8d9" />
                   <item id="448b49c0f7ad4ac4b0268057a87c45aa" cid="DFF095" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/04/2024 18:58:21" from="587e9d261927435bb9f93ce7800323e8" to="597cc54af10d441097b8f1f5279e23ca" />
-                  <item id="73cd41ce79f04ce1bfebb2d409f89bf3" cid="DFF093" type="dfd-data-flow" name="Запрос на редактирование " creation-date="01/04/2024 18:57:33" from="587e9d261927435bb9f93ce7800323e8" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="1efb9219ece84e74bd83a38654fe6526" cid="DFF097" type="dfd-data-flow" name="Запрос на редактирование" creation-date="01/04/2024 18:58:53" from="587e9d261927435bb9f93ce7800323e8" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
+                  <item id="0d99db89670643d48eb526c39802feef" cid="DFF090" type="dfd-data-flow" name="Данные комментариев" creation-date="01/04/2024 18:55:02" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="05091c4ed78b438087e6d401c8a69f60" />
+                  <item id="c6a6d734d39c4016aff89fc860a0fe60" cid="DFF085" type="dfd-data-flow" name="Запрос данных видеозаписей" creation-date="01/04/2024 18:48:18" from="05091c4ed78b438087e6d401c8a69f60" to="3a3d757acf054ea6ab6adbd358308227" />
                   <item id="e8568720ef6f48cdb42128223eea47b1" cid="DFF088" type="dfd-data-flow" name="Видеоконтент" creation-date="01/04/2024 18:50:50" from="597cc54af10d441097b8f1f5279e23ca" to="05091c4ed78b438087e6d401c8a69f60" />
+                  <item id="bf1b8bd363a14cea940b13320179de76" cid="DFF099" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:59:12" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="587e9d261927435bb9f93ce7800323e8" />
+                  <item id="6ef5d033f3934e389bdd100d3bbc64e8" cid="DFF087" type="dfd-data-flow" name="Запрос видеоконтента" creation-date="01/04/2024 18:49:59" from="05091c4ed78b438087e6d401c8a69f60" to="597cc54af10d441097b8f1f5279e23ca" />
+                  <item id="ecb763ac4b764bf3ad0a9f4fb82606ea" cid="DFF096" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:58:41" from="597cc54af10d441097b8f1f5279e23ca" to="587e9d261927435bb9f93ce7800323e8" />
+                  <item id="e5016bec52214dcb9b752fee0140db37" cid="DFF100" type="dfd-data-flow" name="Тип, идентификатор контента" creation-date="01/04/2024 18:59:26" from="978c20af954b4712b73c576cd718f8d9" to="587e9d261927435bb9f93ce7800323e8" />
+                  <item id="587e9d261927435bb9f93ce7800323e8" cid="DFP021" type="dfd-process" name="Пометить контент как неприемлемый" creation-date="01/04/2024 18:45:14" />
+                  <item id="a6b9beeb384a47c18d824f398842a492" cid="DFF091" type="dfd-data-flow" name="Период для модерации, тип данных для модерации" creation-date="01/04/2024 18:56:21" from="978c20af954b4712b73c576cd718f8d9" to="05091c4ed78b438087e6d401c8a69f60" />
+                  <item id="f71f60f10d004276b8c37af33bb88ba6" cid="DFF101" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:59:42" from="587e9d261927435bb9f93ce7800323e8" to="978c20af954b4712b73c576cd718f8d9" />
+                  <item id="73cd41ce79f04ce1bfebb2d409f89bf3" cid="DFF093" type="dfd-data-flow" name="Запрос на редактирование " creation-date="01/04/2024 18:57:33" from="587e9d261927435bb9f93ce7800323e8" to="3a3d757acf054ea6ab6adbd358308227" />
+                  <item id="05091c4ed78b438087e6d401c8a69f60" cid="DFP020" type="dfd-process" name="Получить контент для модерации" creation-date="01/04/2024 18:40:03" />
+                  <item id="fc180837dcf74f44a4e0af0b965ea589" cid="DFF086" type="dfd-data-flow" name="Данные видеозаписей" creation-date="01/04/2024 18:49:30" from="3a3d757acf054ea6ab6adbd358308227" to="05091c4ed78b438087e6d401c8a69f60" />
                   <item id="5a9749c7f8404f24be8bbcc4942bac7d" cid="DFF094" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:58:01" from="3a3d757acf054ea6ab6adbd358308227" to="587e9d261927435bb9f93ce7800323e8" />
                   <item id="0e066100b4704ac19c8705e1174e5338" cid="DFF089" type="dfd-data-flow" name="Запрос комментариев" creation-date="01/04/2024 18:54:13" from="05091c4ed78b438087e6d401c8a69f60" to="b89c37b8f58640e7b2ea56b3c3dae7a0" />
-                  <item id="ecb763ac4b764bf3ad0a9f4fb82606ea" cid="DFF096" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:58:41" from="597cc54af10d441097b8f1f5279e23ca" to="587e9d261927435bb9f93ce7800323e8" />
-                  <item id="a6b9beeb384a47c18d824f398842a492" cid="DFF091" type="dfd-data-flow" name="Период для модерации, тип данных для модерации" creation-date="01/04/2024 18:56:21" from="978c20af954b4712b73c576cd718f8d9" to="05091c4ed78b438087e6d401c8a69f60" />
-                  <item id="587e9d261927435bb9f93ce7800323e8" cid="DFP021" type="dfd-process" name="Пометить контент как неприемлемый" creation-date="01/04/2024 18:45:14" />
-                  <item id="fc180837dcf74f44a4e0af0b965ea589" cid="DFF086" type="dfd-data-flow" name="Данные видеозаписей" creation-date="01/04/2024 18:49:30" from="3a3d757acf054ea6ab6adbd358308227" to="05091c4ed78b438087e6d401c8a69f60" />
-                  <item id="e5016bec52214dcb9b752fee0140db37" cid="DFF100" type="dfd-data-flow" name="Тип, идентификатор контента" creation-date="01/04/2024 18:59:26" from="978c20af954b4712b73c576cd718f8d9" to="587e9d261927435bb9f93ce7800323e8" />
-                  <item id="bf1b8bd363a14cea940b13320179de76" cid="DFF099" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:59:12" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="587e9d261927435bb9f93ce7800323e8" />
-                  <item id="f71f60f10d004276b8c37af33bb88ba6" cid="DFF101" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 18:59:42" from="587e9d261927435bb9f93ce7800323e8" to="978c20af954b4712b73c576cd718f8d9" />
-                  <item id="6ef5d033f3934e389bdd100d3bbc64e8" cid="DFF087" type="dfd-data-flow" name="Запрос видеоконтента" creation-date="01/04/2024 18:49:59" from="05091c4ed78b438087e6d401c8a69f60" to="597cc54af10d441097b8f1f5279e23ca" />
-                  <item id="0d99db89670643d48eb526c39802feef" cid="DFF090" type="dfd-data-flow" name="Данные комментариев" creation-date="01/04/2024 18:55:02" from="b89c37b8f58640e7b2ea56b3c3dae7a0" to="05091c4ed78b438087e6d401c8a69f60" />
-                  <item id="ed1612d1cf3540d9a909bede6a5de5a9" cid="DFF092" type="dfd-data-flow" name="Контент" creation-date="01/04/2024 18:56:49" from="05091c4ed78b438087e6d401c8a69f60" to="978c20af954b4712b73c576cd718f8d9" />
-                  <item id="05091c4ed78b438087e6d401c8a69f60" cid="DFP020" type="dfd-process" name="Получить контент для модерации" creation-date="01/04/2024 18:40:03" />
                 </abstract-items>
                 <layer id="a0c18fa3d4a94235b0989a116d8c1bbc" name="Default" visible="true" enabled="true" locked="false">
                   <item id="978c20af954b4712b73c576cd718f8d9" iid="7ff8945cfb694ea192b87bf8a6b288e0" creation-date="12/25/2023 22:43:22" order-index="0" type="entity">
@@ -1362,7 +1572,7 @@
                   </item>
                 </layer>
               </diagram>
-              <diagram type="gane-sarson-data-flow" id="p404951bcec7944a8a4c662cc79b2ad0e_409941689" name="DFD1_Admin" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default" view-location="0,80">
+              <diagram type="gane-sarson-data-flow" id="p404951bcec7944a8a4c662cc79b2ad0e_409941689" name="DFD1_Admin" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default" view-location="0,80">
                 <style>
                   <background-color index="1" color="#FFFFFFFF" />
                   <background-color index="2" color="#FFFFFFFF" />
@@ -1379,18 +1589,18 @@
                   <version />
                 </meta>
                 <abstract-items>
-                  <item id="12375d3151b54b1a8d907b60cbafc444" cid="DFF106" type="dfd-data-flow" name="ИД пользователя, тип роли, действие (добавить/удалить)" creation-date="01/04/2024 19:18:02" from="ec602cbb626c4f038dc724a99acf7a62" to="4c2fa6b151b74d7984ad5e1c822be8d9" />
-                  <item id="1a61d1bf7db64937a842879ae6f40dad" cid="DFF104" type="dfd-data-flow" name="Список пользователей (с данными)" creation-date="01/04/2024 19:08:40" from="4e64774890604c6e9b9581f2e904ea96" to="3f248f3edb2a4bf6b134d5dd3daf8b79" />
-                  <item id="52eb5a4596c442edb85e18963e37ee8d" cid="DFF108" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:19:14" from="997211866b8b4d38bd6593051fa444af" to="4c2fa6b151b74d7984ad5e1c822be8d9" />
-                  <item id="997211866b8b4d38bd6593051fa444af" cid="DFS015" type="dfd-data-store" name="Права пользователей" creation-date="01/04/2024 19:14:28" />
-                  <item id="9a5e25e9d8744fccbf32bd82cf4e2c88" cid="DFF103" type="dfd-data-flow" name="Запрос на поиск пользователей" creation-date="01/04/2024 19:08:16" from="3f248f3edb2a4bf6b134d5dd3daf8b79" to="4e64774890604c6e9b9581f2e904ea96" />
-                  <item id="2ac64928b2a34076b56e09ea15a38f37" cid="DFF107" type="dfd-data-flow" name="Запрос на изменение роли пользователя" creation-date="01/04/2024 19:18:48" from="4c2fa6b151b74d7984ad5e1c822be8d9" to="997211866b8b4d38bd6593051fa444af" />
-                  <item id="08e2ef0e3e21409ba0d47a35f921710a" cid="DFF109" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:19:26" from="4c2fa6b151b74d7984ad5e1c822be8d9" to="ec602cbb626c4f038dc724a99acf7a62" />
-                  <item id="c4d0f9c0c5b3473389f4b478e8717382" cid="DFF105" type="dfd-data-flow" name="Список пользователей (с данными)" creation-date="01/04/2024 19:11:39" from="3f248f3edb2a4bf6b134d5dd3daf8b79" to="ec602cbb626c4f038dc724a99acf7a62" />
                   <item id="4c2fa6b151b74d7984ad5e1c822be8d9" cid="DFP023" type="dfd-process" name="Редактировать права пользователей" creation-date="01/04/2024 19:17:35" />
+                  <item id="1a61d1bf7db64937a842879ae6f40dad" cid="DFF104" type="dfd-data-flow" name="Список пользователей (с данными)" creation-date="01/04/2024 19:08:40" from="4e64774890604c6e9b9581f2e904ea96" to="3f248f3edb2a4bf6b134d5dd3daf8b79" />
                   <item id="4e64774890604c6e9b9581f2e904ea96" cid="DFS014" type="dfd-data-store" name="Данные пользователей" creation-date="01/04/2024 19:07:24" />
-                  <item id="3f248f3edb2a4bf6b134d5dd3daf8b79" cid="DFP022" type="dfd-process" name="Получить данные пользователей по запросу" creation-date="01/04/2024 19:06:06" />
                   <item id="cfd002914f0649e49804c5bdfa004421" cid="DFF102" type="dfd-data-flow" name="Запрос (ИД пользователя, имя пользователя)" creation-date="01/04/2024 19:07:55" from="ec602cbb626c4f038dc724a99acf7a62" to="3f248f3edb2a4bf6b134d5dd3daf8b79" />
+                  <item id="3f248f3edb2a4bf6b134d5dd3daf8b79" cid="DFP022" type="dfd-process" name="Получить данные пользователей по запросу" creation-date="01/04/2024 19:06:06" />
+                  <item id="52eb5a4596c442edb85e18963e37ee8d" cid="DFF108" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:19:14" from="997211866b8b4d38bd6593051fa444af" to="4c2fa6b151b74d7984ad5e1c822be8d9" />
+                  <item id="c4d0f9c0c5b3473389f4b478e8717382" cid="DFF105" type="dfd-data-flow" name="Список пользователей (с данными)" creation-date="01/04/2024 19:11:39" from="3f248f3edb2a4bf6b134d5dd3daf8b79" to="ec602cbb626c4f038dc724a99acf7a62" />
+                  <item id="08e2ef0e3e21409ba0d47a35f921710a" cid="DFF109" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:19:26" from="4c2fa6b151b74d7984ad5e1c822be8d9" to="ec602cbb626c4f038dc724a99acf7a62" />
+                  <item id="2ac64928b2a34076b56e09ea15a38f37" cid="DFF107" type="dfd-data-flow" name="Запрос на изменение роли пользователя" creation-date="01/04/2024 19:18:48" from="4c2fa6b151b74d7984ad5e1c822be8d9" to="997211866b8b4d38bd6593051fa444af" />
+                  <item id="9a5e25e9d8744fccbf32bd82cf4e2c88" cid="DFF103" type="dfd-data-flow" name="Запрос на поиск пользователей" creation-date="01/04/2024 19:08:16" from="3f248f3edb2a4bf6b134d5dd3daf8b79" to="4e64774890604c6e9b9581f2e904ea96" />
+                  <item id="997211866b8b4d38bd6593051fa444af" cid="DFS015" type="dfd-data-store" name="Права пользователей" creation-date="01/04/2024 19:14:28" />
+                  <item id="12375d3151b54b1a8d907b60cbafc444" cid="DFF106" type="dfd-data-flow" name="ИД пользователя, тип роли, действие (добавить/удалить)" creation-date="01/04/2024 19:18:02" from="ec602cbb626c4f038dc724a99acf7a62" to="4c2fa6b151b74d7984ad5e1c822be8d9" />
                 </abstract-items>
                 <layer id="79e8d5d0fa42480fba307f6cc4119a02" name="Default" visible="true" enabled="true" locked="false">
                   <item id="ec602cbb626c4f038dc724a99acf7a62" iid="ca99e3102ff74217ac32a0ca49dedd63" creation-date="12/25/2023 22:43:41" order-index="0" type="entity">
@@ -1482,7 +1692,7 @@
                   </item>
                 </layer>
               </diagram>
-              <diagram type="gane-sarson-data-flow" id="p00422d2449794e969593f14e4f0e3de1_448825508" name="DFD1_Advertiser" order-index="-1" uid="" auto-routed-paths="false" default-line-style="default">
+              <diagram type="gane-sarson-data-flow" id="p00422d2449794e969593f14e4f0e3de1_448825508" name="DFD1_Advertiser" order-index="-1" uid="" name-style="" auto-routed-paths="false" default-line-style="default">
                 <style>
                   <background-color index="1" color="#FFFFFFFF" />
                   <background-color index="2" color="#FFFFFFFF" />
@@ -1499,26 +1709,26 @@
                   <version />
                 </meta>
                 <abstract-items>
-                  <item id="5071120c1df34460b9d22d1a2cd7faaf" cid="DFF116" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:32:24" from="3134f526a5054268a56ce01e401ef03e" to="43f664ccc0854e5ea60d9472edbd22f8" />
-                  <item id="02f8b922a474446aafb1e1d59353cba0" cid="DFF120" type="dfd-data-flow" name="Список объявлений" creation-date="01/04/2024 19:34:17" from="22b132451125402dbd9ef4182df9202f" to="5017a589130c42f299e75e1d0ea03e12" />
-                  <item id="aff06ad180224c29abf1b2629041e48d" cid="DFF123" type="dfd-data-flow" name="Данные статистики" creation-date="01/04/2024 19:37:25" from="f52dc7f918a544d19fc5adc6083ca267" to="471888d7fc9e4f9dbe9c6f01300292b7" />
-                  <item id="869e42f51df84531800fa487574972b4" cid="DFF118" type="dfd-data-flow" name="Данные рекламных объявлений" creation-date="01/04/2024 19:33:45" from="6ef8ea42cde946228963ba81f410f8e5" to="22b132451125402dbd9ef4182df9202f" />
                   <item id="6605e98e3af84ef1997a6970e129e473" cid="DFF115" type="dfd-data-flow" name="Запрос на редактирование настроек показа объявления" creation-date="01/04/2024 19:29:54" from="43f664ccc0854e5ea60d9472edbd22f8" to="3134f526a5054268a56ce01e401ef03e" />
-                  <item id="f52dc7f918a544d19fc5adc6083ca267" cid="DFS018" type="dfd-data-store" name="Статистика показов рекламных объявлений" creation-date="01/04/2024 19:26:02" />
+                  <item id="02f8b922a474446aafb1e1d59353cba0" cid="DFF120" type="dfd-data-flow" name="Список объявлений" creation-date="01/04/2024 19:34:17" from="22b132451125402dbd9ef4182df9202f" to="5017a589130c42f299e75e1d0ea03e12" />
+                  <item id="5071120c1df34460b9d22d1a2cd7faaf" cid="DFF116" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:32:24" from="3134f526a5054268a56ce01e401ef03e" to="43f664ccc0854e5ea60d9472edbd22f8" />
                   <item id="6ef8ea42cde946228963ba81f410f8e5" cid="DFS016" type="dfd-data-store" name="Рекламные объявления" creation-date="01/04/2024 19:21:22" />
-                  <item id="9f523417c0454b0489e4e6a8b7eb7887" cid="DFF124" type="dfd-data-flow" name="Данные статистики" creation-date="01/04/2024 19:37:35" from="471888d7fc9e4f9dbe9c6f01300292b7" to="5017a589130c42f299e75e1d0ea03e12" />
-                  <item id="5d8c7fafba824d06af1f2e6e670a3fd7" cid="DFF110" type="dfd-data-flow" name="ИД объявления (при редактировании), контент объявления, настройки показа" creation-date="01/04/2024 19:27:14" from="5017a589130c42f299e75e1d0ea03e12" to="43f664ccc0854e5ea60d9472edbd22f8" />
-                  <item id="471888d7fc9e4f9dbe9c6f01300292b7" cid="DFP025" type="dfd-process" name="Отобразить статистику показов рекламного объявления" creation-date="01/04/2024 19:26:35" />
-                  <item id="711bf902531343fabffdf123c671db3d" cid="DFF122" type="dfd-data-flow" name="Запрос на получение статистики по объявлению" creation-date="01/04/2024 19:37:05" from="471888d7fc9e4f9dbe9c6f01300292b7" to="f52dc7f918a544d19fc5adc6083ca267" />
-                  <item id="43f664ccc0854e5ea60d9472edbd22f8" cid="DFP024" type="dfd-process" name="Настроить рекламное объявление" creation-date="01/04/2024 19:25:41" />
-                  <item id="c626d9a9a2134930aeab6b9bfc9972f0" cid="DFF113" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:29:32" from="6ef8ea42cde946228963ba81f410f8e5" to="43f664ccc0854e5ea60d9472edbd22f8" />
-                  <item id="1043d95097e44747bab5edd6758573c1" cid="DFF119" type="dfd-data-flow" name="Запрос на получение списка объявлений" creation-date="01/04/2024 19:34:01" from="5017a589130c42f299e75e1d0ea03e12" to="22b132451125402dbd9ef4182df9202f" />
-                  <item id="2412ab59c5994d408fa050bf27b65261" cid="DFF121" type="dfd-data-flow" name="ИД объявления" creation-date="01/04/2024 19:36:33" from="5017a589130c42f299e75e1d0ea03e12" to="471888d7fc9e4f9dbe9c6f01300292b7" />
                   <item id="22b132451125402dbd9ef4182df9202f" cid="DFP026" type="dfd-process" name="Отобразить список рекламных объявлений" creation-date="01/04/2024 19:32:43" />
-                  <item id="0778a45b1c734414be8558fedef159f8" cid="DFF117" type="dfd-data-flow" name="Запрос на получение объявлений рекламодателя" creation-date="01/04/2024 19:33:20" from="22b132451125402dbd9ef4182df9202f" to="6ef8ea42cde946228963ba81f410f8e5" />
                   <item id="e0ecd2ba86f6494396fe71e25ded6654" cid="DFF114" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:29:42" from="43f664ccc0854e5ea60d9472edbd22f8" to="5017a589130c42f299e75e1d0ea03e12" />
-                  <item id="409c7c819c34492db2e82f3ce2605ddf" cid="DFF112" type="dfd-data-flow" name="Запрос на редактирование объявления" creation-date="01/04/2024 19:29:11" from="43f664ccc0854e5ea60d9472edbd22f8" to="6ef8ea42cde946228963ba81f410f8e5" />
+                  <item id="1043d95097e44747bab5edd6758573c1" cid="DFF119" type="dfd-data-flow" name="Запрос на получение списка объявлений" creation-date="01/04/2024 19:34:01" from="5017a589130c42f299e75e1d0ea03e12" to="22b132451125402dbd9ef4182df9202f" />
                   <item id="3134f526a5054268a56ce01e401ef03e" cid="DFS017" type="dfd-data-store" name="Настройки показа рекламных объявлений" creation-date="01/04/2024 19:21:58" />
+                  <item id="471888d7fc9e4f9dbe9c6f01300292b7" cid="DFP025" type="dfd-process" name="Отобразить статистику показов рекламного объявления" creation-date="01/04/2024 19:26:35" />
+                  <item id="f52dc7f918a544d19fc5adc6083ca267" cid="DFS018" type="dfd-data-store" name="Статистика показов рекламных объявлений" creation-date="01/04/2024 19:26:02" />
+                  <item id="711bf902531343fabffdf123c671db3d" cid="DFF122" type="dfd-data-flow" name="Запрос на получение статистики по объявлению" creation-date="01/04/2024 19:37:05" from="471888d7fc9e4f9dbe9c6f01300292b7" to="f52dc7f918a544d19fc5adc6083ca267" />
+                  <item id="9f523417c0454b0489e4e6a8b7eb7887" cid="DFF124" type="dfd-data-flow" name="Данные статистики" creation-date="01/04/2024 19:37:35" from="471888d7fc9e4f9dbe9c6f01300292b7" to="5017a589130c42f299e75e1d0ea03e12" />
+                  <item id="2412ab59c5994d408fa050bf27b65261" cid="DFF121" type="dfd-data-flow" name="ИД объявления" creation-date="01/04/2024 19:36:33" from="5017a589130c42f299e75e1d0ea03e12" to="471888d7fc9e4f9dbe9c6f01300292b7" />
+                  <item id="c626d9a9a2134930aeab6b9bfc9972f0" cid="DFF113" type="dfd-data-flow" name="Статус операции" creation-date="01/04/2024 19:29:32" from="6ef8ea42cde946228963ba81f410f8e5" to="43f664ccc0854e5ea60d9472edbd22f8" />
+                  <item id="43f664ccc0854e5ea60d9472edbd22f8" cid="DFP024" type="dfd-process" name="Настроить рекламное объявление" creation-date="01/04/2024 19:25:41" />
+                  <item id="aff06ad180224c29abf1b2629041e48d" cid="DFF123" type="dfd-data-flow" name="Данные статистики" creation-date="01/04/2024 19:37:25" from="f52dc7f918a544d19fc5adc6083ca267" to="471888d7fc9e4f9dbe9c6f01300292b7" />
+                  <item id="5d8c7fafba824d06af1f2e6e670a3fd7" cid="DFF110" type="dfd-data-flow" name="ИД объявления (при редактировании), контент объявления, настройки показа" creation-date="01/04/2024 19:27:14" from="5017a589130c42f299e75e1d0ea03e12" to="43f664ccc0854e5ea60d9472edbd22f8" />
+                  <item id="409c7c819c34492db2e82f3ce2605ddf" cid="DFF112" type="dfd-data-flow" name="Запрос на редактирование объявления" creation-date="01/04/2024 19:29:11" from="43f664ccc0854e5ea60d9472edbd22f8" to="6ef8ea42cde946228963ba81f410f8e5" />
+                  <item id="0778a45b1c734414be8558fedef159f8" cid="DFF117" type="dfd-data-flow" name="Запрос на получение объявлений рекламодателя" creation-date="01/04/2024 19:33:20" from="22b132451125402dbd9ef4182df9202f" to="6ef8ea42cde946228963ba81f410f8e5" />
+                  <item id="869e42f51df84531800fa487574972b4" cid="DFF118" type="dfd-data-flow" name="Данные рекламных объявлений" creation-date="01/04/2024 19:33:45" from="6ef8ea42cde946228963ba81f410f8e5" to="22b132451125402dbd9ef4182df9202f" />
                 </abstract-items>
                 <layer id="df190c92610d44dab64d39da87b9fc4f" name="Default" visible="true" enabled="true" locked="false">
                   <item id="5017a589130c42f299e75e1d0ea03e12" iid="c5772c50863c40a898526fea3fd56952" creation-date="12/25/2023 22:43:52" order-index="0" type="entity">
@@ -1663,20 +1873,9 @@
               </diagram>
             </nested-diagrams>
           </item>
-          <item id="7ee75dedfa3c427b8d8fefd61a87a10e" cid="DFF010" type="dfd-data-flow" name="Команды по управлению &#xD;&#xA;правами пользователей" creation-date="12/25/2023 22:50:58" from="ec602cbb626c4f038dc724a99acf7a62" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="c980cf45d9594f86a0d4dfc28424077e" cid="DFF002" type="dfd-data-flow" name="Видеоконтент, &#xD;&#xA;каталоги видео" creation-date="12/25/2023 22:34:42" from="e84eae42809d45b2b87e51d296e85c3a" to="98b07c7c3a9f4763a6284b71ad557e91" />
-          <item id="1fd8f0d085494b67928edf4d5851dd20" cid="DFF001" type="dfd-data-flow" name="Запросы видео" creation-date="12/25/2023 22:33:33" from="98b07c7c3a9f4763a6284b71ad557e91" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="31fd726ac4ff45549890c8b04d145a16" cid="DFF011" type="dfd-data-flow" name="Данные рекламных объявлений, настройки рекламных кампаний" creation-date="12/25/2023 22:54:26" from="5017a589130c42f299e75e1d0ea03e12" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="bf234b1da39643c3917e9613cf9dfd28" cid="DFF005" type="dfd-data-flow" name="Данные библиотеки, &#xD;&#xA;рекомендации" creation-date="12/25/2023 22:40:42" from="e84eae42809d45b2b87e51d296e85c3a" to="2d26ad898a914c97858d884fae43e08d" />
-          <item id="978c20af954b4712b73c576cd718f8d9" cid="DFE004" type="dfd-external" name="Модератор" creation-date="12/25/2023 22:43:22" />
-          <item id="a38bf6f6c969459489d89493192b024f" cid="DFF008" type="dfd-data-flow" name="Видеоконтент" creation-date="12/25/2023 22:48:42" from="d478096fa0b84541ae1801bda41e7d41" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="4313a93f2b8f41dfb92c668d49e054e7" cid="DFF006" type="dfd-data-flow" name="Команды по управлению каталогом" creation-date="12/25/2023 22:44:46" from="978c20af954b4712b73c576cd718f8d9" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="b884df10f25344ef84dd36c09a04bf4e" cid="DFF012" type="dfd-data-flow" name="Статистика показов &#xD;&#xA;обьявлений, аналитика" creation-date="12/25/2023 22:55:10" from="e84eae42809d45b2b87e51d296e85c3a" to="5017a589130c42f299e75e1d0ea03e12" />
-          <item id="50fd9ace5d3945f1a8bc4ed52d75366e" cid="DFF004" type="dfd-data-flow" name="Оценки видео, &#xD;&#xA;управление библиотекой,&#xD;&#xA;комментарии,&#xD;&#xA;подписки" creation-date="12/25/2023 22:39:37" from="2d26ad898a914c97858d884fae43e08d" to="e84eae42809d45b2b87e51d296e85c3a" />
-          <item id="f60d0c01ecd04e53833546f28bacd778" cid="DFF007" type="dfd-data-flow" name="Видеоконтент, &#xD;&#xA;комментарии" creation-date="12/25/2023 22:46:45" from="e84eae42809d45b2b87e51d296e85c3a" to="978c20af954b4712b73c576cd718f8d9" />
-          <item id="e430729db4024ffb8e8f0c5957a80df9" cid="DFF009" type="dfd-data-flow" name="Статистика &#xD;&#xA;канала" creation-date="12/25/2023 22:49:32" from="e84eae42809d45b2b87e51d296e85c3a" to="d478096fa0b84541ae1801bda41e7d41" />
           <item id="98b07c7c3a9f4763a6284b71ad557e91" cid="DFE002" type="dfd-external" name="Пользователь" creation-date="12/25/2023 22:27:42" />
-          <item id="5017a589130c42f299e75e1d0ea03e12" cid="DFE006" type="dfd-external" name="Рекламодатель" creation-date="12/25/2023 22:43:52" />
+          <item id="b884df10f25344ef84dd36c09a04bf4e" cid="DFF012" type="dfd-data-flow" name="Статистика показов &#xD;&#xA;обьявлений, аналитика" creation-date="12/25/2023 22:55:10" from="e84eae42809d45b2b87e51d296e85c3a" to="5017a589130c42f299e75e1d0ea03e12" />
+          <item id="a38bf6f6c969459489d89493192b024f" cid="DFF008" type="dfd-data-flow" name="Видеоконтент" creation-date="12/25/2023 22:48:42" from="d478096fa0b84541ae1801bda41e7d41" to="e84eae42809d45b2b87e51d296e85c3a" />
         </abstract-items>
         <layer id="cc6b460afd9d481cb7a9db686f08e6f0" name="Default" visible="true" enabled="true" locked="false">
           <item id="e84eae42809d45b2b87e51d296e85c3a" iid="d1b69754d26a4096b9f5c6fc020763b0" creation-date="12/16/2023 00:10:48" order-index="0" type="entity">

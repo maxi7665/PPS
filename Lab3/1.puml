@@ -1,0 +1,57 @@
+@startuml
+
+:Авторизованный\nпользователь: as authorized
+
+left to right direction
+actor "Пользователь" as user
+rectangle {
+  usecase "UC-1\nПросмотреть видео" as UC1
+  usecase "UC-7\nВыполнить поиск\nвидео" as UC7
+  usecase "UC-9\nВыполнить поиск\nканалов" as UC9
+  usecase "<<CRUD>>\nUC-2\nУправление \nкомментариями\nк видео" as UC2
+  usecase "UC-5\nПросмотреть\nкомментарии\n к видео" as UC5
+  usecase "UC-6\nПросмотреть\nоценки видео" as UC6
+  usecase "<<CRUD>>\nUC-3\nУправление плейлистами" as UC3
+  usecase "<<CRUD>>\nUC-4\nУправление видео\nв плейлистах" as UC4
+  usecase "<<CRD>>\nUC-8\nУправление оценками\nвидео" as UC8
+  usecase "UC-10\nЗагрузить видео\n на канал" as UC10
+  usecase "UC-11\nВыбрать \nнаименование \nвидео" as UC11
+  usecase "UC-12\nВыбрать \nобложку \nвидео" as UC12
+  usecase "UC-13\nУказать \nрасположение\nфайла" as UC13
+  usecase "UC-13.1\nУказать\nлокальный\nфайл" as UC13_1
+  usecase "UC-13.2\nУказать\nURL" as UC13_2
+  usecase "<<CRUD>>\nUC-14\nУправление каналами" as UC14
+  usecase "<<RUD>>\nUC-15\nУправление видео\nна канале" as UC15
+}
+
+UC2 -[hidden] UC4
+UC3 -[hidden] UC4
+
+user --> UC7
+user --> UC1
+user --> UC9
+authorized --> UC2
+authorized --> UC3
+authorized --> UC4
+authorized --> UC8
+authorized --> UC10
+authorized -> UC14
+authorized -> UC15
+
+UC1 .> UC7  : "<<extend>>\n(выбрано видео\nв результатах поиска)"
+UC1 ..> UC5 : "<<include>>"
+UC1 ..> UC6 : "<<include>>"
+
+UC2 <.. UC5 : "<<extend>>\n(выполняется\nчтение\nкомментария)"
+UC8 <.. UC6 : "<<extend>>\n(выполняется\nчтение\nоценки)"
+
+UC10 ..> UC11 : "<<include>>"
+UC10 ..> UC12 : "<<include>>"
+UC10 ..> UC13 : "<<include>>"
+
+UC13 <|-- UC13_1
+UC13 <|-- UC13_2
+
+user <|- authorized
+
+@enduml

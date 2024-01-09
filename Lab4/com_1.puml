@@ -1,0 +1,21 @@
+@startuml
+
+rectangle user as "Пользователь\n(клиент-браузер)"
+rectangle server as "Сервер"
+rectangle storage as "Хранилище"
+rectangle ext as "Внешний ресурс"
+rectangle db as "БД"
+
+user - (server): "1: данные формы\n17: запрос страницы просмотра видео\n19:запрос главной страницы\n<&arrow-right>\n\n16: данные о видеозаписи\n18: страница просмотра видео\n20: главная страница\n<&arrow-left>"
+server - db : "4, 10, 14: данные о видеозаписи\n<&arrow-right>\n\n5, 11, 15: статус операции\n<&arrow-left>"
+(server) -- (storage) : "2: данные локального файла\n8: данные загруженного файла\n<&arrow-bottom>\n\n3: статус операции\n9: статус операции\n<&arrow-top>"
+(server) -- (ext) : "6: запрос файла\n<&arrow-bottom>\n\n7: данные файла\n<&arrow-top>"
+
+
+'Others arrows icons
+'<&arrow-left>
+'<&arrow-right>
+'<&arrow-top>
+'<&arrow-bottom>
+
+@enduml

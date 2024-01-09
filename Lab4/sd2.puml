@@ -1,0 +1,52 @@
+@startuml
+
+autoactivate on
+
+participant "Пользователь\n(клиент-браузер)" as user
+participant "Сервер" as server
+database "БД" as db
+
+activate user
+
+  user -> server: Запрос на поиск видео
+  
+  server -> db: поисковый запрос
+    
+  server <<-- db: результат поиска
+  
+  user <<-- server: список видео
+
+loop пока не найдено видео, \nкоторого не содержится в плейлисте\nлибо операция не прервана
+
+  opt если необходимо \nповторить поиск видео
+  
+    user -> server: Запрос на поиск видео
+  
+    server -> db: поисковый запрос
+      
+    server <<-- db: результат поиска
+    
+    user <<-- server: список видео
+  
+  end
+    
+  user -> server: идентификатор выбранной\nвидеозаписи и плейлиста
+  
+  opt видеозапись существует \nи не содержится в плейлисте
+    
+    server -> db: команда на добавление\nвидеозаписи в плейлист
+    
+    server <<-- db: статус операции
+  
+  end
+  
+  user <<-- server: статус операции
+
+end loop
+
+user -> server: запрос страницы \nпросмотра плейлиста
+
+user <<-- server: страница просмотра \nплейлиста
+
+deactivate user 
+@enduml

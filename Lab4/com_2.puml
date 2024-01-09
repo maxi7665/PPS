@@ -1,0 +1,17 @@
+@startuml
+
+rectangle user as "Пользователь\n(клиент-браузер)"
+rectangle server as "Сервер"
+rectangle db as "БД"
+
+user - (server): "1,5: запрос на поиск видео\n9: идентификатор выбранной\nвидеозаписи плейлиста\n19:запрос страницы\nпросмотра плейлиста\n<&arrow-right>\n\n4, 8: список видео\n12: статус операции\n14: страница просмотра плейлиста\n<&arrow-left>"
+server - db : "2, 6: поисковый запрос\n10: команда на добавление\nвидео в плейлист\n<&arrow-right>\n\n3, 7: результат поиска\n11:статус операции\n<&arrow-left>"
+
+
+'Others arrows icons
+'<&arrow-left>
+'<&arrow-right>
+'<&arrow-top>
+'<&arrow-bottom>
+
+@enduml

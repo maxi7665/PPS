@@ -1,0 +1,74 @@
+@startuml
+
+autoactivate on
+
+participant "Пользователь\n(клиент-браузер)" as user
+participant "Сервер" as server
+participant "Хранилище" as storage
+database "БД" as db
+participant "Внешний ресурс" as ext
+
+
+
+activate user
+
+loop пока статус операции не является успешным\nлибо операция не прервана пользователем
+
+  user -> server: Данные формы
+  
+  alt в запросе содержится локальный файл
+  
+    server -> storage: данные локального файла
+    
+    server <<-- storage: статус операции
+    
+    server -> db: данные о видеозаписи
+    
+    server <<-- db: статус операции
+  
+  else в запросе содержится внешний URL
+  
+    server -> ext: запрос файла
+    
+    server <<-- ext: данные файла
+  
+    server -> storage: данные загруженного файла
+    
+    server <<-- storage: статус операции
+    
+    server -> db: данные о видеозаписи
+    
+    server <<-- db: статус операции
+  
+  else в запросе содержится локальный URL
+  
+    server -> db: запрос данных о местоположении\nфайла в хранилище
+    
+    server <<-- db: данные о местоположении\nфайла в хранилище
+    
+    server -> db: данные о видеозаписи
+    
+    server <<-- db: статус операции
+  
+  end
+  
+  user <<-- server: статус операции\nданные о видеозаписи
+
+end loop
+
+alt видео загружено
+
+  user -> server: запрос страницы просмотра видео
+  
+  user <<-- server: страница просмотра видео
+
+else операция прервана
+
+  user -> server: запрос главной страницы
+  
+  user <<-- server: главная страница
+
+end
+
+deactivate user 
+@enduml

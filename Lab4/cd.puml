@@ -1,0 +1,114 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+class User{
+  + GetClientIdentification() : string
+  + SendNotify(string) : void
+  + Block() : void
+}
+
+note left: Посетитель
+
+class AuthorizedUser {
+  # id: int
+  # name: string
+  # login: string
+  # password_hash: string
+  + GetCredentials() : string
+  + GetUserId(): int
+  + GetAssignedRoles(): Role[]
+  + GetName(): string
+}
+
+note left: Авторизованный пользователь
+
+interface IAuthorizedUser{
+  + GetCredentials() : string
+  + GetUserId(): int
+  + GetAssignedRoles(): Role[]
+}
+
+note right: Интерфейс для пользователей,\nспособных авторизоваться
+
+class VideoCreator {
+  + GetPublishedVideos(): Video[]
+}
+
+note bottom: Автор видео
+
+class Moderator {
+  + GetBlockedCommentsIds(): int[]
+}
+
+note bottom: Модератор
+
+class Admin {
+  + GetBlockedUsersIds(): int[]
+}
+
+note bottom: Администратор
+
+class Advertiser {
+  + GetAdsIds(): int[]
+}
+
+note bottom: Рекламодатель
+
+class Playlist{
+ # videos: Video[]
+ # owner: AuthorizedUser
+ # name: string
+ + GetName(): string
+ + GetVideo(): Video[]
+ + AddVideo(Video): void
+ + RemoveVideo(int) : bool
+ + ContainsVideo(int): bool
+ + GetOwner(): AuthorizedUser
+}
+
+note bottom: Плейлист
+
+class Video {
+  # id: int
+  # name: string
+  # description: string
+  # author: AuthorizedUser
+  + GetName(): string
+  + GetDescription(): string
+  + GetAuthor(): AuthorizedUser
+  + GetId(): int
+}
+
+note bottom: Видеозапись
+
+class Role{
+  - id: int
+  - name: string
+  - parent: Role
+  + GetParent(): Role
+  + GetId(): string
+  + GetName(): string
+}
+
+ note right: Роль пользователя
+
+
+' Student "0..*" -- "1..*" Course
+
+User <|-- AuthorizedUser
+IAuthorizedUser <|.. AuthorizedUser
+AuthorizedUser <|-- VideoCreator
+AuthorizedUser <|-- Moderator
+Moderator <|-- Admin
+AuthorizedUser <|-- Advertiser
+
+AuthorizedUser .>   Role
+
+AuthorizedUser "1" <-- "1" Video
+AuthorizedUser "1" <-- "1" Playlist
+Video o-- Playlist
+
+
+
+@enduml
